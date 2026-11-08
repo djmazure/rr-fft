@@ -1,0 +1,875 @@
+{
+ "schema": "rr.failure_bundle/v1",
+ "module": "test_fft_core",
+ "verdict": {
+  "module": "test_fft_core",
+  "counts": {
+   "passed": 5,
+   "failed": 2,
+   "errors": 0,
+   "skipped": 0,
+   "undetermined": 0,
+   "total": 7
+  },
+  "seed": 1784287252,
+  "session_id": "f9a2a731be10",
+  "attempt": 1,
+  "transition": "green->red",
+  "failing_tests": [
+   {
+    "name": "test_natural_order_xk_index",
+    "status": "fail",
+    "message": "assert (False or 511 >= (2 * 256))\n +  where False = done()\n +    where done = <Task 7 scheduled coro=_watch()>.done\n +  and   511 = len([0, 1, 2, 3, 4, 5, ...])",
+    "sim_time_ns": 4244.0,
+    "file": "/home/dmazure/git_repo/tich-super/rr-fft/sim/cocotb/tests/test_fft_core.py",
+    "lineno": "197"
+   },
+   {
+    "name": "test_config_applies_at_frame_boundary",
+    "status": "fail",
+    "message": "name 'CONFIG_WORD_B' is not defined",
+    "sim_time_ns": 28.0,
+    "file": "/home/dmazure/git_repo/tich-super/rr-fft/sim/cocotb/tests/test_fft_core.py",
+    "lineno": "224"
+   }
+  ]
+ },
+ "diagnosis": {
+  "matches": [
+   {
+    "id": "DS-fwft-output-valid-desync-001",
+    "title": "FWFT/AXI-S datapath drops or duplicates a word at backpressure edges \u2014 output-valid not gated on the registered consume",
+    "score": 2,
+    "why": [
+     "regex"
+    ],
+    "root_causes": [
+     {
+      "summary": "`rd_en_r` and the `(not full)` term are sampled in DIFFERENT cycles, so they desync at every backpressure edge: the captured word and the pop pointer drift \u2192 a word is popped-but-never-emitted (SKIP) or double-emitted. The recurring mux_ep_ddr bug class (VFIFO-T1.1/T2.2, 3 instances).",
+      "fix": "Gate the registered output VALID on the ACTUAL registered consume (the same `rd_en_r`/pop event that advanced the pointer), NOT on a fresh `din_valid and not full` projection. One source of truth for 'a word left the stage' per cycle. (H.81)"
+     }
+    ],
+    "drill_down": "rr_diagnose_walk(signature_id=\"DS-fwft-output-valid-desync-001\", answers=[])"
+   },
+   {
+    "id": "DS-rr-linux-sdcard-stale-workspace-001",
+    "title": "Board boots the OLD design after rebuild+flash \u2014 rr linux --refresh leaves Vitis hw_platform workspace caches stale",
+    "score": 2,
+    "why": [
+     "regex"
+    ],
+    "root_causes": [
+     {
+      "summary": "`rr linux fsbl --refresh` (and friends) build incrementally against the Vitis hw_platform workspace caches under sw/linux/src/{fsbl,bsp,device_tree}_workspace/, which retain the OLD .bit + xparameters.h / pl.dtsi across bitstream-edit cycles \u2014 so a fresh SD still embeds the old design.",
+      "fix": "Scorched clean before the rebuild: `rm -rf .routertl_cache .Xil project build .deps.ok bitstream dcp reports` AND the `sw/linux/src/*_workspace/` dirs, then rebuild. (H.74; RTL-P1.63/P1.64 track making --refresh sufficient.)"
+     }
+    ],
+    "drill_down": "rr_diagnose_walk(signature_id=\"DS-rr-linux-sdcard-stale-workspace-001\", answers=[])"
+   },
+   {
+    "id": "DS-xpm-fwft-sim-dout-valid-lastword-001",
+    "title": "XPM FWFT FIFO: RTL reads DOUT same-cycle-as-rd_en \u2014 sim-clean but latches a STALE last word on silicon",
+    "score": 2,
+    "why": [
+     "regex"
+    ],
+    "root_causes": [
+     {
+      "summary": "The stock xpm_fifo_sync sim model (READ_MODE=fwft) keeps DOUT VALID at the rd_en/pop cycle even for the LAST word, so RTL reading DOUT same-cycle-as-rd_en always gets good data in sim. Real silicon invalidates DOUT at the pop/empty edge for the final entry \u2192 the same RTL latches stale. A sim-model FIDELITY gap, not an RTL-only bug.",
+      "fix": "Do not consume FWFT DOUT in the rd_en cycle for the final entry \u2014 register the valid/empty handshake and gate the read on a stable valid. Re-verify against silicon (or a faithful FWFT model), since the stock XPM sim model masks this class. (RTL-P3.746; pairs with DS-fwft-output-valid-desync-001.)"
+     }
+    ]
+   }
+  ]
+ },
+ "recall": [
+  {
+   "kind": "hazard",
+   "id": "Haz.63",
+   "repo": "routertl",
+   "title": "Submodule commit-wait loop polls wrong lock path (.git/index.lock) and dead-loops",
+   "score": 1,
+   "why": [
+    "symptom overlap: false, name, process, real"
+   ],
+   "drill_down": "hazard_view Haz.63"
+  }
+ ],
+ "truncation": [
+  "hwtx.digest.channels: top 20 by transitions (full schema: rr_hwtx_digest)",
+  "hwtx.failure_window.rows: cut to fit \u2014 page more via rr_hwtx_raw(t0/t1 from failure_window.anchor)"
+ ],
+ "hwtx": {
+  "vcd": "/home/dmazure/git_repo/tich-super/rr-fft/sim/waves/test_fft_core/rr_fft_top.vcd",
+  "digest": {
+   "tier": "digest",
+   "schema": "hwtx_v0",
+   "source": {
+    "kind": "sim_vcd",
+    "file": "rr_fft_top.vcd",
+    "sha1_12": "ea5caaf67239",
+    "git": "17ebaed"
+   },
+   "timescale": "1fs",
+   "time_range": [
+    0,
+    7194000000
+   ],
+   "channels": [
+    {
+     "name": "rr_fft_top.u_reorder.clk",
+     "width": 1,
+     "radix": "bin",
+     "transitions": 3598
+    },
+    {
+     "name": "rr_fft_top.in_cnt[7:0]",
+     "width": 8,
+     "radix": "hex",
+     "transitions": 770
+    },
+    {
+     "name": "rr_fft_top.g_pairs(0).u_pair.cnt1[7:0]",
+     "width": 8,
+     "radix": "hex",
+     "transitions": 770
+    },
+    {
+     "name": "rr_fft_top.g_pairs(0).u_pair.cnt2[7:0]",
+     "width": 8,
+     "radix": "hex",
+     "transitions": 642
+    },
+    {
+     "name": "rr_fft_top.g_pairs(0).u_pair.s2_n[5:0]",
+     "width": 6,
+     "radix": "hex",
+     "transitions": 641
+    },
+    {
+     "name": "rr_fft_top.g_pairs(1).u_pair.cnt1[5:0]",
+     "width": 6,
+     "radix": "hex",
+     "transitions": 578
+    },
+    {
+     "name": "rr_fft_top.g_pairs(1).u_pair.cnt2[5:0]",
+     "width": 6,
+     "radix": "hex",
+     "transitions": 546
+    },
+    {
+     "name": "rr_fft_top.g_pairs(1).u_pair.s2_n[3:0]",
+     "width": 4,
+     "radix": "hex",
+     "transitions": 545
+    },
+    {
+     "name": "rr_fft_top.g_pairs(2).u_pair.cnt1[3:0]",
+     "width": 4,
+     "radix": "hex",
+     "transitions": 530
+    },
+    {
+     "name": "rr_fft_top.g_pairs(2).u_pair.cnt2[3:0]",
+     "width": 4,
+     "radix": "hex",
+     "transitions": 522
+    },
+    {
+     "name": "rr_fft_top.g_pairs(2).u_pair.s2_n[1:0]",
+     "width": 2,
+     "radix": "hex",
+     "transitions": 521
+    },
+    {
+     "name": "rr_fft_top.g_pairs(3).u_pair.cnt1[1:0]",
+     "width": 2,
+     "radix": "hex",
+     "transitions": 518
+    },
+    {
+     "name": "rr_fft_top.g_pairs(3).u_pair.cnt2[1:0]",
+     "width": 2,
+     "radix": "hex",
+     "transitions": 516
+    },
+    {
+     "name": "rr_fft_top.s_axis_data_tdata[47:0]",
+     "width": 48,
+     "radix": "hex",
+     "transitions": 515
+    },
+    {
+     "name": "rr_fft_top.st_re[23:0]",
+     "width": 24,
+     "radix": "hex",
+     "transitions": 515
+    },
+    {
+     "name": "rr_fft_top.st_im[23:0]",
+     "width": 24,
+     "radix": "hex",
+     "transitions": 515
+    },
+    {
+     "name": "rr_fft_top.g_pairs(3).u_pair.s1_re[24:0]",
+     "width": 25,
+     "radix": "hex",
+     "transitions": 515
+    },
+    {
+     "name": "rr_fft_top.g_pairs(3).u_pair.s1_im[24:0]",
+     "width": 25,
+     "radix": "hex",
+     "transitions": 515
+    },
+    {
+     "name": "rr_fft_top.g_pairs(3).u_pair.s2_m[1:0]",
+     "width": 2,
+     "radix": "hex",
+     "transitions": 515
+    },
+    {
+     "name": "rr_fft_top.u_reorder.wr_cnt[7:0]",
+     "width": 8,
+     "radix": "hex",
+     "transitions": 515
+    }
+   ],
+   "summary": {
+    "n_channels": 131,
+    "n_transitions": 27970,
+    "fsm_state_signals": [],
+    "fsm_transitions": 0,
+    "fsm_states_observed": {}
+   },
+   "next": "rr_hwtx_transactions(...) for decoded FSM states; rr_hwtx_raw(..., channel, t0, t1) for a raw window."
+  },
+  "verdicts": {
+   "tier": "verdicts",
+   "schema": "hwtx_v0",
+   "headline": "PASS: 0/10 contracts proven",
+   "summary": {
+    "unknown": 10
+   },
+   "t1v": [
+    {
+     "tier": "verdict",
+     "contract": "FFT-REQ-001",
+     "status": "unknown",
+     "tests": [],
+     "test_outcomes": {},
+     "signal_refs": [
+      "Random",
+      "_log",
+      "aclk",
+      "aclken",
+      "append",
+      "aresetn",
+      "info",
+      "m_axis_data_tdata",
+      "m_axis_data_tlast",
+      "m_axis_data_tuser",
+      "m_axis_data_tvalid",
+      "mark",
+      "random",
+      "s_axis_config_tdata",
+      "s_axis_config_tvalid",
+      "s_axis_data_tdata",
+      "s_axis_data_tvalid",
+      "start",
+      "start_soon",
+      "test",
+      "value"
+     ],
+     "event_refs": [],
+     "reason": "covered but no test result found: {}",
+     "evidence": [],
+     "source": "coverage_map+result_collector"
+    },
+    {
+     "tier": "verdict",
+     "contract": "FFT-REQ-002",
+     "status": "unknown",
+     "tests": [],
+     "test_outcomes": {},
+     "signal_refs": [
+      "_log",
+      "aclk",
+      "aclken",
+      "add_ii",
+      "add_latency",
+      "append",
+      "aresetn",
+      "finalize",
+      "info",
+      "m_axis_data_tdata",
+      "m_axis_data_tuser",
+      "m_axis_data_tvalid",
+      "mark",
+      "pop",
+      "s_axis_config_tdata",
+      "s_axis_config_tvalid",
+      "s_axis_data_tdata",
+      "s_axis_data_tvalid",
+      "start",
+      "start_soon",
+      "test",
+      "value"
+     ],
+     "event_refs": [],
+     "reason": "covered but no test result found: {}",
+     "evidence": [],
+     "source": "coverage_map+result_collector"
+    },
+    {
+     "tier": "verdict",
+     "contract": "FFT-REQ-003",
+     "status": "unknown",
+     "tests": [],
+     "test_outcomes": {},
+     "signal_refs": [
+      "Random",
+      "_log",
+      "aclk",
+      "aclken",
+      "append",
+      "aresetn",
+      "done",
+      "info",
+      "m_axis_data_tdata",
+      "m_axis_data_tlast",
+      "m_axis_data_tuser",
+      "m_axis_data_tvalid",
+      "mark",
+      "random",
+      "s_axis_config_tdata",
+      "s_axis_config_tvalid",
+      "s_axis_data_tdata",
+      "s_axis_data_tvalid",
+      "start",
+      "start_soon",
+      "test",
+      "value"
+     ],
+     "event_refs": [],
+     "reason": "covered but no test result found: {}",
+     "evidence": [],
+     "source": "coverage_map+result_collector"
+    },
+    {
+     "tier": "verdict",
+     "contract": "FFT-REQ-004",
+     "status": "unknown",
+     "tests": [],
+     "test_outcomes": {},
+     "signal_refs": [
+      "Random",
+      "_log",
+      "aclk",
+      "aclken",
+      "append",
+      "aresetn",
+      "info",
+      "m_axis_data_tdata",
+      "m_axis_data_tlast",
+      "m_axis_data_tuser",
+      "m_axis_data_tvalid",
+      "mark",
+      "random",
+      "s_axis_config_tdata",
+      "s_axis_config_tvalid",
+      "s_axis_data_tdata",
+      "s_axis_data_tvalid",
+      "start",
+      "start_soon",
+      "test",
+      "value"
+     ],
+     "event_refs": [],
+     "reason": "covered but no test result found: {}",
+     "evidence": [],
+     "source": "coverage_map+result_collector"
+    },
+    {
+     "tier": "verdict",
+     "contract": "FFT-REQ-005",
+     "status": "unknown",
+     "tests": [],
+     "test_outcomes": {},
+     "signal_refs": [
+      "Random",
+      "_log",
+      "aclk",
+      "aclken",
+      "add_ii",
+      "add_latency",
+      "append",
+      "aresetn",
+      "finalize",
+      "info",
+      "m_axis_data_tdata",
+      "m_axis_data_tlast",
+      "m_axis_data_tuser",
+      "m_axis_data_tvalid",
+      "mark",
+      "random",
+      "s_axis_config_tdata",
+      "s_axis_config_tvalid",
+      "s_axis_data_tdata",
+      "s_axis_data_tvalid",
+      "start",
+      "start_soon",
+      "test",
+      "value"
+     ],
+     "event_refs": [],
+     "reason": "covered but no test result found: {}",
+     "evidence": [],
+     "source": "coverage_map+result_collector"
+    },
+    {
+     "tier": "verdict",
+     "contract": "FFT-REQ-006",
+     "status": "unknown",
+     "tests": [],
+     "test_outcomes": {},
+     "signal_refs": [
+      "Random",
+      "_log",
+      "aclk",
+      "aclken",
+      "append",
+      "aresetn",
+      "info",
+      "m_axis_data_tdata",
+      "m_axis_data_tlast",
+      "m_axis_data_tuser",
+      "m_axis_data_tvalid",
+      "mark",
+      "random",
+      "s_axis_config_tdata",
+      "s_axis_config_tvalid",
+      "s_axis_data_tdata",
+      "s_axis_data_tvalid",
+      "start",
+      "start_soon",
+      "test",
+      "value"
+     ],
+     "event_refs": [],
+     "reason": "covered but no test result found: {}",
+     "evidence": [],
+     "source": "coverage_map+result_collector"
+    },
+    {
+     "tier": "verdict",
+     "contract": "FFT-REQ-007",
+     "status": "unknown",
+     "tests": [],
+     "test_outcomes": {},
+     "signal_refs": [
+      "Random",
+      "_log",
+      "aclk",
+      "aclken",
+      "append",
+      "aresetn",
+      "info",
+      "m_axis_data_tdata",
+      "m_axis_data_tlast",
+      "m_axis_data_tuser",
+      "m_axis_data_tvalid",
+      "mark",
+      "random",
+      "s_axis_config_tdata",
+      "s_axis_config_tvalid",
+      "s_axis_data_tdata",
+      "s_axis_data_tvalid",
+      "start",
+      "start_soon",
+      "test",
+      "value"
+     ],
+     "event_refs": [],
+     "reason": "covered but no test result found: {}",
+     "evidence": [],
+     "source": "coverage_map+result_collector"
+    },
+    {
+     "tier": "verdict",
+     "contract": "FFT-REQ-020",
+     "status": "unknown",
+     "tests": [],
+     "test_outcomes": {},
+     "signal_refs": [
+      "_log",
+      "aclk",
+      "aclken",
+      "add_ii",
+      "add_latency",
+      "append",
+      "aresetn",
+      "finalize",
+      "info",
+      "m_axis_data_tdata",
+      "m_axis_data_tuser",
+      "m_axis_data_tvalid",
+      "mark",
+      "s_axis_config_tdata",
+      "s_axis_config_tvalid",
+      "s_axis_data_tdata",
+      "s_axis_data_tlast",
+      "s_axis_data_tvalid",
+      "start",
+      "start_soon",
+      "test",
+      "value"
+     ],
+     "event_refs": [],
+     "reason": "covered but no test result found: {}",
+     "evidence": [],
+     "source": "coverage_map+result_collector"
+    },
+    {
+     "tier": "verdict",
+     "contract": "FFT-REQ-021",
+     "status": "unknown",
+     "tests": [],
+     "test_outcomes": {},
+     "signal_refs": [
+      "_log",
+      "aclk",
+      "aclken",
+      "add_ii",
+      "add_latency",
+      "append",
+      "aresetn",
+      "finalize",
+      "info",
+      "m_axis_data_tdata",
+      "m_axis_data_tuser",
+      "m_axis_data_tvalid",
+      "mark",
+      "s_axis_config_tdata",
+      "s_axis_config_tvalid",
+      "s_axis_data_tdata",
+      "s_axis_data_tlast",
+      "s_axis_data_tvalid",
+      "start",
+      "start_soon",
+      "test",
+      "value"
+     ],
+     "event_refs": [],
+     "reason": "covered but no test result found: {}",
+     "evidence": [],
+     "source": "coverage_map+result_collector"
+    },
+    {
+     "tier": "verdict",
+     "contract": "FFT-REQ-101",
+     "status": "unknown",
+     "tests": [],
+     "test_outcomes": {},
+     "signal_refs": [
+      "Random",
+      "_log",
+      "aclk",
+      "aclken",
+      "append",
+      "aresetn",
+      "info",
+      "m_axis_data_tdata",
+      "m_axis_data_tlast",
+      "m_axis_data_tuser",
+      "m_axis_data_tvalid",
+      "mark",
+      "random",
+      "s_axis_config_tdata",
+      "s_axis_config_tvalid",
+      "s_axis_data_tdata",
+      "s_axis_data_tvalid",
+      "start",
+      "start_soon",
+      "test",
+      "value"
+     ],
+     "event_refs": [],
+     "reason": "covered but no test result found: {}",
+     "evidence": [],
+     "source": "coverage_map+result_collector"
+    }
+   ]
+  },
+  "failure_window": {
+   "tier": "raw",
+   "schema": "hwtx_v0",
+   "cols": [
+    "ts_1fs",
+    "channel",
+    "value"
+   ],
+   "rows": [
+    [
+     0,
+     "rr_fft_top.u_reorder.pages[1:0]",
+     "bUU"
+    ],
+    [
+     0,
+     "rr_fft_top.u_reorder.rd_cnt[7:0]",
+     "bUUUUUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.u_reorder.wr_cnt[7:0]",
+     "bUUUUUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.u_reorder.m_tuser[7:0]",
+     "bUUUUUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.u_reorder.m_tdata[47:0]",
+     "bUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(3).u_pair.s3_w[47:0]",
+     "bUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(3).u_pair.s3_cfg[8:0]",
+     "bUUUUUUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(3).u_pair.s3_im[25:0]",
+     "bUUUUUUUUUUUUUUUUUUUUUUUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(3).u_pair.s3_re[25:0]",
+     "bUUUUUUUUUUUUUUUUUUUUUUUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(3).u_pair.s2_m[1:0]",
+     "bUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(3).u_pair.s2_cfg[8:0]",
+     "bUUUUUUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(3).u_pair.s2_im[25:0]",
+     "bUUUUUUUUUUUUUUUUUUUUUUUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(3).u_pair.s2_re[25:0]",
+     "bUUUUUUUUUUUUUUUUUUUUUUUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(3).u_pair.cnt2[1:0]",
+     "bUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(3).u_pair.s1_cfg[8:0]",
+     "bUUUUUUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(3).u_pair.s1_im[24:0]",
+     "bUUUUUUUUUUUUUUUUUUUUUUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(3).u_pair.s1_re[24:0]",
+     "bUUUUUUUUUUUUUUUUUUUUUUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(3).u_pair.cnt1[1:0]",
+     "bUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(3).u_pair.dout_cfg[8:0]",
+     "bUUUUUUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(3).u_pair.dout_im[23:0]",
+     "bUUUUUUUUUUUUUUUUUUUUUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(3).u_pair.dout_re[23:0]",
+     "bUUUUUUUUUUUUUUUUUUUUUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(2).u_pair.s3_w[47:0]",
+     "bUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(2).u_pair.s3_cfg[8:0]",
+     "bUUUUUUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(2).u_pair.s3_im[25:0]",
+     "bUUUUUUUUUUUUUUUUUUUUUUUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(2).u_pair.s3_re[25:0]",
+     "bUUUUUUUUUUUUUUUUUUUUUUUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(2).u_pair.s2_n[1:0]",
+     "bUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(2).u_pair.s2_m[1:0]",
+     "bUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(2).u_pair.s2_cfg[8:0]",
+     "bUUUUUUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(2).u_pair.s2_im[25:0]",
+     "bUUUUUUUUUUUUUUUUUUUUUUUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(2).u_pair.s2_re[25:0]",
+     "bUUUUUUUUUUUUUUUUUUUUUUUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(2).u_pair.cnt2[3:0]",
+     "bUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(2).u_pair.s1_cfg[8:0]",
+     "bUUUUUUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(2).u_pair.s1_im[24:0]",
+     "bUUUUUUUUUUUUUUUUUUUUUUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(2).u_pair.s1_re[24:0]",
+     "bUUUUUUUUUUUUUUUUUUUUUUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(2).u_pair.cnt1[3:0]",
+     "bUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(2).u_pair.dout_cfg[8:0]",
+     "bUUUUUUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(2).u_pair.dout_im[23:0]",
+     "bUUUUUUUUUUUUUUUUUUUUUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(2).u_pair.dout_re[23:0]",
+     "bUUUUUUUUUUUUUUUUUUUUUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(1).u_pair.s3_w[47:0]",
+     "bUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(1).u_pair.s3_cfg[8:0]",
+     "bUUUUUUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(1).u_pair.s3_im[25:0]",
+     "bUUUUUUUUUUUUUUUUUUUUUUUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(1).u_pair.s3_re[25:0]",
+     "bUUUUUUUUUUUUUUUUUUUUUUUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(1).u_pair.s2_n[3:0]",
+     "bUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(1).u_pair.s2_m[1:0]",
+     "bUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(1).u_pair.s2_cfg[8:0]",
+     "bUUUUUUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(1).u_pair.s2_im[25:0]",
+     "bUUUUUUUUUUUUUUUUUUUUUUUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(1).u_pair.s2_re[25:0]",
+     "bUUUUUUUUUUUUUUUUUUUUUUUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(1).u_pair.cnt2[5:0]",
+     "bUUUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(1).u_pair.s1_cfg[8:0]",
+     "bUUUUUUUUU"
+    ],
+    [
+     0,
+     "rr_fft_top.g_pairs(1).u_pair.s1_im[24:0]",
+     "bUUUUUUUUUUUUUUUUUUUUUUUUU"
+    ]
+   ],
+   "truncated": true,
+   "note": "showing 200 of 335 rows (capped at 200); narrow the window with t0/t1/channel",
+   "anchor": {
+    "sim_time_ns": 28.0,
+    "ticks": 28000000,
+    "half_width_ticks": 143880000
+   }
+  }
+ }
+}

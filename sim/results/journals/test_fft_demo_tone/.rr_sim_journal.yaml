@@ -1,0 +1,10 @@
+test: test_fft_demo_tone
+runs:
+- timestamp: '2026-07-17T12:33:21Z'
+  sim_commit: f45ec77cc783-dirty
+  bfm_source_hashes: {}
+  pass: true
+  failures: []
+  attestation: null
+  test_file_hashes:
+    sim/cocotb/tests/test_fft_demo_tone.py: 35441a6178b7c731

@@ -1,0 +1,109 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="cocotb" value="True" />
+    <testcase classname="test_fft_core" name="test_forward_scaled_bit_exact" time="0.436">
+      <properties>
+        <property name="cocotb" value="True" />
+        <property name="random_seed" value="1794098435" />
+        <property name="file" value="/home/dmazure/git_repo/tich-super/routertl/sdk/cocotb_helpers/_heartbeat_bootstrap.py" />
+        <property name="line" value="111" />
+        <property name="sim_time_unit" value="ns" />
+        <property name="sim_time_start" value="0.0" />
+        <property name="sim_time_stop" value="5328.0" />
+        <property name="sim_time_duration" value="5328.0" />
+        <property name="sim_time_ratio" value="12217.98351903433" />
+      </properties>
+    </testcase>
+    <testcase classname="test_fft_core" name="test_roundtrip_inverse_bit_exact" time="0.231">
+      <properties>
+        <property name="cocotb" value="True" />
+        <property name="random_seed" value="1794098436" />
+        <property name="file" value="/home/dmazure/git_repo/tich-super/routertl/sdk/cocotb_helpers/_heartbeat_bootstrap.py" />
+        <property name="line" value="111" />
+        <property name="sim_time_unit" value="ns" />
+        <property name="sim_time_start" value="0.0" />
+        <property name="sim_time_stop" value="3280.0" />
+        <property name="sim_time_duration" value="3280.0" />
+        <property name="sim_time_ratio" value="14195.663881296945" />
+      </properties>
+    </testcase>
+    <testcase classname="test_fft_core" name="test_natural_order_xk_index" time="0.291">
+      <properties>
+        <property name="cocotb" value="True" />
+        <property name="random_seed" value="1794098438" />
+        <property name="file" value="/home/dmazure/git_repo/tich-super/routertl/sdk/cocotb_helpers/_heartbeat_bootstrap.py" />
+        <property name="line" value="111" />
+        <property name="sim_time_unit" value="ns" />
+        <property name="sim_time_start" value="0.0" />
+        <property name="sim_time_stop" value="4312.0" />
+        <property name="sim_time_duration" value="4312.0" />
+        <property name="sim_time_ratio" value="14805.295602966864" />
+      </properties>
+    </testcase>
+    <testcase classname="test_fft_core" name="test_config_applies_at_frame_boundary" time="0.254">
+      <properties>
+        <property name="cocotb" value="True" />
+        <property name="random_seed" value="1794098439" />
+        <property name="file" value="/home/dmazure/git_repo/tich-super/routertl/sdk/cocotb_helpers/_heartbeat_bootstrap.py" />
+        <property name="line" value="111" />
+        <property name="sim_time_unit" value="ns" />
+        <property name="sim_time_start" value="0.0" />
+        <property name="sim_time_stop" value="4304.0" />
+        <property name="sim_time_duration" value="4304.0" />
+        <property name="sim_time_ratio" value="16961.481635089138" />
+      </properties>
+    </testcase>
+    <testcase classname="test_fft_core" name="test_back_to_back_ii1" time="0.335">
+      <properties>
+        <property name="cocotb" value="True" />
+        <property name="random_seed" value="1794098440" />
+        <property name="file" value="/home/dmazure/git_repo/tich-super/routertl/sdk/cocotb_helpers/_heartbeat_bootstrap.py" />
+        <property name="line" value="111" />
+        <property name="sim_time_unit" value="ns" />
+        <property name="sim_time_start" value="0.0" />
+        <property name="sim_time_stop" value="5328.0" />
+        <property name="sim_time_duration" value="5328.0" />
+        <property name="sim_time_ratio" value="15882.07710528228" />
+      </properties>
+    </testcase>
+    <testcase classname="test_fft_core" name="test_data_pushed_flush_semantics" time="0.237">
+      <properties>
+        <property name="cocotb" value="True" />
+        <property name="random_seed" value="1794098441" />
+        <property name="file" value="/home/dmazure/git_repo/tich-super/routertl/sdk/cocotb_helpers/_heartbeat_bootstrap.py" />
+        <property name="line" value="111" />
+        <property name="sim_time_unit" value="ns" />
+        <property name="sim_time_start" value="0.0" />
+        <property name="sim_time_stop" value="6352.0" />
+        <property name="sim_time_duration" value="6352.0" />
+        <property name="sim_time_ratio" value="26790.457240117492" />
+      </properties>
+    </testcase>
+    <testcase classname="test_fft_core" name="test_reset_no_stale_output" time="0.256">
+      <properties>
+        <property name="cocotb" value="True" />
+        <property name="random_seed" value="1794098442" />
+        <property name="file" value="/home/dmazure/git_repo/tich-super/routertl/sdk/cocotb_helpers/_heartbeat_bootstrap.py" />
+        <property name="line" value="111" />
+        <property name="sim_time_unit" value="ns" />
+        <property name="sim_time_start" value="0.0" />
+        <property name="sim_time_stop" value="4868.0" />
+        <property name="sim_time_duration" value="4868.0" />
+        <property name="sim_time_ratio" value="19027.831060583972" />
+      </properties>
+    </testcase>
+    <testcase classname="test_fft_core" name="test_aclken_freeze_exact" time="0.222">
+      <properties>
+        <property name="cocotb" value="True" />
+        <property name="random_seed" value="1794098443" />
+        <property name="file" value="/home/dmazure/git_repo/tich-super/routertl/sdk/cocotb_helpers/_heartbeat_bootstrap.py" />
+        <property name="line" value="111" />
+        <property name="sim_time_unit" value="ns" />
+        <property name="sim_time_start" value="0.0" />
+        <property name="sim_time_stop" value="4764.0" />
+        <property name="sim_time_duration" value="4764.0" />
+        <property name="sim_time_ratio" value="21430.16471910601" />
+      </properties>
+    </testcase>
+  </testsuite>
+</testsuites>

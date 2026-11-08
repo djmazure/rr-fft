@@ -1,0 +1,31 @@
+# Development-workspace project.yml for rr_fft.
+#
+# Companion to the future ip.yml (the publishable contract). Lets a checkout
+# of this repo run the cocotb suite via `rr sim run <test>` with an installed
+# routertl SDK. Part matches the reference deployment silicon (ZU+ -2
+# industrial) so the technical-contract closure (fmax 375 MHz) is
+# checked against the device that has to meet it.
+
+project:
+  name: rr_fft
+  top_module: rr_fft_top
+  top_sim: rr_fft_top
+
+auto_sources: true
+paths:
+  sources:
+    - rtl
+  constraints: constraints   # auto-globbed for *.xdc by the canonical resolver (RTL-P3.566)
+
+hardware:
+  vendor: xilinx
+  part: xczu5cg-sfvc784-2-i
+  language: vhdl
+
+simulation:
+  test_dir: sim/cocotb/tests
+  waves_dir: sim/cocotb/waves
+  logs_dir: sim/cocotb/logs
+
+linting:
+  profile: routertl-vhdl-strict-provisional

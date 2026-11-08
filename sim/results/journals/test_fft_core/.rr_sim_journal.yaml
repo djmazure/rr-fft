@@ -1,0 +1,159 @@
+test: test_fft_core
+runs:
+- timestamp: '2026-07-16T23:10:33Z'
+  sim_commit: 2797d07e070b-dirty
+  bfm_source_hashes: {}
+  pass: false
+  failures:
+  - failed
+  - failed=1
+  attestation: null
+  test_file_hashes:
+    sim/cocotb/tests/test_fft_core.py: c2792ec001f26213
+- timestamp: '2026-07-16T23:11:50Z'
+  sim_commit: 2797d07e070b-dirty
+  bfm_source_hashes: {}
+  pass: true
+  failures: []
+  attestation: null
+  test_file_hashes:
+    sim/cocotb/tests/test_fft_core.py: ea6145e6350fc130
+- timestamp: '2026-07-16T23:15:11Z'
+  sim_commit: 25c6fc8acb7e-dirty
+  bfm_source_hashes: {}
+  pass: true
+  failures: []
+  attestation: "attempt-1 red was a test-stimulus defect (missing flush beats for\
+    \ the valid-gated pipe); no DUT defect, no assertion weakened \u2014 coverage\
+    \ strengthened (frame 3 now checked). Witness commit with BUG-FIX: tag is in history\
+    \ (see git log)"
+  test_file_hashes:
+    sim/cocotb/tests/test_fft_core.py: ea6145e6350fc130
+- timestamp: '2026-07-17T07:15:22Z'
+  sim_commit: 25c6fc8acb7e-dirty
+  bfm_source_hashes: {}
+  pass: true
+  failures: []
+  attestation: null
+  test_file_hashes:
+    sim/cocotb/tests/test_fft_core.py: 3df2989697ff5cee
+- timestamp: '2026-07-17T07:17:41Z'
+  sim_commit: c6cfb4f86577-dirty
+  bfm_source_hashes: {}
+  pass: true
+  failures: []
+  attestation: null
+  test_file_hashes:
+    sim/cocotb/tests/test_fft_core.py: 3df2989697ff5cee
+- timestamp: '2026-07-17T07:18:21Z'
+  sim_commit: c6cfb4f86577-dirty
+  bfm_source_hashes: {}
+  pass: true
+  failures: []
+  attestation: null
+  test_file_hashes:
+    sim/cocotb/tests/test_fft_core.py: 3df2989697ff5cee
+- timestamp: '2026-07-17T07:18:39Z'
+  sim_commit: c6cfb4f86577-dirty
+  bfm_source_hashes: {}
+  pass: true
+  failures: []
+  attestation: null
+  test_file_hashes:
+    sim/cocotb/tests/test_fft_core.py: 3df2989697ff5cee
+- timestamp: '2026-07-17T07:21:04Z'
+  sim_commit: c6cfb4f86577-dirty
+  bfm_source_hashes: {}
+  pass: true
+  failures: []
+  attestation: null
+  test_file_hashes:
+    sim/cocotb/tests/test_fft_core.py: a9287eeab6aecdf8
+- timestamp: '2026-07-17T08:00:49Z'
+  sim_commit: 63d0cd32d427-dirty
+  bfm_source_hashes: {}
+  pass: true
+  failures: []
+  attestation: null
+  test_file_hashes:
+    sim/cocotb/tests/test_fft_core.py: a9287eeab6aecdf8
+  assertion_fingerprints:
+    test:sim/cocotb/tests/test_fft_core.py::test_forward_scaled_bit_exact: e261dc86a19a02f15ee620fdf08c948ee849771b98385cc35c121b35cd822151
+    test:sim/cocotb/tests/test_fft_core.py::test_roundtrip_inverse_bit_exact: e261dc86a19a02f15ee620fdf08c948ee849771b98385cc35c121b35cd822151
+    test:sim/cocotb/tests/test_fft_core.py::test_aclken_freeze_exact: e261dc86a19a02f15ee620fdf08c948ee849771b98385cc35c121b35cd822151
+- timestamp: '2026-07-17T09:10:58Z'
+  sim_commit: b8d86380c7b0-dirty
+  bfm_source_hashes: {}
+  pass: true
+  failures: []
+  attestation: null
+  test_file_hashes:
+    sim/cocotb/tests/test_fft_core.py: a9287eeab6aecdf8
+  assertion_fingerprints:
+    test:sim/cocotb/tests/test_fft_core.py::test_forward_scaled_bit_exact: e261dc86a19a02f15ee620fdf08c948ee849771b98385cc35c121b35cd822151
+    test:sim/cocotb/tests/test_fft_core.py::test_roundtrip_inverse_bit_exact: e261dc86a19a02f15ee620fdf08c948ee849771b98385cc35c121b35cd822151
+    test:sim/cocotb/tests/test_fft_core.py::test_aclken_freeze_exact: e261dc86a19a02f15ee620fdf08c948ee849771b98385cc35c121b35cd822151
+- timestamp: '2026-07-17T09:30:11Z'
+  sim_commit: 5e43c71ddc49-dirty
+  bfm_source_hashes: {}
+  pass: true
+  failures: []
+  attestation: null
+  test_file_hashes:
+    sim/cocotb/tests/test_fft_core.py: fda68be3edc71303
+  assertion_fingerprints:
+    test:sim/cocotb/tests/test_fft_core.py::test_forward_scaled_bit_exact: e261dc86a19a02f15ee620fdf08c948ee849771b98385cc35c121b35cd822151
+    test:sim/cocotb/tests/test_fft_core.py::test_roundtrip_inverse_bit_exact: e261dc86a19a02f15ee620fdf08c948ee849771b98385cc35c121b35cd822151
+    test:sim/cocotb/tests/test_fft_core.py::test_reset_no_stale_output: e3b30c8db832377cfc15964fd51df7c1f28c7b5f08ca3e2b9c91c803e378125f
+    test:sim/cocotb/tests/test_fft_core.py::test_aclken_freeze_exact: e261dc86a19a02f15ee620fdf08c948ee849771b98385cc35c121b35cd822151
+- timestamp: '2026-07-17T11:20:53Z'
+  sim_commit: 17ebaed4d85b-dirty
+  bfm_source_hashes: {}
+  pass: false
+  failures:
+  - failed
+  - failed=2
+  attestation: null
+  test_file_hashes:
+    sim/cocotb/tests/test_fft_core.py: aea2a3ebebf11050
+  assertion_fingerprints:
+    test:sim/cocotb/tests/test_fft_core.py::test_forward_scaled_bit_exact: e261dc86a19a02f15ee620fdf08c948ee849771b98385cc35c121b35cd822151
+    test:sim/cocotb/tests/test_fft_core.py::test_roundtrip_inverse_bit_exact: e261dc86a19a02f15ee620fdf08c948ee849771b98385cc35c121b35cd822151
+    test:sim/cocotb/tests/test_fft_core.py::test_natural_order_xk_index: 8b2e4203563c639dd16f787a9b3fb02ad0231ff86ff96707c4585acf93bed800
+    test:sim/cocotb/tests/test_fft_core.py::test_config_applies_at_frame_boundary: 1c972214a074ef0e1f61ebf4a5789ae8672d5804fba7277ed9919fa1ad3b9dbb
+    test:sim/cocotb/tests/test_fft_core.py::test_back_to_back_ii1: 343d83a104845cf00eb63fe9c6c060d0695e968a1a6d7d9d1877ba1e62b43026
+    test:sim/cocotb/tests/test_fft_core.py::test_reset_no_stale_output: e3b30c8db832377cfc15964fd51df7c1f28c7b5f08ca3e2b9c91c803e378125f
+    test:sim/cocotb/tests/test_fft_core.py::test_aclken_freeze_exact: e261dc86a19a02f15ee620fdf08c948ee849771b98385cc35c121b35cd822151
+- timestamp: '2026-07-17T11:21:52Z'
+  sim_commit: 17ebaed4d85b-dirty
+  bfm_source_hashes: {}
+  pass: true
+  failures: []
+  attestation: null
+  test_file_hashes:
+    sim/cocotb/tests/test_fft_core.py: 507f3279f8614620
+  assertion_fingerprints:
+    test:sim/cocotb/tests/test_fft_core.py::test_forward_scaled_bit_exact: e261dc86a19a02f15ee620fdf08c948ee849771b98385cc35c121b35cd822151
+    test:sim/cocotb/tests/test_fft_core.py::test_roundtrip_inverse_bit_exact: e261dc86a19a02f15ee620fdf08c948ee849771b98385cc35c121b35cd822151
+    test:sim/cocotb/tests/test_fft_core.py::test_natural_order_xk_index: 0ce43f22464e36d0c598854b7e56bd8c40b35172795b3898c5de7b583b578773
+    test:sim/cocotb/tests/test_fft_core.py::test_config_applies_at_frame_boundary: 1c972214a074ef0e1f61ebf4a5789ae8672d5804fba7277ed9919fa1ad3b9dbb
+    test:sim/cocotb/tests/test_fft_core.py::test_back_to_back_ii1: 343d83a104845cf00eb63fe9c6c060d0695e968a1a6d7d9d1877ba1e62b43026
+    test:sim/cocotb/tests/test_fft_core.py::test_reset_no_stale_output: e3b30c8db832377cfc15964fd51df7c1f28c7b5f08ca3e2b9c91c803e378125f
+    test:sim/cocotb/tests/test_fft_core.py::test_aclken_freeze_exact: e261dc86a19a02f15ee620fdf08c948ee849771b98385cc35c121b35cd822151
+- timestamp: '2026-07-17T11:22:34Z'
+  sim_commit: 17ebaed4d85b-dirty
+  bfm_source_hashes: {}
+  pass: true
+  failures: []
+  attestation: null
+  test_file_hashes:
+    sim/cocotb/tests/test_fft_core.py: 8e46fb0e9d124329
+  assertion_fingerprints:
+    test:sim/cocotb/tests/test_fft_core.py::test_forward_scaled_bit_exact: e261dc86a19a02f15ee620fdf08c948ee849771b98385cc35c121b35cd822151
+    test:sim/cocotb/tests/test_fft_core.py::test_roundtrip_inverse_bit_exact: e261dc86a19a02f15ee620fdf08c948ee849771b98385cc35c121b35cd822151
+    test:sim/cocotb/tests/test_fft_core.py::test_natural_order_xk_index: 0ce43f22464e36d0c598854b7e56bd8c40b35172795b3898c5de7b583b578773
+    test:sim/cocotb/tests/test_fft_core.py::test_config_applies_at_frame_boundary: 1c972214a074ef0e1f61ebf4a5789ae8672d5804fba7277ed9919fa1ad3b9dbb
+    test:sim/cocotb/tests/test_fft_core.py::test_back_to_back_ii1: 343d83a104845cf00eb63fe9c6c060d0695e968a1a6d7d9d1877ba1e62b43026
+    test:sim/cocotb/tests/test_fft_core.py::test_data_pushed_flush_semantics: 8f9ccf1b88708deadcb07e8baa4e6abfabf52e6b13bb87fc3fda8df1e4287042
+    test:sim/cocotb/tests/test_fft_core.py::test_reset_no_stale_output: e3b30c8db832377cfc15964fd51df7c1f28c7b5f08ca3e2b9c91c803e378125f
+    test:sim/cocotb/tests/test_fft_core.py::test_aclken_freeze_exact: e261dc86a19a02f15ee620fdf08c948ee849771b98385cc35c121b35cd822151

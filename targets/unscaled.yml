@@ -1,0 +1,36 @@
+# unscaled characterization target — the G_HAS_SCALING=false build
+# (the unscaled-inverse xfft config: 33-bit bit-growth output).
+#
+# Peer of the project.yml default (scaled). Same part, same 375 MHz
+# constraint; only the top generic differs. Used for OOC timing/resource
+# characterization (FFT-P2.6) — in particular verifying the twiddle-on-A
+# DSP decomposition (2 DSPs/product expected; see docs/ARCHITECTURE.md
+# unscaled width plan).
+
+project:
+  name: rr_fft_unscaled
+  top_module: rr_fft_top
+  top_sim: rr_fft_top
+
+hardware:
+  vendor: xilinx
+  part: xczu5cg-sfvc784-2-i
+  language: vhdl
+
+auto_sources: true
+paths:
+  sources:
+    - rtl
+  constraints: constraints
+
+build_options:
+  generics:
+    G_HAS_SCALING: false
+
+simulation:
+  test_dir: sim/cocotb/tests
+  waves_dir: sim/cocotb/waves
+  logs_dir: sim/cocotb/logs
+
+linting:
+  profile: routertl-vhdl-strict-provisional

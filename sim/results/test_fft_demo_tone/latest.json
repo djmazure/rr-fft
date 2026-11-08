@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-11-08T00:42:08.118092+00:00",
+  "module": "test_fft_demo_tone",
+  "simulator": "nvc",
+  "seed": 1794098524,
+  "duration_s": 2.907,
+  "passed": 1,
+  "failed": 0,
+  "errors": 0,
+  "skipped": 0,
+  "undetermined": 0,
+  "undetermined_xpass": 0,
+  "total": 1,
+  "tests": [
+    {
+      "name": "test_sweep_peak_marches",
+      "classname": "test_fft_demo_tone",
+      "status": "pass",
+      "time_s": 2.907,
+      "sim_time_ns": 67792.0
+    }
+  ],
+  "wave_dir": "sim/waves/test_fft_demo_tone",
+  "session_id": "2f6386f77302",
+  "source_state": {
+    "schema": "rr.sim.source_state.v1",
+    "root_rel": ".",
+    "git_head": "4a66144b48a05de980f828a37a987b8eb1fb6cff",
+    "dirty_digest": "51e736c766f19b25",
+    "content_digest": "cc267a5733e2675bf7fcc29d8cbf3343c2e585fe65a64d4fbaae3f71f1862c76",
+    "tree_digest": "cc267a5733e2675bf7fcc29d8cbf3343c2e585fe65a64d4fbaae3f71f1862c76",
+    "captured_at": "2026-11-08T00:42:02+00:00"
+  },
+  "compile_s": 0.089,
+  "run_s": 5.735,
+  "weakened_assertions": [],
+  "weakened_total": 0,
+  "weakened_strict_pass": 0,
+  "weakened_strict_error": 0,
+  "attempt": 1,
+  "transition": "steady"
+}

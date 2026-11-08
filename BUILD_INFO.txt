@@ -1,0 +1,16 @@
+# RouteRTL build artifact — auto-generated, do not edit (RTL-P2.767)
+#
+# Identifies exactly which build produced the artifacts in this
+# directory. Compare git SHA / part against the active target to tell
+# at a glance whether this build is current.
+
+target:       xilinx-xczu5cg
+part:         xczu5cg-sfvc784-2-i
+top_module:   rr_fft_top
+git_sha:      5e43c71d (dirty)
+built_at:     2026-07-17T09:26:26+00:00
+tool:         xilinx/Vivado unknown
+source_count: 4
+source_hash:  7b1bd9d682e6f7400e184f846683349e9badf7382c07e9a36330329469f37f2a
+timing:       MET (WNS 0.244 ns, WHS 0.028 ns)
+fmax:         412.7 MHz [aclk]

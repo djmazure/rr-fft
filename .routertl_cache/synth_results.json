@@ -1,0 +1,34 @@
+{
+  "version": 3,
+  "results": {
+    "rr_fft_top::xilinx-xczu5cg": {
+      "module": "rr_fft_top",
+      "status": "PASS",
+      "timestamp": "2026-07-17T09:24:18+00:00",
+      "duration_s": 105.3,
+      "resources": {
+        "LUTs": 2996,
+        "FFs": 2307,
+        "BRAM": 2,
+        "DSPs": 24,
+        "IOs": 0
+      },
+      "warnings": 1,
+      "vendor": "xilinx",
+      "part": "xczu5cg-sfvc784-2-i",
+      "target": "xilinx-xczu5cg",
+      "timing_wns": 1.353,
+      "timing_fmax": 0.0,
+      "timing_clock": "",
+      "timing_tns": 0.0,
+      "timing_met": true,
+      "phases": [
+        {
+          "name": "Synthesis",
+          "passed": true,
+          "duration_s": 0.0
+        }
+      ]
+    }
+  }
+}

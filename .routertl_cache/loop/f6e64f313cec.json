@@ -1,0 +1,202 @@
+{
+ "schema": "rr.loop_session/v2",
+ "id": "f6e64f313cec",
+ "ticket": "FFT-P2.6",
+ "modules": [
+  "test_fft_core"
+ ],
+ "budget": {
+  "max_attempts": 10,
+  "max_wall_s": 7200.0,
+  "outer": {
+   "max_attempts": 4,
+   "max_wall_s": 21600.0
+  }
+ },
+ "opened_at": "2026-07-17T07:16:40+00:00",
+ "audit_since": "2026-07-17T07:16:40+00:00",
+ "state": "closed",
+ "spent": {
+  "attempts": 5,
+  "wall_s": 7.477,
+  "outer": {
+   "attempts": 2,
+   "wall_s": 140.204
+  }
+ },
+ "attempts": [
+  {
+   "n": 1,
+   "tier": "inner",
+   "module": "test_fft_core",
+   "verdict": "passed",
+   "seed": null,
+   "wall_s": 1.481,
+   "bundle": null,
+   "at": "2026-07-17T07:17:41+00:00",
+   "technical_inner": {
+    "status": "infeasible",
+    "binding_constraint": "latency in_valid\u2192out_valid: no measurement present \u2014 vacuous, no evidence of meeting max_cycles 640",
+    "hard": [
+     {
+      "kind": "unmeasured",
+      "category": "latency",
+      "name": "in_valid__out_valid",
+      "measured": null,
+      "bound": 640.0,
+      "detail": "latency in_valid\u2192out_valid: no measurement present \u2014 vacuous, no evidence of meeting max_cycles 640",
+      "tier": "inner"
+     },
+     {
+      "kind": "unmeasured",
+      "category": "ii",
+      "name": "in_valid",
+      "measured": null,
+      "bound": 1.0,
+      "detail": "ii in_valid: no measurement present \u2014 vacuous, no evidence of meeting ii_max 1",
+      "tier": "inner"
+     }
+    ],
+    "soft": []
+   }
+  },
+  {
+   "n": 2,
+   "tier": "inner",
+   "module": "test_fft_core",
+   "verdict": "passed",
+   "seed": null,
+   "wall_s": 1.449,
+   "bundle": null,
+   "at": "2026-07-17T07:18:21+00:00",
+   "technical_inner": {
+    "status": "infeasible",
+    "binding_constraint": "latency in_valid\u2192out_valid: no measurement present \u2014 vacuous, no evidence of meeting max_cycles 640",
+    "hard": [
+     {
+      "kind": "unmeasured",
+      "category": "latency",
+      "name": "in_valid__out_valid",
+      "measured": null,
+      "bound": 640.0,
+      "detail": "latency in_valid\u2192out_valid: no measurement present \u2014 vacuous, no evidence of meeting max_cycles 640",
+      "tier": "inner"
+     },
+     {
+      "kind": "unmeasured",
+      "category": "ii",
+      "name": "in_valid",
+      "measured": null,
+      "bound": 1.0,
+      "detail": "ii in_valid: no measurement present \u2014 vacuous, no evidence of meeting ii_max 1",
+      "tier": "inner"
+     }
+    ],
+    "soft": []
+   }
+  },
+  {
+   "n": 3,
+   "tier": "inner",
+   "module": "test_fft_core",
+   "verdict": "passed",
+   "seed": null,
+   "wall_s": 1.392,
+   "bundle": null,
+   "at": "2026-07-17T07:18:39+00:00",
+   "technical_inner": {
+    "status": "infeasible",
+    "binding_constraint": "latency in_valid\u2192out_valid: no measurement present \u2014 vacuous, no evidence of meeting max_cycles 640",
+    "hard": [
+     {
+      "kind": "unmeasured",
+      "category": "latency",
+      "name": "in_valid__out_valid",
+      "measured": null,
+      "bound": 640.0,
+      "detail": "latency in_valid\u2192out_valid: no measurement present \u2014 vacuous, no evidence of meeting max_cycles 640",
+      "tier": "inner"
+     },
+     {
+      "kind": "unmeasured",
+      "category": "ii",
+      "name": "in_valid",
+      "measured": null,
+      "bound": 1.0,
+      "detail": "ii in_valid: no measurement present \u2014 vacuous, no evidence of meeting ii_max 1",
+      "tier": "inner"
+     }
+    ],
+    "soft": []
+   }
+  },
+  {
+   "n": 4,
+   "tier": "inner",
+   "module": "test_fft_core",
+   "verdict": "passed",
+   "seed": null,
+   "wall_s": 1.447,
+   "bundle": null,
+   "at": "2026-07-17T07:21:04+00:00",
+   "technical_inner": {
+    "status": "met",
+    "binding_constraint": null,
+    "hard": [],
+    "soft": []
+   }
+  },
+  {
+   "n": 1,
+   "tier": "outer",
+   "module": "test_fft_core",
+   "verdict": "failed",
+   "seed": null,
+   "wall_s": 40.072,
+   "bundle": null,
+   "at": "2026-07-17T07:21:54+00:00",
+   "job_id": "5f0ec12dcae6",
+   "build_state": "failed",
+   "build_exit_code": 1,
+   "policy_status": null
+  },
+  {
+   "n": 2,
+   "tier": "outer",
+   "module": "test_fft_core",
+   "verdict": "failed",
+   "seed": null,
+   "wall_s": 100.132,
+   "bundle": null,
+   "at": "2026-07-17T07:24:52+00:00",
+   "job_id": "b7b03b06d0a0",
+   "build_state": "failed",
+   "build_exit_code": 1,
+   "policy_status": null
+  },
+  {
+   "n": 5,
+   "tier": "inner",
+   "module": "test_fft_core",
+   "verdict": "passed",
+   "seed": null,
+   "wall_s": 1.708,
+   "bundle": null,
+   "at": "2026-07-17T08:00:49+00:00",
+   "technical_inner": {
+    "status": "met",
+    "binding_constraint": null,
+    "hard": [],
+    "soft": []
+   }
+  }
+ ],
+ "closed_at": "2026-07-17T08:05:41+00:00",
+ "audit_next_since": "2026-07-17T08:05:41+00:00",
+ "close": {
+  "at": "2026-07-17T08:05:41+00:00",
+  "clean": true,
+  "findings": [],
+  "forced": false
+ }
+}

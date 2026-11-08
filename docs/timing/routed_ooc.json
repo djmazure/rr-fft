@@ -1,0 +1,131 @@
+{
+  "schema": "rr_fft.routed_ooc/v1",
+  "about": "Routed out-of-context timing of rr_fft_top at the 375 MHz hard contract (FFT-P2.1), one entry per build target; twiddle_block is the G_TWIDDLE_ROM_STYLE = block build (FFT-P2.12). Rerun on 2026-11-08 after the RouteRTL VHDL style refactor (FFT-P2.13). Copied from reports/ of each run; tests/test_routed_timing_evidence.py checks it against requirements.yml, constraints/rr_fft.xdc and the RTL file hashes.",
+  "date": "2026-11-08",
+  "routertl": "5.3.0 (dev)",
+  "tool": "Vivado 2024.1",
+  "part": "xczu5cg-sfvc784-2-i",
+  "commands": [
+    "rr queue submit synth --ooc [--target unscaled | --target twiddle_block]",
+    "rr queue submit impl --ooc [--target unscaled | --target twiddle_block]"
+  ],
+  "rtl_not_in_build": {
+    "rtl/rr_fft_xfft_shim.vhd": "wraps rr_fft_top; not in the rr_fft_top hierarchy"
+  },
+  "builds": {
+    "scaled": {
+      "build_file": "project.yml",
+      "generics": {
+        "G_HAS_SCALING": true,
+        "G_TWIDDLE_ROM_STYLE": "distributed"
+      },
+      "synth_mode": "out_of_context",
+      "design_state": "routed",
+      "clock": "aclk",
+      "period_ns": 2.667,
+      "wns_ns": 0.725,
+      "tns_ns": 0.0,
+      "whs_ns": 0.036,
+      "ths_ns": 0.0,
+      "fmax_mhz": 514.9,
+      "no_clock_pins": 0,
+      "unconstrained_internal_endpoints": 0,
+      "nets_with_routing_errors": 0,
+      "worst_path": {
+        "source": "GEN_PAIRS[2].i_pair/GEN_TW_DIST.s4Wr_r_reg[10]/C",
+        "destination": "GEN_PAIRS[2].i_pair/pRe_r_reg[1]/DSP_M_DATA_INST/V[10]",
+        "logic_levels": "3 (DSP_A_B_DATA=1 DSP_MULTIPLIER=1 DSP_PREADD_DATA=1)"
+      },
+      "utilization": {
+        "clb_lut": 1689,
+        "lut_as_logic": 1180,
+        "lut_as_shift_register": 509,
+        "ff": 1922,
+        "bram_tile": 1,
+        "dsp": 44
+      },
+      "rtl_sha256": {
+        "rtl/rr_fft_pkg.vhd": "e809c47743d625a38e9f17656602268f7ffa00563beb09c942aca2ed618d060e",
+        "rtl/rr_fft_reorder.vhd": "505a0ec3d8efba7df02bda5757f53ea26c2c59ff96dd58fec898ba549d8205a5",
+        "rtl/rr_fft_sdf_pair.vhd": "69095f241481a348a6734d69f9a4b798a931979d11f31429a0ed7b68a425e41a",
+        "rtl/rr_fft_top.vhd": "cb6adb07ccd94230b700295d759d883d4c9e3fb31cd2bfa87f1a61db0ceebd61"
+      }
+    },
+    "unscaled": {
+      "build_file": "targets/unscaled.yml",
+      "generics": {
+        "G_HAS_SCALING": false,
+        "G_TWIDDLE_ROM_STYLE": "distributed"
+      },
+      "synth_mode": "out_of_context",
+      "design_state": "routed",
+      "clock": "aclk",
+      "period_ns": 2.667,
+      "wns_ns": 0.738,
+      "tns_ns": 0.0,
+      "whs_ns": 0.032,
+      "ths_ns": 0.0,
+      "fmax_mhz": 518.4,
+      "no_clock_pins": 0,
+      "unconstrained_internal_endpoints": 0,
+      "nets_with_routing_errors": 0,
+      "worst_path": {
+        "source": "GEN_PAIRS[1].i_pair/GEN_BF2_IN_FABRIC.line2Im_r_reg[15][23]__0/C",
+        "destination": "GEN_PAIRS[1].i_pair/GEN_BF2_IN_FABRIC.line2Im_r_reg[0][28]__0/D",
+        "logic_levels": "3 (CARRY8=2 LUT6=1)"
+      },
+      "utilization": {
+        "clb_lut": 1546,
+        "lut_as_logic": 1049,
+        "lut_as_shift_register": 497,
+        "ff": 1925,
+        "bram_tile": 1,
+        "dsp": 44
+      },
+      "rtl_sha256": {
+        "rtl/rr_fft_pkg.vhd": "e809c47743d625a38e9f17656602268f7ffa00563beb09c942aca2ed618d060e",
+        "rtl/rr_fft_reorder.vhd": "505a0ec3d8efba7df02bda5757f53ea26c2c59ff96dd58fec898ba549d8205a5",
+        "rtl/rr_fft_sdf_pair.vhd": "69095f241481a348a6734d69f9a4b798a931979d11f31429a0ed7b68a425e41a",
+        "rtl/rr_fft_top.vhd": "cb6adb07ccd94230b700295d759d883d4c9e3fb31cd2bfa87f1a61db0ceebd61"
+      }
+    },
+    "twiddle_block": {
+      "build_file": "targets/twiddle_block.yml",
+      "generics": {
+        "G_HAS_SCALING": true,
+        "G_TWIDDLE_ROM_STYLE": "block"
+      },
+      "synth_mode": "out_of_context",
+      "design_state": "routed",
+      "clock": "aclk",
+      "period_ns": 2.667,
+      "wns_ns": 0.599,
+      "tns_ns": 0.0,
+      "whs_ns": 0.041,
+      "ths_ns": 0.0,
+      "fmax_mhz": 483.6,
+      "no_clock_pins": 0,
+      "unconstrained_internal_endpoints": 0,
+      "nets_with_routing_errors": 0,
+      "worst_path": {
+        "source": "GEN_PAIRS[0].i_pair/GEN_TW_BLOCK.s3Wb_r_reg_0/CLKARDCLK",
+        "destination": "GEN_PAIRS[0].i_pair/pRe_r_reg[1]/DSP_A_B_DATA_INST/A[0]",
+        "logic_levels": "0"
+      },
+      "utilization": {
+        "clb_lut": 1517,
+        "lut_as_logic": 1008,
+        "lut_as_shift_register": 509,
+        "ff": 1873,
+        "bram_tile": 2,
+        "dsp": 44
+      },
+      "rtl_sha256": {
+        "rtl/rr_fft_pkg.vhd": "e809c47743d625a38e9f17656602268f7ffa00563beb09c942aca2ed618d060e",
+        "rtl/rr_fft_reorder.vhd": "505a0ec3d8efba7df02bda5757f53ea26c2c59ff96dd58fec898ba549d8205a5",
+        "rtl/rr_fft_sdf_pair.vhd": "69095f241481a348a6734d69f9a4b798a931979d11f31429a0ed7b68a425e41a",
+        "rtl/rr_fft_top.vhd": "cb6adb07ccd94230b700295d759d883d4c9e3fb31cd2bfa87f1a61db0ceebd61"
+      }
+    }
+  }
+}

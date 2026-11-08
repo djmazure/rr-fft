@@ -1,0 +1,36 @@
+# twiddle_block characterization target — the scaled build with the
+# first pair's twiddle ROM in block RAM (G_TWIDDLE_ROM_STYLE = "block",
+# FFT-P2.12).
+#
+# Peer of the project.yml default (scaled, twiddle ROMs in LUTs). Same
+# part, same 375 MHz constraint; only the generic differs. Used for the
+# OOC timing/resource evidence of the style trade: one more block RAM,
+# about 150 fewer logic LUT, same latency (FFT-REQ-040).
+
+project:
+  name: rr_fft_twiddle_block
+  top_module: rr_fft_top
+  top_sim: rr_fft_top
+
+hardware:
+  vendor: xilinx
+  part: xczu5cg-sfvc784-2-i
+  language: vhdl
+
+auto_sources: true
+paths:
+  sources:
+    - rtl
+  constraints: constraints
+
+build_options:
+  generics:
+    G_TWIDDLE_ROM_STYLE: block
+
+simulation:
+  test_dir: sim/cocotb/tests
+  waves_dir: sim/cocotb/waves
+  logs_dir: sim/cocotb/logs
+
+linting:
+  profile: routertl-vhdl-strict-provisional

@@ -1,0 +1,67 @@
+# rr_fft — first-party pipelined streaming FFT/IFFT.
+#
+# THIS repo is the source of the routertl/fft package: `rr pkg publish`
+# runs from here and the registry pins this repo's commits. Installs are
+# served from the registry blob. Contract-first: bit-exact to the fixed-point
+# oracle in model/ (the arithmetic spec), within 1 LSB (scaled) and 3 LSB
+# (unscaled) of the Xilinx xfft v9.1 C model in the reference deployment
+# configurations. Post-synthesis on xczu5cg-2: DSP 44, one RAMB36, about
+# 1800 LUT per build variant. Routed out of context at 375 MHz, every build
+# target: docs/timing/routed_ooc.json.
+#
+# Two build variants via the G_HAS_SCALING top generic (xfft
+# C_HAS_SCALING analog): scaled (runtime schedule, 24-bit out, wrap) and
+# unscaled (bit growth to 33-bit out on the oracle-proven width plan).
+# rr_fft_xfft_shim is a drop-in xfft v9.1 port-map adapter for both.
+#
+# G_TWIDDLE_ROM_STYLE (both tops, FFT-P2.12): "distributed" (default,
+# twiddle ROMs in LUTs) or "block" (the first pair's 192-word twiddle ROM
+# in 2 RAMB18, about 175 logic LUT fewer, same output and latency).
+#
+# v0.3.1 (FFT-P2.13): RTL in the RouteRTL VHDL style, lint profile
+# routertl-vhdl-strict-provisional. Port names of rr_fft_top and
+# rr_fft_xfft_shim are upper case (ACLK, ARESETN, S_AXIS_DATA_TDATA, ...);
+# names, widths, order and generics are otherwise unchanged and VHDL binds
+# an instance written with the xfft lower-case names as before. Output
+# stream cycle-identical to v0.3.0 (tools/equiv/run.sh).
+
+name: fft
+namespace: routertl
+version: 0.3.1
+description: Pipelined streaming FFT/IFFT (radix-2^2 SDF, 256-pt/24-bit, scaled + unscaled builds, xfft drop-in shim), contract-verified bit-exact to its fixed-point oracle.
+license: MIT
+library: rr_fft
+language: vhdl
+
+hdl:
+  library: rr_fft
+  language: vhdl
+  top_module: rr_fft_top
+  top_sim: rr_fft_top
+  files:
+    - rtl/rr_fft_pkg.vhd
+    - rtl/rr_fft_sdf_pair.vhd
+    - rtl/rr_fft_reorder.vhd
+    - rtl/rr_fft_top.vhd
+    - rtl/rr_fft_xfft_shim.vhd
+
+paths:
+  sources: rtl
+
+synthesis:
+  mode: rtl
+  sources:
+    - rtl/rr_fft_pkg.vhd
+    - rtl/rr_fft_sdf_pair.vhd
+    - rtl/rr_fft_reorder.vhd
+    - rtl/rr_fft_top.vhd
+    - rtl/rr_fft_xfft_shim.vhd
+
+requirements: requirements.yml
+
+# The cocotb tests live under sim/cocotb/tests. Without this pointer
+# coverage-map and `rr contract report` take the pytest guards in tests/
+# as the test root and find no @requires test (FFT-P2.9).
+build:
+  simulation:
+    test_dir: sim/cocotb/tests

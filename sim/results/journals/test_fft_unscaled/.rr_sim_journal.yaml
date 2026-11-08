@@ -1,0 +1,22 @@
+test: test_fft_unscaled
+runs:
+- timestamp: '2026-07-17T09:10:23Z'
+  sim_commit: b8d86380c7b0-dirty
+  bfm_source_hashes: {}
+  pass: true
+  failures: []
+  attestation: null
+  test_file_hashes:
+    sim/cocotb/tests/test_fft_unscaled.py: 4fe83fd1714797e1
+  assertion_fingerprints:
+    test:sim/cocotb/tests/test_fft_unscaled.py::test_unscaled_bit_growth_bit_exact: bf6d1fecd5ea72ef9a380c01a7411f02fa45e692dc9b39ce7b0ca0c5411afae4
+- timestamp: '2026-07-17T09:10:48Z'
+  sim_commit: b8d86380c7b0-dirty
+  bfm_source_hashes: {}
+  pass: true
+  failures: []
+  attestation: null
+  test_file_hashes:
+    sim/cocotb/tests/test_fft_unscaled.py: f0744207e1aa373d
+  assertion_fingerprints:
+    test:sim/cocotb/tests/test_fft_unscaled.py::test_unscaled_bit_growth_bit_exact: bf6d1fecd5ea72ef9a380c01a7411f02fa45e692dc9b39ce7b0ca0c5411afae4

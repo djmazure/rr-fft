@@ -1,0 +1,367 @@
+# rr_fft — Requirements catalog (contract-first per ROUTERTL convention)
+#
+# DRAFT v0 — written before the RTL exists (contract-first). Each FFT-REQ-N
+# will be referenced by exactly one cocotb test via @requires(FFT-REQ-N);
+# `rr sim coverage-map` enforces the mapping. The reference for every
+# bit-exactness REQ is the fixed-point oracle in model/ (NOT numpy floats,
+# NOT the xfft C model — see docs/ARCHITECTURE.md for the equivalence tiers).
+
+ip: rr_fft_top
+version: 0.1
+hdl_file: rtl/rr_fft_top.vhd
+
+port_contract:
+  slaves:
+    - {name: S_AXIS_CONFIG, protocol: axi-stream}
+    - {name: S_AXIS_DATA, protocol: axi-stream}
+  masters:
+    - {name: M_AXIS_DATA, protocol: axi-stream}
+  clocks:
+    - {name: ACLK}
+  resets:
+    - {name: ARESETN, polarity: active_low, domain: ACLK}
+  scalars:
+    - {name: ACLKEN, dir: in, width: 1}
+
+parameters:
+  - { name: LOG2_N,        default: 8 }    # 256-pt in v1
+  - { name: DATA_WIDTH,    default: 24 }
+  - { name: TWIDDLE_WIDTH, default: 24 }
+  - { name: NATURAL_ORDER, default: true }
+
+functional_contract:
+
+  # ── Transform correctness (oracle-anchored) ──────────────────────
+  - id: FFT-REQ-001
+    kind: behavioral
+    spec: ["DFT X[k]=sum x[n]W_N^{nk}, W_N=exp(-j2pi/N); fixed-point per model/rr_fft_oracle.py (the arithmetic spec); interface per AMD PG109 (xfft v9.1)"]
+    desc: >-
+      Forward transform of any input frame is bit-exact to the model/
+      oracle for every legal scale schedule (truncation rounding at
+      every stage boundary).
+  - id: FFT-REQ-002
+    kind: behavioral
+    desc: >-
+      Inverse transform in unscaled mode is bit-exact to the oracle,
+      including full bit growth (DATA_WIDTH + LOG2_N + 1 output).
+  - id: FFT-REQ-003
+    kind: behavioral
+    spec: ["AMD PG109 (xfft v9.1), Data Output channel: XK_INDEX field on m_axis_data_tuser; natural-order output option"]
+    desc: >-
+      With NATURAL_ORDER, output samples are emitted in natural index
+      order and xk_index (`M_AXIS_DATA_TUSER`) matches the sample index
+      for every sample of every frame; `M_AXIS_DATA_TLAST` marks the
+      final sample.
+  - id: FFT-REQ-004
+    kind: behavioral
+    spec: ["AMD PG109 (xfft v9.1), Configuration channel: config applied on the next frame boundary"]
+    desc: >-
+      A config word (FWD_INV + scale schedule) accepted on
+      `S_AXIS_CONFIG_TDATA` applies to the NEXT frame boundary and
+      never mid-frame.
+  - id: FFT-REQ-005
+    kind: behavioral
+    desc: >-
+      Back-to-back frames with zero idle cycles are processed at
+      II = 1 with no sample loss or corruption (realtime throttle
+      contract: the core never backpressures the producer).
+  - id: FFT-REQ-006
+    kind: behavioral
+    desc: >-
+      Deasserting `ACLKEN` freezes all architectural state exactly;
+      resuming produces the identical output stream as an ungated run.
+  - id: FFT-REQ-007
+    kind: behavioral
+    spec: ["DFT inversion theorem: IDFT(DFT(x)) = N*x; fixed-point deviation bound per model/gen_golden.py round-trip check"]
+    desc: >-
+      FFT of an IFFT (and vice versa) reproduces the input frame
+      exactly, within the deterministic scaling predicted by the
+      oracle for the chosen schedules (round-trip identity).
+
+  - id: FFT-REQ-008
+    kind: behavioral
+    spec: ["Deliberate divergence from AMD PG109 (xfft self-flushes on aclk): rr_fft is data-pushed — see docs/ARCHITECTURE.md and FFT-P3.1"]
+    desc: >-
+      The datapath advances on accepted input beats only (data-pushed):
+      with `S_AXIS_DATA_TVALID` idle, `M_AXIS_DATA_TVALID` never rises,
+      regardless of in-flight samples; those samples are emitted only as
+      subsequent input beats (flush) push them through the pipeline.
+
+  # ── xfft drop-in shim (rr_fft_xfft_shim) ─────────────────────────
+  - id: FFT-REQ-020
+    kind: behavioral
+    desc: >-
+      Scaled shim: the xfft v9.1 port shape (16-bit config, 48-bit
+      data, tlast in, event outputs) is a transparent adapter — output
+      stream bit-exact to the bare core for the same stimulus.
+  - id: FFT-REQ-021
+    kind: behavioral
+    oracle_class: computed
+    oracle:
+      entry: model/oracle_seam.py:shim_sign_extend
+      vectors: model/vectors/fft_req_021_shim.yml
+    desc: >-
+      Unscaled shim: 8-bit config carries FWD_INV only; each 33-bit
+      output component is sign-extended to 40 bits (80-bit tdata,
+      xfft byte-padding convention), values bit-exact to the oracle.
+
+  # ── Reference-deployment configurations through the shim ─────────
+  # The deployment drives config tvalid at 1 with a constant word.
+  # Goldens: model/gen_live_goldens.py -> sim/cocotb/tests/fft_live_goldens.py.
+  - id: FFT-REQ-022
+    kind: behavioral
+    spec: ["AMD PG109 (xfft v9.1), Configuration channel: FWD_INV at bit 0, SCALE_SCH above it, first stage pair in the lowest two bits; Data Output channel: XK_INDEX on m_axis_data_tuser, m_axis_data_tlast on the last sample"]
+    desc: >-
+      Scaled shim, config word 0x156 (FWD_INV = 0, inverse; schedule
+      [3, 2, 2, 2] from the input-side pair): back-to-back frames are
+      bit-exact to the oracle, xk_index equals the natural-order bin
+      and `M_AXIS_DATA_TLAST` marks bin N-1 of every frame.
+  - id: FFT-REQ-023
+    kind: behavioral
+    spec: ["AMD PG109 (xfft v9.1), Configuration channel: FWD_INV at bit 0, remaining bits padding in the unscaled configuration"]
+    desc: >-
+      Unscaled shim, config word 0xB1 (FWD_INV = 1, forward; bits 7:1
+      have no effect): back-to-back frames are bit-exact to the
+      oracle with each 33-bit component sign-extended to 40 bits,
+      xk_index equals the natural-order bin and `M_AXIS_DATA_TLAST`
+      marks bin N-1 of every frame.
+  - id: FFT-REQ-024
+    kind: behavioral
+    spec: ["Xilinx xfft v9.1 bit-accurate C model (Vivado data/ip/xilinx/xfft_v9_1/cmodel), pipelined streaming, truncation; docs/ARCHITECTURE.md equivalence tier 2"]
+    desc: >-
+      xfft equivalence, config 0x156: over the FFT-REQ-022 corpus the
+      output differs from the xfft v9.1 C model by at most 1 LSB per
+      component, and the SNR against it is at least 100 dB on every
+      full-scale frame.
+  - id: FFT-REQ-025
+    kind: behavioral
+    spec: ["Xilinx xfft v9.1 bit-accurate C model (Vivado data/ip/xilinx/xfft_v9_1/cmodel), pipelined streaming, truncation; docs/ARCHITECTURE.md equivalence tier 2"]
+    desc: >-
+      xfft equivalence, config 0xB1: over the FFT-REQ-023 corpus the
+      output differs from the xfft v9.1 C model by at most 64 LSB of
+      the 33-bit output, and the SNR against it is at least 120 dB on
+      every full-scale frame.
+
+  # RTL-P2.1065 — the first scalar-expressible transform property, added so
+  # rr_test_fill has a golden it can actually consume (the frame-valued
+  # REQ-001/002 goldens cannot be filled by a scalar drive/observe tool).
+  - id: FFT-REQ-030
+    kind: behavioral
+    oracle_class: computed
+    oracle:
+      entry: model/oracle_seam.py:dc_response
+      vectors: model/vectors/fft_req_030_dc.yml
+    spec: ["DFT X[k]=sum x[n]W_N^{nk}: for a constant frame x[n]=A, X[0]=N*A exactly and X[k!=0]=0; fixed-point truncation per model/rr_fft_oracle.py"]
+    desc: >-
+      DC response: for a constant input frame the first output sample
+      X[0] is bit-exact to the oracle under every legal scale schedule,
+      in both scaled and unscaled modes. Exercises the adder tree, the
+      truncating scale schedule and the output packing; the twiddle
+      multipliers are deliberately not covered (a DC frame bypasses
+      W^0), so this REQ complements rather than replaces FFT-REQ-001.
+
+  # ── Build-time resource trade (FFT-P2.12) ─────────────────────────
+  - id: FFT-REQ-040
+    kind: behavioral
+    spec: ["rtl/rr_fft_top.vhd generic G_TWIDDLE_ROM_STYLE; AMD UG901 (Vivado synthesis), ROM_STYLE attribute: block / distributed"]
+    desc: >-
+      The top generic G_TWIDDLE_ROM_STYLE ("distributed", the default, or
+      "block"; any other value fails elaboration) selects where the first
+      stage pair's twiddle ROM is held: in LUTs, or in one block RAM (a
+      registered read). The style changes resources only: with
+      "block" the `M_AXIS_DATA_TDATA` stream is bit-exact to the oracle in
+      both directions and the latency from `S_AXIS_DATA_TVALID` to
+      `M_AXIS_DATA_TVALID` equals the default build's (557 cycles over
+      three back-to-back frames). The
+      twiddle_block target carries the block-RAM resource budget below.
+
+  # ── Explicit non-behaviors ────────────────────────────────────────
+  - id: FFT-REQ-101
+    kind: negative
+    spec: ["AMD PG109 (xfft v9.1), aresetn: synchronous reset, min 2 cycles; no stale output after reset"]
+    desc: >-
+      No `M_AXIS_DATA_TVALID` beat is ever emitted with stale or X-init
+      frame content after `ARESETN` deassertion (first output frame is
+      fully computed from post-reset input only).
+
+# ── Technical contract (physical-bounds tier, RTL-P3.1118) ──────────
+# THE headline requirement: 375 MHz hard on xczu5cg-…-2-i (the reference
+# deployment clock). Latency/resource bounds are draft ceilings to be
+# tightened once the first candidate closes.
+technical:
+  clocks:
+    - { name: aclk, fmax_mhz: 375.0 }
+  anchors:
+    - { name: in_valid,  kind: port, signal: S_AXIS_DATA_TVALID }
+    - { name: out_valid, kind: port, signal: M_AXIS_DATA_TVALID }
+  throughput:
+    - { anchor: in_valid, ii_max: 1, clock: aclk }
+  latency:
+    - { from: in_valid, to: out_valid, max_cycles: 640, clock: aclk }  # ~2.5N draft ceiling (SDF + reorder)
+  # Floors and caps catch an implementation that drifts, by trimmed logic or
+  # by growth. Reference: xfft v9.1 in the reference deployment, routed,
+  # 21 Oct 2026, per instance: scaled LUT 1865-1878, FF 3503-3527,
+  # 2 RAMB18, DSP 46; unscaled LUT 1784-1788, FF 3542-3543, 2 RAMB18,
+  # DSP 46. Caps are the rr_fft post-synthesis values plus about 10 %
+  # (scaled: lut 1271, ff 1922; unscaled: lut 1154, ff 1924). One budget
+  # holds for both builds (scaled and target unscaled).
+  # bram counts RAMB36 tiles, as rr reports BRAM (available 144 on
+  # xczu5cg = the RAMB36 count); a RAMB18 is half a tile, so the 2 RAMB18
+  # of the reference xfft are 1 tile.
+  #
+  # One entry per build style (FFT-P2.12): the twiddle_block target
+  # (G_TWIDDLE_ROM_STYLE = block) has its own entry; the entry without a
+  # target selector holds for every other target (project.yml scaled and
+  # target unscaled, twiddle ROMs in LUTs).
+  resources:
+    - # lut counts LUT as logic (rr reports shift-register LUTs separately).
+      # The twiddle ROMs are in LUTs (bram below), about 190 LUT.
+      lut:  { min: 600, max: 1400 }
+      ff:   { min: 1000, max: 2120 }
+      # 3 multipliers x 4 real products x 2 DSP48E2 = 24, BF2I adders of all
+      # four pairs = 16, BF2II adders of the first pair = 4
+      dsp:  { min: 44, max: 44 }
+      # the reorder ping-pong (2 x 256 samples) is the only block RAM
+      bram: { min: 1, max: 1 }
+      uram: { max: 0 }
+    - target: twiddle_block
+      # First pair's twiddle ROM in block RAM. Post-synthesis 7 Nov 2026
+      # (Vivado 2024.1): lut 1100 (scaled default 1277), ff 1873, two
+      # RAMB18 for the ROM. Caps are those values plus about 10 %; the lut
+      # cap is below the default build's lut, so a block build whose ROM
+      # falls back to LUTs fails both lut and bram.
+      lut:  { min: 600, max: 1210 }
+      ff:   { min: 1000, max: 2060 }
+      dsp:  { min: 44, max: 44 }
+      # reorder RAM (1 tile) + the twiddle ROM (2 RAMB18 = 1 tile)
+      bram: { min: 2, max: 2 }
+      uram: { max: 0 }
+  policy:
+    hard: [fmax, throughput]
+    priority: [fmax, latency, resources]
+    on_infeasible: fail-loud
+
+# ── Feature matrix (FFT-P2.9) ───────────────────────────────────────
+# The shipped configuration space of v0.3.1, one axis per configuration
+# dimension. The RTL is 256 points, 24-bit data, 24-bit twiddle (package
+# constants, not generics). An arm with reqs is PROVEN only when every
+# mapped REQ has a live, non-vacuous @requires test (satisfy: all). An arm
+# that the RTL does not implement, or that no test drives, is declared
+# `unexercised:` with the reason — never bound to a REQ. Oracle-only
+# capabilities (model/rr_fft_oracle.py takes any log2_n, any data width and
+# returns bit-reversed order) are NOT implemented RTL; they are listed as
+# unexercised FFT-P4.1 arms. Witness tests per REQ: `rr sim coverage-map`.
+feature_matrix:
+  policy: no-silent-arms
+  audited_by: FFT-P2.9
+  axes:
+
+    - axis: build_variant
+      source: "rtl/rr_fft_top.vhd generic G_HAS_SCALING (xfft v9.1 C_HAS_SCALING analog, AMD PG109); targets/unscaled.yml"
+      arms:
+        - {arm: "scaled (G_HAS_SCALING=true, 24-bit out)", reqs: [FFT-REQ-001]}
+        - {arm: "unscaled (G_HAS_SCALING=false, 33-bit out)", reqs: [FFT-REQ-002]}
+
+    - axis: twiddle_rom_style
+      source: "rtl/rr_fft_top.vhd generic G_TWIDDLE_ROM_STYLE (FFT-P2.12); targets/twiddle_block.yml"
+      arms:
+        - {arm: "distributed (default, twiddle ROMs in LUTs)", reqs: [FFT-REQ-001, FFT-REQ-007]}
+        - {arm: "block (first pair's twiddle ROM in block RAM)", reqs: [FFT-REQ-040]}
+
+    - axis: direction
+      source: "AMD PG109 (xfft v9.1), Configuration channel: FWD_INV at bit 0 (1 = forward)"
+      arms:
+        - {arm: "forward / scaled", reqs: [FFT-REQ-001]}
+        - {arm: "inverse / scaled", reqs: [FFT-REQ-007, FFT-REQ-022]}
+        - {arm: "forward / unscaled", reqs: [FFT-REQ-002, FFT-REQ-023]}
+        - {arm: "inverse / unscaled", reqs: [FFT-REQ-002, FFT-REQ-021]}
+
+    - axis: scale_schedule
+      source: "AMD PG109 (xfft v9.1), Configuration channel: SCALE_SCH, 2 bits per radix-2^2 pair, first pair in the lowest bits; scaled build only"
+      arms:
+        - {arm: "[2,2,2,2] (0x155), full frames", reqs: [FFT-REQ-001]}
+        - {arm: "[0,0,0,0] (0x000), inverse full frame", reqs: [FFT-REQ-007]}
+        - {arm: "[3,2,2,2] (0x156), full frames", reqs: [FFT-REQ-022]}
+        - {arm: "[3,2,2,2] forward (0x157), full frame", reqs: [FFT-REQ-004]}
+        - {arm: "every legal schedule, DC frames", reqs: [FFT-REQ-030]}
+        - arm: "every legal schedule, non-DC frames"
+          unexercised: >-
+            Not covered. Full-frame bit-exactness is tested for the four
+            schedules above only; the sweep over every legal schedule
+            uses DC frames, which bypass the twiddle multipliers
+            (FFT-REQ-030). FFT-REQ-001 states every legal schedule; its
+            test drives 0x155.
+        - {arm: "schedule change at frame boundary", reqs: [FFT-REQ-004]}
+        - {arm: "schedule bits ignored in the unscaled build (0xB1)", reqs: [FFT-REQ-023]}
+
+    - axis: interface
+      source: "rtl/rr_fft_top.vhd (core AXIS ports) and rtl/rr_fft_xfft_shim.vhd (xfft v9.1 port map, AMD PG109)"
+      arms:
+        - {arm: "core rr_fft_top", reqs: [FFT-REQ-001, FFT-REQ-003]}
+        - {arm: "shim scaled (16-bit config, 48-bit data)", reqs: [FFT-REQ-020, FFT-REQ-022]}
+        - {arm: "shim unscaled (8-bit config, 80-bit data)", reqs: [FFT-REQ-021, FFT-REQ-023]}
+        - {arm: "shim xfft equivalence, config 0x156", reqs: [FFT-REQ-024]}
+        - {arm: "shim xfft equivalence, config 0xB1", reqs: [FFT-REQ-025]}
+        - arm: "shim event outputs"
+          unexercised: >-
+            Not implemented: the shim ties the xfft event outputs to 0 and
+            ignores S_AXIS_DATA_TLAST (FDD Known limitations). FFT-REQ-020
+            checks only that the events stay 0.
+        - arm: "multichannel"
+          unexercised: "Not implemented in RTL; planned (FFT-P4.1)."
+
+    - axis: frame_configuration
+      source: "rtl/rr_fft_pkg.vhd constants; requirements.yml parameters LOG2_N, DATA_WIDTH, TWIDDLE_WIDTH, NATURAL_ORDER (not HDL generics, FDD Known limitations)"
+      arms:
+        - {arm: "256 points, 24-bit data, 24-bit twiddle", reqs: [FFT-REQ-001, FFT-REQ-002]}
+        - {arm: "natural output order with xk_index and tlast", reqs: [FFT-REQ-003]}
+        - {arm: "truncation rounding", reqs: [FFT-REQ-001, FFT-REQ-002]}
+        - arm: "other transform lengths (generic LOG2_N)"
+          unexercised: >-
+            Not implemented in RTL: the length is a package constant.
+            Oracle-only (model/rr_fft_oracle.py takes any log2_n). Planned
+            (FFT-P4.1).
+        - arm: "runtime transform length (xfft NFFT)"
+          unexercised: "Not implemented in RTL; planned (FFT-P4.1)."
+        - arm: "other data or twiddle widths"
+          unexercised: >-
+            Not implemented in RTL: the widths are package constants.
+            Oracle-only (data_width argument). Planned (FFT-P4.1).
+        - arm: "bit-reversed output order"
+          unexercised: >-
+            Not implemented in RTL. Oracle-only
+            (RrFftOracle.bit_reversed). Planned (FFT-P4.1).
+        - arm: "convergent rounding"
+          unexercised: "Not implemented in RTL; planned (FFT-P4.1)."
+        - arm: "block floating point"
+          unexercised: "Not implemented in RTL; planned (FFT-P4.1)."
+
+    - axis: stream_control
+      source: "AMD PG109 (xfft v9.1): aclken, aresetn, back-to-back frames; rr_fft data-pushed flush (deliberate divergence, FFT-P3.1)"
+      arms:
+        - {arm: "back-to-back frames at II = 1 / scaled core", reqs: [FFT-REQ-005]}
+        - {arm: "clock-enable freeze / scaled core", reqs: [FFT-REQ-006]}
+        - {arm: "reset mid-stream, no stale output / scaled core", reqs: [FFT-REQ-101]}
+        - {arm: "data-pushed flush / scaled core", reqs: [FFT-REQ-008]}
+        - {arm: "back-to-back frames / unscaled build", reqs: [FFT-REQ-002, FFT-REQ-023]}
+        - arm: "clock-enable freeze / unscaled build"
+          unexercised: >-
+            Not covered: test_aclken_freeze_exact (FFT-REQ-006) runs the
+            scaled core only; no unscaled or shim test gates ACLKEN.
+        - arm: "reset mid-stream / unscaled build"
+          unexercised: >-
+            Not covered: test_reset_no_stale_output (FFT-REQ-101) runs the
+            scaled core only.
+        - arm: "data-pushed silence / unscaled build"
+          unexercised: >-
+            Not covered as a prohibition: the unscaled and shim tests flush
+            with zero beats but do not assert that M_AXIS_DATA_TVALID stays
+            low during input silence (FFT-REQ-008 runs the scaled core only).
+        - arm: "backpressure (m_axis_data_tready)"
+          unexercised: >-
+            Not implemented: input tready is constant 1 and the output has no
+            tready (FDD Known limitations).
+        - arm: "self-flush on aclk"
+          unexercised: >-
+            Not implemented by decision: rr_fft is data-pushed (FFT-REQ-008,
+            decided in FFT-P3.1).

@@ -1,0 +1,5214 @@
+- log2_n: 8
+  dc_re: 1
+  dc_im: 0
+  sch:
+  - 2
+  - 2
+  - 2
+  - 2
+  scaled: true
+- log2_n: 8
+  dc_re: 1000
+  dc_im: -1000
+  sch:
+  - 2
+  - 2
+  - 2
+  - 2
+  scaled: true
+- log2_n: 8
+  dc_re: -1
+  dc_im: 1
+  sch:
+  - 2
+  - 2
+  - 2
+  - 2
+  scaled: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: 699051
+  sch:
+  - 2
+  - 2
+  - 2
+  - 2
+  scaled: true
+- log2_n: 8
+  dc_re: 12345
+  dc_im: -54321
+  sch:
+  - 0
+  - 0
+  - 0
+  - 0
+  scaled: false
+- log2_n: 8
+  dc_re: 0
+  dc_im: 0
+  sch:
+  - 0
+  - 0
+  - 0
+  - 0
+  scaled: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 0
+  - 0
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 0
+  - 0
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 0
+  - 0
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 0
+  - 0
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 0
+  - 1
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 0
+  - 1
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 0
+  - 1
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 0
+  - 1
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 0
+  - 2
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 0
+  - 2
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 0
+  - 2
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 0
+  - 2
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 0
+  - 3
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 0
+  - 3
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 0
+  - 3
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 0
+  - 3
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 1
+  - 0
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 1
+  - 0
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 1
+  - 0
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 1
+  - 0
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 1
+  - 1
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 1
+  - 1
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 1
+  - 1
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 1
+  - 1
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 1
+  - 2
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 1
+  - 2
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 1
+  - 2
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 1
+  - 2
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 1
+  - 3
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 1
+  - 3
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 1
+  - 3
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 1
+  - 3
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 2
+  - 0
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 2
+  - 0
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 2
+  - 0
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 2
+  - 0
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 2
+  - 1
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 2
+  - 1
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 2
+  - 1
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 2
+  - 1
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 2
+  - 2
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 2
+  - 2
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 2
+  - 2
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 2
+  - 2
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 2
+  - 3
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 2
+  - 3
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 2
+  - 3
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 2
+  - 3
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 3
+  - 0
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 3
+  - 0
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 3
+  - 0
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 3
+  - 0
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 3
+  - 1
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 3
+  - 1
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 3
+  - 1
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 3
+  - 1
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 3
+  - 2
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 3
+  - 2
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 3
+  - 2
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 3
+  - 2
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 3
+  - 3
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 3
+  - 3
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 3
+  - 3
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 3
+  - 3
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 0
+  - 0
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 0
+  - 0
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 0
+  - 0
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 0
+  - 0
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 0
+  - 1
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 0
+  - 1
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 0
+  - 1
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 0
+  - 1
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 0
+  - 2
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 0
+  - 2
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 0
+  - 2
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 0
+  - 2
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 0
+  - 3
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 0
+  - 3
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 0
+  - 3
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 0
+  - 3
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 1
+  - 0
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 1
+  - 0
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 1
+  - 0
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 1
+  - 0
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 1
+  - 1
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 1
+  - 1
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 1
+  - 1
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 1
+  - 1
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 1
+  - 2
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 1
+  - 2
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 1
+  - 2
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 1
+  - 2
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 1
+  - 3
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 1
+  - 3
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 1
+  - 3
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 1
+  - 3
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 2
+  - 0
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 2
+  - 0
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 2
+  - 0
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 2
+  - 0
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 2
+  - 1
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 2
+  - 1
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 2
+  - 1
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 2
+  - 1
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 2
+  - 2
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 2
+  - 2
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 2
+  - 2
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 2
+  - 2
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 2
+  - 3
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 2
+  - 3
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 2
+  - 3
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 2
+  - 3
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 3
+  - 0
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 3
+  - 0
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 3
+  - 0
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 3
+  - 0
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 3
+  - 1
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 3
+  - 1
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 3
+  - 1
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 3
+  - 1
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 3
+  - 2
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 3
+  - 2
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 3
+  - 2
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 3
+  - 2
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 3
+  - 3
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 3
+  - 3
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 3
+  - 3
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 3
+  - 3
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 0
+  - 0
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 0
+  - 0
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 0
+  - 0
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 0
+  - 0
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 0
+  - 1
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 0
+  - 1
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 0
+  - 1
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 0
+  - 1
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 0
+  - 2
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 0
+  - 2
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 0
+  - 2
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 0
+  - 2
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 0
+  - 3
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 0
+  - 3
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 0
+  - 3
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 0
+  - 3
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 1
+  - 0
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 1
+  - 0
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 1
+  - 0
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 1
+  - 0
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 1
+  - 1
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 1
+  - 1
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 1
+  - 1
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 1
+  - 1
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 1
+  - 2
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 1
+  - 2
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 1
+  - 2
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 1
+  - 2
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 1
+  - 3
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 1
+  - 3
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 1
+  - 3
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 1
+  - 3
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 2
+  - 0
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 2
+  - 0
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 2
+  - 0
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 2
+  - 0
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 2
+  - 1
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 2
+  - 1
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 2
+  - 1
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 2
+  - 1
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 2
+  - 2
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 2
+  - 2
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 2
+  - 2
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 2
+  - 2
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 2
+  - 3
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 2
+  - 3
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 2
+  - 3
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 2
+  - 3
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 3
+  - 0
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 3
+  - 0
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 3
+  - 0
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 3
+  - 0
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 3
+  - 1
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 3
+  - 1
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 3
+  - 1
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 3
+  - 1
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 3
+  - 2
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 3
+  - 2
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 3
+  - 2
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 3
+  - 2
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 3
+  - 3
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 3
+  - 3
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 3
+  - 3
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 3
+  - 3
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 0
+  - 0
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 0
+  - 0
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 0
+  - 0
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 0
+  - 0
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 0
+  - 1
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 0
+  - 1
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 0
+  - 1
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 0
+  - 1
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 0
+  - 2
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 0
+  - 2
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 0
+  - 2
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 0
+  - 2
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 0
+  - 3
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 0
+  - 3
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 0
+  - 3
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 0
+  - 3
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 1
+  - 0
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 1
+  - 0
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 1
+  - 0
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 1
+  - 0
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 1
+  - 1
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 1
+  - 1
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 1
+  - 1
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 1
+  - 1
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 1
+  - 2
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 1
+  - 2
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 1
+  - 2
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 1
+  - 2
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 1
+  - 3
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 1
+  - 3
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 1
+  - 3
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 1
+  - 3
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 2
+  - 0
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 2
+  - 0
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 2
+  - 0
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 2
+  - 0
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 2
+  - 1
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 2
+  - 1
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 2
+  - 1
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 2
+  - 1
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 2
+  - 2
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 2
+  - 2
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 2
+  - 2
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 2
+  - 2
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 2
+  - 3
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 2
+  - 3
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 2
+  - 3
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 2
+  - 3
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 3
+  - 0
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 3
+  - 0
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 3
+  - 0
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 3
+  - 0
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 3
+  - 1
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 3
+  - 1
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 3
+  - 1
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 3
+  - 1
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 3
+  - 2
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 3
+  - 2
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 3
+  - 2
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 3
+  - 2
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 3
+  - 3
+  - 0
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 3
+  - 3
+  - 1
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 3
+  - 3
+  - 2
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 3
+  - 3
+  - 3
+  scaled: true
+  inverse: false
+- log2_n: 8
+  dc_re: 12345
+  dc_im: -54321
+  sch:
+  - 0
+  - 0
+  - 0
+  - 0
+  scaled: false
+  inverse: false
+- log2_n: 8
+  dc_re: -8388608
+  dc_im: 8388607
+  sch:
+  - 0
+  - 0
+  - 0
+  - 0
+  scaled: false
+  inverse: false
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 0
+  - 0
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 0
+  - 0
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 0
+  - 0
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 0
+  - 0
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 0
+  - 1
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 0
+  - 1
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 0
+  - 1
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 0
+  - 1
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 0
+  - 2
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 0
+  - 2
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 0
+  - 2
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 0
+  - 2
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 0
+  - 3
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 0
+  - 3
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 0
+  - 3
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 0
+  - 3
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 1
+  - 0
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 1
+  - 0
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 1
+  - 0
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 1
+  - 0
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 1
+  - 1
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 1
+  - 1
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 1
+  - 1
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 1
+  - 1
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 1
+  - 2
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 1
+  - 2
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 1
+  - 2
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 1
+  - 2
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 1
+  - 3
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 1
+  - 3
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 1
+  - 3
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 1
+  - 3
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 2
+  - 0
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 2
+  - 0
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 2
+  - 0
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 2
+  - 0
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 2
+  - 1
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 2
+  - 1
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 2
+  - 1
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 2
+  - 1
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 2
+  - 2
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 2
+  - 2
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 2
+  - 2
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 2
+  - 2
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 2
+  - 3
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 2
+  - 3
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 2
+  - 3
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 2
+  - 3
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 3
+  - 0
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 3
+  - 0
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 3
+  - 0
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 3
+  - 0
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 3
+  - 1
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 3
+  - 1
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 3
+  - 1
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 3
+  - 1
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 3
+  - 2
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 3
+  - 2
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 3
+  - 2
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 3
+  - 2
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 3
+  - 3
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 3
+  - 3
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 3
+  - 3
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 0
+  - 3
+  - 3
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 0
+  - 0
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 0
+  - 0
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 0
+  - 0
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 0
+  - 0
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 0
+  - 1
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 0
+  - 1
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 0
+  - 1
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 0
+  - 1
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 0
+  - 2
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 0
+  - 2
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 0
+  - 2
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 0
+  - 2
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 0
+  - 3
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 0
+  - 3
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 0
+  - 3
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 0
+  - 3
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 1
+  - 0
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 1
+  - 0
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 1
+  - 0
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 1
+  - 0
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 1
+  - 1
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 1
+  - 1
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 1
+  - 1
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 1
+  - 1
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 1
+  - 2
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 1
+  - 2
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 1
+  - 2
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 1
+  - 2
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 1
+  - 3
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 1
+  - 3
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 1
+  - 3
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 1
+  - 3
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 2
+  - 0
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 2
+  - 0
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 2
+  - 0
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 2
+  - 0
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 2
+  - 1
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 2
+  - 1
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 2
+  - 1
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 2
+  - 1
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 2
+  - 2
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 2
+  - 2
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 2
+  - 2
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 2
+  - 2
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 2
+  - 3
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 2
+  - 3
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 2
+  - 3
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 2
+  - 3
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 3
+  - 0
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 3
+  - 0
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 3
+  - 0
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 3
+  - 0
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 3
+  - 1
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 3
+  - 1
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 3
+  - 1
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 3
+  - 1
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 3
+  - 2
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 3
+  - 2
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 3
+  - 2
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 3
+  - 2
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 3
+  - 3
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 3
+  - 3
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 3
+  - 3
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 1
+  - 3
+  - 3
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 0
+  - 0
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 0
+  - 0
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 0
+  - 0
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 0
+  - 0
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 0
+  - 1
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 0
+  - 1
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 0
+  - 1
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 0
+  - 1
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 0
+  - 2
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 0
+  - 2
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 0
+  - 2
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 0
+  - 2
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 0
+  - 3
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 0
+  - 3
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 0
+  - 3
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 0
+  - 3
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 1
+  - 0
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 1
+  - 0
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 1
+  - 0
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 1
+  - 0
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 1
+  - 1
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 1
+  - 1
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 1
+  - 1
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 1
+  - 1
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 1
+  - 2
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 1
+  - 2
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 1
+  - 2
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 1
+  - 2
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 1
+  - 3
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 1
+  - 3
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 1
+  - 3
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 1
+  - 3
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 2
+  - 0
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 2
+  - 0
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 2
+  - 0
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 2
+  - 0
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 2
+  - 1
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 2
+  - 1
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 2
+  - 1
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 2
+  - 1
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 2
+  - 2
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 2
+  - 2
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 2
+  - 2
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 2
+  - 2
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 2
+  - 3
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 2
+  - 3
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 2
+  - 3
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 2
+  - 3
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 3
+  - 0
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 3
+  - 0
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 3
+  - 0
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 3
+  - 0
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 3
+  - 1
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 3
+  - 1
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 3
+  - 1
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 3
+  - 1
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 3
+  - 2
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 3
+  - 2
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 3
+  - 2
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 3
+  - 2
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 3
+  - 3
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 3
+  - 3
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 3
+  - 3
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 2
+  - 3
+  - 3
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 0
+  - 0
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 0
+  - 0
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 0
+  - 0
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 0
+  - 0
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 0
+  - 1
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 0
+  - 1
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 0
+  - 1
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 0
+  - 1
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 0
+  - 2
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 0
+  - 2
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 0
+  - 2
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 0
+  - 2
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 0
+  - 3
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 0
+  - 3
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 0
+  - 3
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 0
+  - 3
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 1
+  - 0
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 1
+  - 0
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 1
+  - 0
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 1
+  - 0
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 1
+  - 1
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 1
+  - 1
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 1
+  - 1
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 1
+  - 1
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 1
+  - 2
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 1
+  - 2
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 1
+  - 2
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 1
+  - 2
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 1
+  - 3
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 1
+  - 3
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 1
+  - 3
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 1
+  - 3
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 2
+  - 0
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 2
+  - 0
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 2
+  - 0
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 2
+  - 0
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 2
+  - 1
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 2
+  - 1
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 2
+  - 1
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 2
+  - 1
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 2
+  - 2
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 2
+  - 2
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 2
+  - 2
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 2
+  - 2
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 2
+  - 3
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 2
+  - 3
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 2
+  - 3
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 2
+  - 3
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 3
+  - 0
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 3
+  - 0
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 3
+  - 0
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 3
+  - 0
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 3
+  - 1
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 3
+  - 1
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 3
+  - 1
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 3
+  - 1
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 3
+  - 2
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 3
+  - 2
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 3
+  - 2
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 3
+  - 2
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 3
+  - 3
+  - 0
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 3
+  - 3
+  - 1
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 3
+  - 3
+  - 2
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 1398101
+  dc_im: -699051
+  sch:
+  - 3
+  - 3
+  - 3
+  - 3
+  scaled: true
+  inverse: true
+- log2_n: 8
+  dc_re: 12345
+  dc_im: -54321
+  sch:
+  - 0
+  - 0
+  - 0
+  - 0
+  scaled: false
+  inverse: true
+- log2_n: 8
+  dc_re: -8388608
+  dc_im: 8388607
+  sch:
+  - 0
+  - 0
+  - 0
+  - 0
+  scaled: false
+  inverse: true

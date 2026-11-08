@@ -1,0 +1,3 @@
+# RouteRTL — Known FPGA Parts (auto-updated)
+# Format: <vendor> <part>
+xilinx xczu5cg-sfvc784-2-i

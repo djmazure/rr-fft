@@ -1,0 +1,8351 @@
+req_id: FFT-REQ-030
+oracle_entry: model/oracle_seam.py:dc_response
+oracle_sha256: e28ea37622bfe196a90ec37026bdd12dc6022ad705a48a6b47faa34aa4603a34
+vectors_sha256: 73fbecc36eb5c91deb17c6e3788439cbb383b6df0ecbc20388d6e8229bf131ec
+minted:
+- vector:
+    log2_n: 8
+    dc_re: 1
+    dc_im: 0
+    sch:
+    - 2
+    - 2
+    - 2
+    - 2
+    scaled: true
+  golden:
+    x0_re: 1
+    x0_im: 0
+    tdata_scaled: 1
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1000
+    dc_im: -1000
+    sch:
+    - 2
+    - 2
+    - 2
+    - 2
+    scaled: true
+  golden:
+    x0_re: 1000
+    x0_im: -1000
+    tdata_scaled: 281458199495656
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: -1
+    dc_im: 1
+    sch:
+    - 2
+    - 2
+    - 2
+    - 2
+    scaled: true
+  golden:
+    x0_re: -1
+    x0_im: 1
+    tdata_scaled: 33554431
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: 699051
+    sch:
+    - 2
+    - 2
+    - 2
+    - 2
+    scaled: true
+  golden:
+    x0_re: 1398101
+    x0_im: 699051
+    tdata_scaled: 11728131020117
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 12345
+    dc_im: -54321
+    sch:
+    - 0
+    - 0
+    - 0
+    - 0
+    scaled: false
+  golden:
+    x0_re: 3160320
+    x0_im: -13906176
+    tdata_scaled: 48168061384960
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 0
+    dc_im: 0
+    sch:
+    - 0
+    - 0
+    - 0
+    - 0
+    scaled: false
+  golden:
+    x0_re: 0
+    x0_im: 0
+    tdata_scaled: 0
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 0
+    - 0
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592320
+    x0_im: 5592320
+    tdata_scaled: 93823566173440
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 0
+    - 0
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592448
+    x0_im: -5592448
+    tdata_scaled: 187649279830656
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 0
+    - 0
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592384
+    x0_im: 5592384
+    tdata_scaled: 93824639915328
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 0
+    - 0
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796192
+    x0_im: 2796192
+    tdata_scaled: 46912319957664
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 0
+    - 1
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592448
+    x0_im: -5592448
+    tdata_scaled: 187649279830656
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 0
+    - 1
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592384
+    x0_im: 5592384
+    tdata_scaled: 93824639915328
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 0
+    - 1
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 0
+    - 1
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -2796208
+    x0_im: -2796208
+    tdata_scaled: 234562405094736
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 0
+    - 2
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592384
+    x0_im: 5592384
+    tdata_scaled: 93824639915328
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 0
+    - 2
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 0
+    - 2
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 0
+    - 2
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796200
+    x0_im: 2796200
+    tdata_scaled: 46912454175400
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 0
+    - 3
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 0
+    - 3
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 0
+    - 3
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796200
+    x0_im: 2796200
+    tdata_scaled: 46912454175400
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 0
+    - 3
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 1398100
+    x0_im: 1398100
+    tdata_scaled: 23456227087700
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 1
+    - 0
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592448
+    x0_im: -5592448
+    tdata_scaled: 187649279830656
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 1
+    - 0
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592384
+    x0_im: 5592384
+    tdata_scaled: 93824639915328
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 1
+    - 0
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 1
+    - 0
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -2796208
+    x0_im: -2796208
+    tdata_scaled: 234562405094736
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 1
+    - 1
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592384
+    x0_im: 5592384
+    tdata_scaled: 93824639915328
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 1
+    - 1
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 1
+    - 1
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 1
+    - 1
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796200
+    x0_im: 2796200
+    tdata_scaled: 46912454175400
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 1
+    - 2
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 1
+    - 2
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 1
+    - 2
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 1
+    - 2
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -2796204
+    x0_im: -2796204
+    tdata_scaled: 234562472203604
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 1
+    - 3
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 1
+    - 3
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 1
+    - 3
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -2796204
+    x0_im: -2796204
+    tdata_scaled: 234562472203604
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 1
+    - 3
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -1398102
+    x0_im: -1398102
+    tdata_scaled: 258018732845738
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 2
+    - 0
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592384
+    x0_im: 5592384
+    tdata_scaled: 93824639915328
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 2
+    - 0
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 2
+    - 0
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 2
+    - 0
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796200
+    x0_im: 2796200
+    tdata_scaled: 46912454175400
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 2
+    - 1
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 2
+    - 1
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 2
+    - 1
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 2
+    - 1
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -2796204
+    x0_im: -2796204
+    tdata_scaled: 234562472203604
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 2
+    - 2
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 2
+    - 2
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 2
+    - 2
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 2
+    - 2
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 2
+    - 3
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 2
+    - 3
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 2
+    - 3
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 2
+    - 3
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 1398101
+    x0_im: -699051
+    tdata_scaled: 269746848486741
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 3
+    - 0
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 3
+    - 0
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 3
+    - 0
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 3
+    - 0
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -2796204
+    x0_im: -2796204
+    tdata_scaled: 234562472203604
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 3
+    - 1
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 3
+    - 1
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 3
+    - 1
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 3
+    - 1
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 3
+    - 2
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 3
+    - 2
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 3
+    - 2
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 3
+    - 2
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 1398101
+    x0_im: -699051
+    tdata_scaled: 269746848486741
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 3
+    - 3
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 3
+    - 3
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 3
+    - 3
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 1398101
+    x0_im: -699051
+    tdata_scaled: 269746848486741
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 3
+    - 3
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 699050
+    x0_im: -349526
+    tdata_scaled: 275610904210090
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 0
+    - 0
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592448
+    x0_im: -5592448
+    tdata_scaled: 187649279830656
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 0
+    - 0
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592384
+    x0_im: 5592384
+    tdata_scaled: 93824639915328
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 0
+    - 0
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 0
+    - 0
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -2796208
+    x0_im: -2796208
+    tdata_scaled: 234562405094736
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 0
+    - 1
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592384
+    x0_im: 5592384
+    tdata_scaled: 93824639915328
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 0
+    - 1
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 0
+    - 1
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 0
+    - 1
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796200
+    x0_im: 2796200
+    tdata_scaled: 46912454175400
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 0
+    - 2
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 0
+    - 2
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 0
+    - 2
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 0
+    - 2
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -2796204
+    x0_im: -2796204
+    tdata_scaled: 234562472203604
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 0
+    - 3
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 0
+    - 3
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 0
+    - 3
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -2796204
+    x0_im: -2796204
+    tdata_scaled: 234562472203604
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 0
+    - 3
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -1398102
+    x0_im: -1398102
+    tdata_scaled: 258018732845738
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 1
+    - 0
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592384
+    x0_im: 5592384
+    tdata_scaled: 93824639915328
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 1
+    - 0
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 1
+    - 0
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 1
+    - 0
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796200
+    x0_im: 2796200
+    tdata_scaled: 46912454175400
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 1
+    - 1
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 1
+    - 1
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 1
+    - 1
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 1
+    - 1
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -2796204
+    x0_im: -2796204
+    tdata_scaled: 234562472203604
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 1
+    - 2
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 1
+    - 2
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 1
+    - 2
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 1
+    - 2
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 1
+    - 3
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 1
+    - 3
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 1
+    - 3
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 1
+    - 3
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 1398101
+    x0_im: -699051
+    tdata_scaled: 269746848486741
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 2
+    - 0
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 2
+    - 0
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 2
+    - 0
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 2
+    - 0
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -2796204
+    x0_im: -2796204
+    tdata_scaled: 234562472203604
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 2
+    - 1
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 2
+    - 1
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 2
+    - 1
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 2
+    - 1
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 2
+    - 2
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 2
+    - 2
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 2
+    - 2
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 2
+    - 2
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 1398101
+    x0_im: -699051
+    tdata_scaled: 269746848486741
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 2
+    - 3
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 2
+    - 3
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 2
+    - 3
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 1398101
+    x0_im: -699051
+    tdata_scaled: 269746848486741
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 2
+    - 3
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 699050
+    x0_im: -349526
+    tdata_scaled: 275610904210090
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 3
+    - 0
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 3
+    - 0
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 3
+    - 0
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 3
+    - 0
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 3
+    - 1
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 3
+    - 1
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 3
+    - 1
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 3
+    - 1
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 1398101
+    x0_im: -699051
+    tdata_scaled: 269746848486741
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 3
+    - 2
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 3
+    - 2
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 3
+    - 2
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 1398101
+    x0_im: -699051
+    tdata_scaled: 269746848486741
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 3
+    - 2
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 699050
+    x0_im: -349526
+    tdata_scaled: 275610904210090
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 3
+    - 3
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796200
+    x0_im: -1398104
+    tdata_scaled: 258018686708392
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 3
+    - 3
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 1398100
+    x0_im: -699052
+    tdata_scaled: 269746831709524
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 3
+    - 3
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 699050
+    x0_im: -349526
+    tdata_scaled: 275610904210090
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 3
+    - 3
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 349525
+    x0_im: -174763
+    tdata_scaled: 278542940460373
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 0
+    - 0
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592384
+    x0_im: 5592384
+    tdata_scaled: 93824639915328
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 0
+    - 0
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 0
+    - 0
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 0
+    - 0
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796200
+    x0_im: 2796200
+    tdata_scaled: 46912454175400
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 0
+    - 1
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 0
+    - 1
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 0
+    - 1
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 0
+    - 1
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -2796204
+    x0_im: -2796204
+    tdata_scaled: 234562472203604
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 0
+    - 2
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 0
+    - 2
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 0
+    - 2
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 0
+    - 2
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 0
+    - 3
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 0
+    - 3
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 0
+    - 3
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 0
+    - 3
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 1398101
+    x0_im: -699051
+    tdata_scaled: 269746848486741
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 1
+    - 0
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 1
+    - 0
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 1
+    - 0
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 1
+    - 0
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -2796204
+    x0_im: -2796204
+    tdata_scaled: 234562472203604
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 1
+    - 1
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 1
+    - 1
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 1
+    - 1
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 1
+    - 1
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 1
+    - 2
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 1
+    - 2
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 1
+    - 2
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 1
+    - 2
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 1398101
+    x0_im: -699051
+    tdata_scaled: 269746848486741
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 1
+    - 3
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 1
+    - 3
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 1
+    - 3
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 1398101
+    x0_im: -699051
+    tdata_scaled: 269746848486741
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 1
+    - 3
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 699050
+    x0_im: -349526
+    tdata_scaled: 275610904210090
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 2
+    - 0
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 2
+    - 0
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 2
+    - 0
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 2
+    - 0
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 2
+    - 1
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 2
+    - 1
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 2
+    - 1
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 2
+    - 1
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 1398101
+    x0_im: -699051
+    tdata_scaled: 269746848486741
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 2
+    - 2
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 2
+    - 2
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 2
+    - 2
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 1398101
+    x0_im: -699051
+    tdata_scaled: 269746848486741
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 2
+    - 2
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 699050
+    x0_im: -349526
+    tdata_scaled: 275610904210090
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 2
+    - 3
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796200
+    x0_im: -1398104
+    tdata_scaled: 258018686708392
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 2
+    - 3
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 1398100
+    x0_im: -699052
+    tdata_scaled: 269746831709524
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 2
+    - 3
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 699050
+    x0_im: -349526
+    tdata_scaled: 275610904210090
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 2
+    - 3
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 349525
+    x0_im: -174763
+    tdata_scaled: 278542940460373
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 3
+    - 0
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 3
+    - 0
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592400
+    x0_im: -2796208
+    tdata_scaled: 234562396706128
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 3
+    - 0
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796200
+    x0_im: -1398104
+    tdata_scaled: 258018686708392
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 3
+    - 0
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 1398100
+    x0_im: -699052
+    tdata_scaled: 269746831709524
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 3
+    - 1
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592400
+    x0_im: -2796208
+    tdata_scaled: 234562396706128
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 3
+    - 1
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796200
+    x0_im: -1398104
+    tdata_scaled: 258018686708392
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 3
+    - 1
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 1398100
+    x0_im: -699052
+    tdata_scaled: 269746831709524
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 3
+    - 1
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 699050
+    x0_im: -349526
+    tdata_scaled: 275610904210090
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 3
+    - 2
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796200
+    x0_im: -1398104
+    tdata_scaled: 258018686708392
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 3
+    - 2
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 1398100
+    x0_im: -699052
+    tdata_scaled: 269746831709524
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 3
+    - 2
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 699050
+    x0_im: -349526
+    tdata_scaled: 275610904210090
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 3
+    - 2
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 349525
+    x0_im: -174763
+    tdata_scaled: 278542940460373
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 3
+    - 3
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 1398100
+    x0_im: -699052
+    tdata_scaled: 269746831709524
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 3
+    - 3
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 699050
+    x0_im: -349526
+    tdata_scaled: 275610904210090
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 3
+    - 3
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 349525
+    x0_im: -174763
+    tdata_scaled: 278542940460373
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 3
+    - 3
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 174762
+    x0_im: -87382
+    tdata_scaled: 280008950196906
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 0
+    - 0
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592448
+    x0_im: -5592448
+    tdata_scaled: 187649279830656
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 0
+    - 0
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592384
+    x0_im: 5592384
+    tdata_scaled: 93824639915328
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 0
+    - 0
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 0
+    - 0
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -2796208
+    x0_im: -2796208
+    tdata_scaled: 234562405094736
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 0
+    - 1
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592384
+    x0_im: 5592384
+    tdata_scaled: 93824639915328
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 0
+    - 1
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 0
+    - 1
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592400
+    x0_im: -2796208
+    tdata_scaled: 234562396706128
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 0
+    - 1
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796200
+    x0_im: -1398104
+    tdata_scaled: 258018686708392
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 0
+    - 2
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 0
+    - 2
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592400
+    x0_im: -2796208
+    tdata_scaled: 234562396706128
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 0
+    - 2
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796200
+    x0_im: -1398104
+    tdata_scaled: 258018686708392
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 0
+    - 2
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 1398100
+    x0_im: -699052
+    tdata_scaled: 269746831709524
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 0
+    - 3
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592400
+    x0_im: -2796208
+    tdata_scaled: 234562396706128
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 0
+    - 3
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796200
+    x0_im: -1398104
+    tdata_scaled: 258018686708392
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 0
+    - 3
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 1398100
+    x0_im: -699052
+    tdata_scaled: 269746831709524
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 0
+    - 3
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 699050
+    x0_im: -349526
+    tdata_scaled: 275610904210090
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 1
+    - 0
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592384
+    x0_im: 5592384
+    tdata_scaled: 93824639915328
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 1
+    - 0
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 1
+    - 0
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592400
+    x0_im: -2796208
+    tdata_scaled: 234562396706128
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 1
+    - 0
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796200
+    x0_im: -1398104
+    tdata_scaled: 258018686708392
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 1
+    - 1
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 1
+    - 1
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592400
+    x0_im: -2796208
+    tdata_scaled: 234562396706128
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 1
+    - 1
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796200
+    x0_im: -1398104
+    tdata_scaled: 258018686708392
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 1
+    - 1
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 1398100
+    x0_im: -699052
+    tdata_scaled: 269746831709524
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 1
+    - 2
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592400
+    x0_im: -2796208
+    tdata_scaled: 234562396706128
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 1
+    - 2
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796200
+    x0_im: -1398104
+    tdata_scaled: 258018686708392
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 1
+    - 2
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 1398100
+    x0_im: -699052
+    tdata_scaled: 269746831709524
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 1
+    - 2
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 699050
+    x0_im: -349526
+    tdata_scaled: 275610904210090
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 1
+    - 3
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796200
+    x0_im: -1398104
+    tdata_scaled: 258018686708392
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 1
+    - 3
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 1398100
+    x0_im: -699052
+    tdata_scaled: 269746831709524
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 1
+    - 3
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 699050
+    x0_im: -349526
+    tdata_scaled: 275610904210090
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 1
+    - 3
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 349525
+    x0_im: -174763
+    tdata_scaled: 278542940460373
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 2
+    - 0
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 2
+    - 0
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592400
+    x0_im: -2796208
+    tdata_scaled: 234562396706128
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 2
+    - 0
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796200
+    x0_im: -1398104
+    tdata_scaled: 258018686708392
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 2
+    - 0
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 1398100
+    x0_im: -699052
+    tdata_scaled: 269746831709524
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 2
+    - 1
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592400
+    x0_im: -2796208
+    tdata_scaled: 234562396706128
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 2
+    - 1
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796200
+    x0_im: -1398104
+    tdata_scaled: 258018686708392
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 2
+    - 1
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 1398100
+    x0_im: -699052
+    tdata_scaled: 269746831709524
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 2
+    - 1
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 699050
+    x0_im: -349526
+    tdata_scaled: 275610904210090
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 2
+    - 2
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796200
+    x0_im: -1398104
+    tdata_scaled: 258018686708392
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 2
+    - 2
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 1398100
+    x0_im: -699052
+    tdata_scaled: 269746831709524
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 2
+    - 2
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 699050
+    x0_im: -349526
+    tdata_scaled: 275610904210090
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 2
+    - 2
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 349525
+    x0_im: -174763
+    tdata_scaled: 278542940460373
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 2
+    - 3
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 1398100
+    x0_im: -699052
+    tdata_scaled: 269746831709524
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 2
+    - 3
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 699050
+    x0_im: -349526
+    tdata_scaled: 275610904210090
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 2
+    - 3
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 349525
+    x0_im: -174763
+    tdata_scaled: 278542940460373
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 2
+    - 3
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 174762
+    x0_im: -87382
+    tdata_scaled: 280008950196906
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 3
+    - 0
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 5592400
+    x0_im: -2796208
+    tdata_scaled: 234562396706128
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 3
+    - 0
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796200
+    x0_im: -1398104
+    tdata_scaled: 258018686708392
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 3
+    - 0
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 1398100
+    x0_im: -699052
+    tdata_scaled: 269746831709524
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 3
+    - 0
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 699050
+    x0_im: -349526
+    tdata_scaled: 275610904210090
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 3
+    - 1
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 2796200
+    x0_im: -1398104
+    tdata_scaled: 258018686708392
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 3
+    - 1
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 1398100
+    x0_im: -699052
+    tdata_scaled: 269746831709524
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 3
+    - 1
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 699050
+    x0_im: -349526
+    tdata_scaled: 275610904210090
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 3
+    - 1
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 349525
+    x0_im: -174763
+    tdata_scaled: 278542940460373
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 3
+    - 2
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 1398100
+    x0_im: -699052
+    tdata_scaled: 269746831709524
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 3
+    - 2
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 699050
+    x0_im: -349526
+    tdata_scaled: 275610904210090
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 3
+    - 2
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 349525
+    x0_im: -174763
+    tdata_scaled: 278542940460373
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 3
+    - 2
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 174762
+    x0_im: -87382
+    tdata_scaled: 280008950196906
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 3
+    - 3
+    - 0
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 699048
+    x0_im: -349528
+    tdata_scaled: 275610870655656
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 3
+    - 3
+    - 1
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 349524
+    x0_im: -174764
+    tdata_scaled: 278542923683156
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 3
+    - 3
+    - 2
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 174762
+    x0_im: -87382
+    tdata_scaled: 280008950196906
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 3
+    - 3
+    - 3
+    scaled: true
+    inverse: false
+  golden:
+    x0_re: 87381
+    x0_im: -43691
+    tdata_scaled: 280741963453781
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 12345
+    dc_im: -54321
+    sch:
+    - 0
+    - 0
+    - 0
+    - 0
+    scaled: false
+    inverse: false
+  golden:
+    x0_re: 3160320
+    x0_im: -13906176
+    tdata_scaled: 48168061384960
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: -8388608
+    dc_im: 8388607
+    sch:
+    - 0
+    - 0
+    - 0
+    - 0
+    scaled: false
+    inverse: false
+  golden:
+    x0_re: -2147483648
+    x0_im: 2147483392
+    tdata_scaled: 281470681743360
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 0
+    - 0
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592320
+    x0_im: 5592320
+    tdata_scaled: 93823566173440
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 0
+    - 0
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592448
+    x0_im: -5592448
+    tdata_scaled: 187649279830656
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 0
+    - 0
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592384
+    x0_im: 5592384
+    tdata_scaled: 93824639915328
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 0
+    - 0
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796192
+    x0_im: 2796192
+    tdata_scaled: 46912319957664
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 0
+    - 1
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592448
+    x0_im: -5592448
+    tdata_scaled: 187649279830656
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 0
+    - 1
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592384
+    x0_im: 5592384
+    tdata_scaled: 93824639915328
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 0
+    - 1
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 0
+    - 1
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -2796208
+    x0_im: -2796208
+    tdata_scaled: 234562405094736
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 0
+    - 2
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592384
+    x0_im: 5592384
+    tdata_scaled: 93824639915328
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 0
+    - 2
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 0
+    - 2
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 0
+    - 2
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796200
+    x0_im: 2796200
+    tdata_scaled: 46912454175400
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 0
+    - 3
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 0
+    - 3
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 0
+    - 3
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796200
+    x0_im: 2796200
+    tdata_scaled: 46912454175400
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 0
+    - 3
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 1398100
+    x0_im: 1398100
+    tdata_scaled: 23456227087700
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 1
+    - 0
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592448
+    x0_im: -5592448
+    tdata_scaled: 187649279830656
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 1
+    - 0
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592384
+    x0_im: 5592384
+    tdata_scaled: 93824639915328
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 1
+    - 0
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 1
+    - 0
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -2796208
+    x0_im: -2796208
+    tdata_scaled: 234562405094736
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 1
+    - 1
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592384
+    x0_im: 5592384
+    tdata_scaled: 93824639915328
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 1
+    - 1
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 1
+    - 1
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 1
+    - 1
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796200
+    x0_im: 2796200
+    tdata_scaled: 46912454175400
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 1
+    - 2
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 1
+    - 2
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 1
+    - 2
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 1
+    - 2
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -2796204
+    x0_im: -2796204
+    tdata_scaled: 234562472203604
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 1
+    - 3
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 1
+    - 3
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 1
+    - 3
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -2796204
+    x0_im: -2796204
+    tdata_scaled: 234562472203604
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 1
+    - 3
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -1398102
+    x0_im: -1398102
+    tdata_scaled: 258018732845738
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 2
+    - 0
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592384
+    x0_im: 5592384
+    tdata_scaled: 93824639915328
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 2
+    - 0
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 2
+    - 0
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 2
+    - 0
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796200
+    x0_im: 2796200
+    tdata_scaled: 46912454175400
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 2
+    - 1
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 2
+    - 1
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 2
+    - 1
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 2
+    - 1
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -2796204
+    x0_im: -2796204
+    tdata_scaled: 234562472203604
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 2
+    - 2
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 2
+    - 2
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 2
+    - 2
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 2
+    - 2
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 2
+    - 3
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 2
+    - 3
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 2
+    - 3
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 2
+    - 3
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 1398101
+    x0_im: -699051
+    tdata_scaled: 269746848486741
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 3
+    - 0
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 3
+    - 0
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 3
+    - 0
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 3
+    - 0
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -2796204
+    x0_im: -2796204
+    tdata_scaled: 234562472203604
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 3
+    - 1
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 3
+    - 1
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 3
+    - 1
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 3
+    - 1
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 3
+    - 2
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 3
+    - 2
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 3
+    - 2
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 3
+    - 2
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 1398101
+    x0_im: -699051
+    tdata_scaled: 269746848486741
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 3
+    - 3
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 3
+    - 3
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 3
+    - 3
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 1398101
+    x0_im: -699051
+    tdata_scaled: 269746848486741
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 0
+    - 3
+    - 3
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 699050
+    x0_im: -349526
+    tdata_scaled: 275610904210090
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 0
+    - 0
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592448
+    x0_im: -5592448
+    tdata_scaled: 187649279830656
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 0
+    - 0
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592384
+    x0_im: 5592384
+    tdata_scaled: 93824639915328
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 0
+    - 0
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 0
+    - 0
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -2796208
+    x0_im: -2796208
+    tdata_scaled: 234562405094736
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 0
+    - 1
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592384
+    x0_im: 5592384
+    tdata_scaled: 93824639915328
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 0
+    - 1
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 0
+    - 1
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 0
+    - 1
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796200
+    x0_im: 2796200
+    tdata_scaled: 46912454175400
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 0
+    - 2
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 0
+    - 2
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 0
+    - 2
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 0
+    - 2
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -2796204
+    x0_im: -2796204
+    tdata_scaled: 234562472203604
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 0
+    - 3
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 0
+    - 3
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 0
+    - 3
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -2796204
+    x0_im: -2796204
+    tdata_scaled: 234562472203604
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 0
+    - 3
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -1398102
+    x0_im: -1398102
+    tdata_scaled: 258018732845738
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 1
+    - 0
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592384
+    x0_im: 5592384
+    tdata_scaled: 93824639915328
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 1
+    - 0
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 1
+    - 0
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 1
+    - 0
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796200
+    x0_im: 2796200
+    tdata_scaled: 46912454175400
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 1
+    - 1
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 1
+    - 1
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 1
+    - 1
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 1
+    - 1
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -2796204
+    x0_im: -2796204
+    tdata_scaled: 234562472203604
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 1
+    - 2
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 1
+    - 2
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 1
+    - 2
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 1
+    - 2
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 1
+    - 3
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 1
+    - 3
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 1
+    - 3
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 1
+    - 3
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 1398101
+    x0_im: -699051
+    tdata_scaled: 269746848486741
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 2
+    - 0
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 2
+    - 0
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 2
+    - 0
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 2
+    - 0
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -2796204
+    x0_im: -2796204
+    tdata_scaled: 234562472203604
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 2
+    - 1
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 2
+    - 1
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 2
+    - 1
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 2
+    - 1
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 2
+    - 2
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 2
+    - 2
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 2
+    - 2
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 2
+    - 2
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 1398101
+    x0_im: -699051
+    tdata_scaled: 269746848486741
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 2
+    - 3
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 2
+    - 3
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 2
+    - 3
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 1398101
+    x0_im: -699051
+    tdata_scaled: 269746848486741
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 2
+    - 3
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 699050
+    x0_im: -349526
+    tdata_scaled: 275610904210090
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 3
+    - 0
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 3
+    - 0
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 3
+    - 0
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 3
+    - 0
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 3
+    - 1
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 3
+    - 1
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 3
+    - 1
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 3
+    - 1
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 1398101
+    x0_im: -699051
+    tdata_scaled: 269746848486741
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 3
+    - 2
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 3
+    - 2
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 3
+    - 2
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 1398101
+    x0_im: -699051
+    tdata_scaled: 269746848486741
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 3
+    - 2
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 699050
+    x0_im: -349526
+    tdata_scaled: 275610904210090
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 3
+    - 3
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796200
+    x0_im: -1398104
+    tdata_scaled: 258018686708392
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 3
+    - 3
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 1398100
+    x0_im: -699052
+    tdata_scaled: 269746831709524
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 3
+    - 3
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 699050
+    x0_im: -349526
+    tdata_scaled: 275610904210090
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 1
+    - 3
+    - 3
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 349525
+    x0_im: -174763
+    tdata_scaled: 278542940460373
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 0
+    - 0
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592384
+    x0_im: 5592384
+    tdata_scaled: 93824639915328
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 0
+    - 0
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 0
+    - 0
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 0
+    - 0
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796200
+    x0_im: 2796200
+    tdata_scaled: 46912454175400
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 0
+    - 1
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 0
+    - 1
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 0
+    - 1
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 0
+    - 1
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -2796204
+    x0_im: -2796204
+    tdata_scaled: 234562472203604
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 0
+    - 2
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 0
+    - 2
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 0
+    - 2
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 0
+    - 2
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 0
+    - 3
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 0
+    - 3
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 0
+    - 3
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 0
+    - 3
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 1398101
+    x0_im: -699051
+    tdata_scaled: 269746848486741
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 1
+    - 0
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 1
+    - 0
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 1
+    - 0
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 1
+    - 0
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -2796204
+    x0_im: -2796204
+    tdata_scaled: 234562472203604
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 1
+    - 1
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 1
+    - 1
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 1
+    - 1
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 1
+    - 1
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 1
+    - 2
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 1
+    - 2
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 1
+    - 2
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 1
+    - 2
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 1398101
+    x0_im: -699051
+    tdata_scaled: 269746848486741
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 1
+    - 3
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 1
+    - 3
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 1
+    - 3
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 1398101
+    x0_im: -699051
+    tdata_scaled: 269746848486741
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 1
+    - 3
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 699050
+    x0_im: -349526
+    tdata_scaled: 275610904210090
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 2
+    - 0
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592400
+    x0_im: 5592400
+    tdata_scaled: 93824908350800
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 2
+    - 0
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 2
+    - 0
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 2
+    - 0
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 2
+    - 1
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592408
+    x0_im: -5592408
+    tdata_scaled: 187649950919336
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 2
+    - 1
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 2
+    - 1
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 2
+    - 1
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 1398101
+    x0_im: -699051
+    tdata_scaled: 269746848486741
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 2
+    - 2
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592404
+    x0_im: -2796204
+    tdata_scaled: 234562463814996
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 2
+    - 2
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796202
+    x0_im: -1398102
+    tdata_scaled: 258018720262826
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 2
+    - 2
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 1398101
+    x0_im: -699051
+    tdata_scaled: 269746848486741
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 2
+    - 2
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 699050
+    x0_im: -349526
+    tdata_scaled: 275610904210090
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 2
+    - 3
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796200
+    x0_im: -1398104
+    tdata_scaled: 258018686708392
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 2
+    - 3
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 1398100
+    x0_im: -699052
+    tdata_scaled: 269746831709524
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 2
+    - 3
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 699050
+    x0_im: -349526
+    tdata_scaled: 275610904210090
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 2
+    - 3
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 349525
+    x0_im: -174763
+    tdata_scaled: 278542940460373
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 3
+    - 0
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 3
+    - 0
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592400
+    x0_im: -2796208
+    tdata_scaled: 234562396706128
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 3
+    - 0
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796200
+    x0_im: -1398104
+    tdata_scaled: 258018686708392
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 3
+    - 0
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 1398100
+    x0_im: -699052
+    tdata_scaled: 269746831709524
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 3
+    - 1
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592400
+    x0_im: -2796208
+    tdata_scaled: 234562396706128
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 3
+    - 1
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796200
+    x0_im: -1398104
+    tdata_scaled: 258018686708392
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 3
+    - 1
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 1398100
+    x0_im: -699052
+    tdata_scaled: 269746831709524
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 3
+    - 1
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 699050
+    x0_im: -349526
+    tdata_scaled: 275610904210090
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 3
+    - 2
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796200
+    x0_im: -1398104
+    tdata_scaled: 258018686708392
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 3
+    - 2
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 1398100
+    x0_im: -699052
+    tdata_scaled: 269746831709524
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 3
+    - 2
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 699050
+    x0_im: -349526
+    tdata_scaled: 275610904210090
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 3
+    - 2
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 349525
+    x0_im: -174763
+    tdata_scaled: 278542940460373
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 3
+    - 3
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 1398100
+    x0_im: -699052
+    tdata_scaled: 269746831709524
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 3
+    - 3
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 699050
+    x0_im: -349526
+    tdata_scaled: 275610904210090
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 3
+    - 3
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 349525
+    x0_im: -174763
+    tdata_scaled: 278542940460373
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 2
+    - 3
+    - 3
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 174762
+    x0_im: -87382
+    tdata_scaled: 280008950196906
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 0
+    - 0
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592448
+    x0_im: -5592448
+    tdata_scaled: 187649279830656
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 0
+    - 0
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592384
+    x0_im: 5592384
+    tdata_scaled: 93824639915328
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 0
+    - 0
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 0
+    - 0
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -2796208
+    x0_im: -2796208
+    tdata_scaled: 234562405094736
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 0
+    - 1
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592384
+    x0_im: 5592384
+    tdata_scaled: 93824639915328
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 0
+    - 1
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 0
+    - 1
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592400
+    x0_im: -2796208
+    tdata_scaled: 234562396706128
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 0
+    - 1
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796200
+    x0_im: -1398104
+    tdata_scaled: 258018686708392
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 0
+    - 2
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 0
+    - 2
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592400
+    x0_im: -2796208
+    tdata_scaled: 234562396706128
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 0
+    - 2
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796200
+    x0_im: -1398104
+    tdata_scaled: 258018686708392
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 0
+    - 2
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 1398100
+    x0_im: -699052
+    tdata_scaled: 269746831709524
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 0
+    - 3
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592400
+    x0_im: -2796208
+    tdata_scaled: 234562396706128
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 0
+    - 3
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796200
+    x0_im: -1398104
+    tdata_scaled: 258018686708392
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 0
+    - 3
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 1398100
+    x0_im: -699052
+    tdata_scaled: 269746831709524
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 0
+    - 3
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 699050
+    x0_im: -349526
+    tdata_scaled: 275610904210090
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 1
+    - 0
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592384
+    x0_im: 5592384
+    tdata_scaled: 93824639915328
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 1
+    - 0
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 1
+    - 0
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592400
+    x0_im: -2796208
+    tdata_scaled: 234562396706128
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 1
+    - 0
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796200
+    x0_im: -1398104
+    tdata_scaled: 258018686708392
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 1
+    - 1
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 1
+    - 1
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592400
+    x0_im: -2796208
+    tdata_scaled: 234562396706128
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 1
+    - 1
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796200
+    x0_im: -1398104
+    tdata_scaled: 258018686708392
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 1
+    - 1
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 1398100
+    x0_im: -699052
+    tdata_scaled: 269746831709524
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 1
+    - 2
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592400
+    x0_im: -2796208
+    tdata_scaled: 234562396706128
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 1
+    - 2
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796200
+    x0_im: -1398104
+    tdata_scaled: 258018686708392
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 1
+    - 2
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 1398100
+    x0_im: -699052
+    tdata_scaled: 269746831709524
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 1
+    - 2
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 699050
+    x0_im: -349526
+    tdata_scaled: 275610904210090
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 1
+    - 3
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796200
+    x0_im: -1398104
+    tdata_scaled: 258018686708392
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 1
+    - 3
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 1398100
+    x0_im: -699052
+    tdata_scaled: 269746831709524
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 1
+    - 3
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 699050
+    x0_im: -349526
+    tdata_scaled: 275610904210090
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 1
+    - 3
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 349525
+    x0_im: -174763
+    tdata_scaled: 278542940460373
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 2
+    - 0
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: -5592416
+    x0_im: -5592416
+    tdata_scaled: 187649816701600
+    overflow: true
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 2
+    - 0
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592400
+    x0_im: -2796208
+    tdata_scaled: 234562396706128
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 2
+    - 0
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796200
+    x0_im: -1398104
+    tdata_scaled: 258018686708392
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 2
+    - 0
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 1398100
+    x0_im: -699052
+    tdata_scaled: 269746831709524
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 2
+    - 1
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592400
+    x0_im: -2796208
+    tdata_scaled: 234562396706128
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 2
+    - 1
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796200
+    x0_im: -1398104
+    tdata_scaled: 258018686708392
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 2
+    - 1
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 1398100
+    x0_im: -699052
+    tdata_scaled: 269746831709524
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 2
+    - 1
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 699050
+    x0_im: -349526
+    tdata_scaled: 275610904210090
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 2
+    - 2
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796200
+    x0_im: -1398104
+    tdata_scaled: 258018686708392
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 2
+    - 2
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 1398100
+    x0_im: -699052
+    tdata_scaled: 269746831709524
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 2
+    - 2
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 699050
+    x0_im: -349526
+    tdata_scaled: 275610904210090
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 2
+    - 2
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 349525
+    x0_im: -174763
+    tdata_scaled: 278542940460373
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 2
+    - 3
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 1398100
+    x0_im: -699052
+    tdata_scaled: 269746831709524
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 2
+    - 3
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 699050
+    x0_im: -349526
+    tdata_scaled: 275610904210090
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 2
+    - 3
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 349525
+    x0_im: -174763
+    tdata_scaled: 278542940460373
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 2
+    - 3
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 174762
+    x0_im: -87382
+    tdata_scaled: 280008950196906
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 3
+    - 0
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 5592400
+    x0_im: -2796208
+    tdata_scaled: 234562396706128
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 3
+    - 0
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796200
+    x0_im: -1398104
+    tdata_scaled: 258018686708392
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 3
+    - 0
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 1398100
+    x0_im: -699052
+    tdata_scaled: 269746831709524
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 3
+    - 0
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 699050
+    x0_im: -349526
+    tdata_scaled: 275610904210090
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 3
+    - 1
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 2796200
+    x0_im: -1398104
+    tdata_scaled: 258018686708392
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 3
+    - 1
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 1398100
+    x0_im: -699052
+    tdata_scaled: 269746831709524
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 3
+    - 1
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 699050
+    x0_im: -349526
+    tdata_scaled: 275610904210090
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 3
+    - 1
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 349525
+    x0_im: -174763
+    tdata_scaled: 278542940460373
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 3
+    - 2
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 1398100
+    x0_im: -699052
+    tdata_scaled: 269746831709524
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 3
+    - 2
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 699050
+    x0_im: -349526
+    tdata_scaled: 275610904210090
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 3
+    - 2
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 349525
+    x0_im: -174763
+    tdata_scaled: 278542940460373
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 3
+    - 2
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 174762
+    x0_im: -87382
+    tdata_scaled: 280008950196906
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 3
+    - 3
+    - 0
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 699048
+    x0_im: -349528
+    tdata_scaled: 275610870655656
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 3
+    - 3
+    - 1
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 349524
+    x0_im: -174764
+    tdata_scaled: 278542923683156
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 3
+    - 3
+    - 2
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 174762
+    x0_im: -87382
+    tdata_scaled: 280008950196906
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 1398101
+    dc_im: -699051
+    sch:
+    - 3
+    - 3
+    - 3
+    - 3
+    scaled: true
+    inverse: true
+  golden:
+    x0_re: 87381
+    x0_im: -43691
+    tdata_scaled: 280741963453781
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: 12345
+    dc_im: -54321
+    sch:
+    - 0
+    - 0
+    - 0
+    - 0
+    scaled: false
+    inverse: true
+  golden:
+    x0_re: 3160320
+    x0_im: -13906176
+    tdata_scaled: 48168061384960
+    overflow: false
+- vector:
+    log2_n: 8
+    dc_re: -8388608
+    dc_im: 8388607
+    sch:
+    - 0
+    - 0
+    - 0
+    - 0
+    scaled: false
+    inverse: true
+  golden:
+    x0_re: -2147483648
+    x0_im: 2147483392
+    tdata_scaled: 281470681743360
+    overflow: false

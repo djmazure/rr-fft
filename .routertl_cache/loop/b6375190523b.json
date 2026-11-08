@@ -1,0 +1,55 @@
+{
+ "schema": "rr.loop_session/v2",
+ "id": "b6375190523b",
+ "ticket": "FFT-P2.4",
+ "modules": [
+  "test_fft_core"
+ ],
+ "budget": {
+  "max_attempts": 10,
+  "max_wall_s": 3600.0,
+  "outer": {
+   "max_attempts": 4,
+   "max_wall_s": 21600.0
+  }
+ },
+ "opened_at": "2026-07-17T09:30:08+00:00",
+ "audit_since": "2026-07-17T09:30:08+00:00",
+ "state": "closed",
+ "spent": {
+  "attempts": 1,
+  "wall_s": 1.874,
+  "outer": {
+   "attempts": 0,
+   "wall_s": 0.0
+  }
+ },
+ "attempts": [
+  {
+   "n": 1,
+   "tier": "inner",
+   "module": "test_fft_core",
+   "verdict": "passed",
+   "seed": null,
+   "wall_s": 1.874,
+   "bundle": null,
+   "at": "2026-07-17T09:30:11+00:00",
+   "technical_inner": {
+    "status": "met",
+    "binding_constraint": null,
+    "hard": [],
+    "soft": []
+   }
+  }
+ ],
+ "closed_at": "2026-07-17T09:30:27+00:00",
+ "audit_next_since": "2026-07-17T09:30:27+00:00",
+ "close": {
+  "at": "2026-07-17T09:30:27+00:00",
+  "clean": true,
+  "findings": [
+   "note: outer tier never exercised \u2014 technical paths/resources declared but no outer (synth/impl) attempt recorded (vacuity visible, not a failure)"
+  ],
+  "forced": false
+ }
+}

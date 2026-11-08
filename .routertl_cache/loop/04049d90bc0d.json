@@ -1,0 +1,85 @@
+{
+ "schema": "rr.loop_session/v2",
+ "id": "04049d90bc0d",
+ "ticket": "FFT-P2.3",
+ "modules": [
+  "test_fft_core"
+ ],
+ "budget": {
+  "max_attempts": 10,
+  "max_wall_s": 3600.0,
+  "outer": {
+   "max_attempts": 4,
+   "max_wall_s": 21600.0
+  }
+ },
+ "opened_at": "2026-07-16T23:10:22+00:00",
+ "audit_since": "2026-07-16T23:10:22+00:00",
+ "state": "closed",
+ "spent": {
+  "attempts": 2,
+  "wall_s": 2.459,
+  "outer": {
+   "attempts": 0,
+   "wall_s": 0.0
+  }
+ },
+ "attempts": [
+  {
+   "n": 1,
+   "tier": "inner",
+   "module": "test_fft_core",
+   "verdict": "failed",
+   "seed": null,
+   "wall_s": 1.25,
+   "bundle": "/home/dmazure/git_repo/tich-super/rr-fft/sim/results/test_fft_core/failure_bundle.json",
+   "at": "2026-07-16T23:10:33+00:00",
+   "technical_inner": null
+  },
+  {
+   "n": 2,
+   "tier": "inner",
+   "module": "test_fft_core",
+   "verdict": "passed",
+   "seed": null,
+   "wall_s": 1.209,
+   "bundle": null,
+   "at": "2026-07-16T23:11:50+00:00",
+   "technical_inner": {
+    "status": "infeasible",
+    "binding_constraint": "latency in_valid\u2192out_valid: no measurement present \u2014 vacuous, no evidence of meeting max_cycles 640",
+    "hard": [
+     {
+      "kind": "unmeasured",
+      "category": "latency",
+      "name": "in_valid__out_valid",
+      "measured": null,
+      "bound": 640.0,
+      "detail": "latency in_valid\u2192out_valid: no measurement present \u2014 vacuous, no evidence of meeting max_cycles 640",
+      "tier": "inner"
+     },
+     {
+      "kind": "unmeasured",
+      "category": "ii",
+      "name": "in_valid",
+      "measured": null,
+      "bound": 1.0,
+      "detail": "ii in_valid: no measurement present \u2014 vacuous, no evidence of meeting ii_max 1",
+      "tier": "inner"
+     }
+    ],
+    "soft": []
+   }
+  }
+ ],
+ "close": {
+  "at": "2026-07-16T23:15:25+00:00",
+  "clean": true,
+  "findings": [
+   "note: outer tier never exercised \u2014 technical paths/resources declared but no outer (synth/impl) attempt recorded (vacuity visible, not a failure)"
+  ],
+  "forced": false
+ },
+ "closed_at": "2026-07-16T23:15:25+00:00",
+ "audit_next_since": "2026-07-16T23:15:25+00:00"
+}

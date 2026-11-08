@@ -1,0 +1,2354 @@
+req_id: FFT-REQ-021
+oracle_entry: model/oracle_seam.py:shim_sign_extend
+oracle_sha256: e28ea37622bfe196a90ec37026bdd12dc6022ad705a48a6b47faa34aa4603a34
+vectors_sha256: 8abff625678f30f963105cb1f25ec8fd519e1a95e0f745abe457cf6a41ef8dbc
+minted:
+- vector:
+    core_re: 0
+    core_im: 0
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 0
+    re_ext: 0
+    im_ext: 0
+- vector:
+    core_re: 1
+    core_im: -1
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208925819613529663078401
+    re_ext: 1
+    im_ext: 1099511627775
+- vector:
+    core_re: 1431655765
+    core_im: -715827883
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208138758533785828283733
+    re_ext: 1431655765
+    im_ext: 1098795799893
+- vector:
+    core_re: -4294967296
+    core_im: 4294967295
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 4722366482865350246400
+    re_ext: 1095216660480
+    im_ext: 4294967295
+- vector:
+    core_re: -1
+    core_im: 4294967295
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 4722366482869645213695
+    re_ext: 1099511627775
+    im_ext: 4294967295
+- vector:
+    core_re: -38587104
+    core_im: 17109606
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 18812211843139056928
+    re_ext: 1099473040672
+    im_ext: 17109606
+- vector:
+    core_re: -152492765
+    core_im: -52420240
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208868182952317725254947
+    re_ext: 1099359135011
+    im_ext: 1099459207536
+- vector:
+    core_re: 56097246
+    core_im: 51889793
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 57053430766445787614
+    re_ext: 56097246
+    im_ext: 51889793
+- vector:
+    core_re: 63818145
+    core_im: -54293004
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208866123825424349645217
+    re_ext: 63818145
+    im_ext: 1099457334772
+- vector:
+    core_re: 3273556
+    core_im: -7580340
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208917484942656682455892
+    re_ext: 3273556
+    im_ext: 1099504047436
+- vector:
+    core_re: 76925110
+    core_im: 121458660
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 133545208964168665270
+    re_ext: 76925110
+    im_ext: 121458660
+- vector:
+    core_re: -48556618
+    core_im: -94006520
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208822458353901880677814
+    re_ext: 1099463071158
+    im_ext: 1099417621256
+- vector:
+    core_re: -94206265
+    core_im: -77411912
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208840704318356219659975
+    re_ext: 1099417421511
+    im_ext: 1099434215864
+- vector:
+    core_re: -32796043
+    core_im: 89976052
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 98929716494856852085
+    re_ext: 1099478831733
+    im_ext: 89976052
+- vector:
+    core_re: -167278722
+    core_im: 176658446
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 194238016621182945150
+    re_ext: 1099344349054
+    im_ext: 176658446
+- vector:
+    core_re: -25423683
+    core_im: -44032333
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208877405553597056028861
+    re_ext: 1099486204093
+    im_ext: 1099467595443
+- vector:
+    core_re: -45007807
+    core_im: 9277737
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 10200980810414242881
+    re_ext: 1099466619969
+    im_ext: 9277737
+- vector:
+    core_re: -32650114
+    core_im: 17888054
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 19668124470763965566
+    re_ext: 1099478977662
+    im_ext: 17888054
+- vector:
+    core_re: -53682055
+    core_im: -46969801
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208874175773374807859321
+    re_ext: 1099457945721
+    im_ext: 1099464657975
+- vector:
+    core_re: -35393793
+    core_im: -11070888
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208913647045642845155071
+    re_ext: 1099476233983
+    im_ext: 1099500556888
+- vector:
+    core_re: 23426905
+    core_im: -130924388
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208781866727663741531993
+    re_ext: 23426905
+    im_ext: 1099380703388
+- vector:
+    core_re: -28020774
+    core_im: -44443890
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208876953041890060824538
+    re_ext: 1099483607002
+    im_ext: 1099467183886
+- vector:
+    core_re: 21698216
+    core_im: 118896055
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 130727594969216521896
+    re_ext: 21698216
+    im_ext: 118896055
+- vector:
+    core_re: -150253963
+    core_im: 230128052
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 253028470150801346165
+    re_ext: 1099361373813
+    im_ext: 230128052
+- vector:
+    core_re: 177084023
+    core_im: -67791751
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208851281796137556514423
+    re_ext: 177084023
+    im_ext: 1099443836025
+- vector:
+    core_re: -86015187
+    core_im: -38479028
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208883511477017082037037
+    re_ext: 1099425612589
+    im_ext: 1099473148748
+- vector:
+    core_re: 25480163
+    core_im: -11311484
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208913382506443798006755
+    re_ext: 25480163
+    im_ext: 1099500316292
+- vector:
+    core_re: 97657347
+    core_im: 36514502
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 40148119531547664899
+    re_ext: 97657347
+    im_ext: 36514502
+- vector:
+    core_re: -26239420
+    core_im: -34858168
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208887492654689690820164
+    re_ext: 1099485388356
+    im_ext: 1099476769608
+- vector:
+    core_re: -97363876
+    core_im: 20806940
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 22877473567851829340
+    re_ext: 1099414263900
+    im_ext: 20806940
+- vector:
+    core_re: -24227905
+    core_im: 21995019
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 24183780243141447615
+    re_ext: 1099487399871
+    im_ext: 21995019
+- vector:
+    core_re: 55175733
+    core_im: 54506492
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 59930521743334697525
+    re_ext: 55175733
+    im_ext: 54506492
+- vector:
+    core_re: -66233769
+    core_im: 93275842
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 102557873969042381399
+    re_ext: 1099445394007
+    im_ext: 93275842
+- vector:
+    core_re: 20450218
+    core_im: -78166328
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208839874828092642429866
+    re_ext: 20450218
+    im_ext: 1099433461448
+- vector:
+    core_re: -24127988
+    core_im: 22759800
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 25024665845343704588
+    re_ext: 1099487499788
+    im_ext: 22759800
+- vector:
+    core_re: -106502981
+    core_im: 162413849
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 178575916586760594619
+    re_ext: 1099405124795
+    im_ext: 162413849
+- vector:
+    core_re: -86787768
+    core_im: -63908683
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208855551275654249167176
+    re_ext: 1099424840008
+    im_ext: 1099447719093
+- vector:
+    core_re: -100307462
+    core_im: 27004041
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 29691258175851163130
+    re_ext: 1099411320314
+    im_ext: 27004041
+- vector:
+    core_re: 29949922
+    core_im: 46593596
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 51230200581927272418
+    re_ext: 29949922
+    im_ext: 46593596
+- vector:
+    core_re: 39943860
+    core_im: 64230638
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 70622333340510944948
+    re_ext: 39943860
+    im_ext: 64230638
+- vector:
+    core_re: 26118385
+    core_im: 43467106
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 47792588472798054641
+    re_ext: 26118385
+    im_ext: 43467106
+- vector:
+    core_re: -67143433
+    core_im: 53862593
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 59222548405110667511
+    re_ext: 1099444484343
+    im_ext: 53862593
+- vector:
+    core_re: -91987018
+    core_im: -73041134
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208845510039589649408950
+    re_ext: 1099419640758
+    im_ext: 1099438586642
+- vector:
+    core_re: -158600510
+    core_im: -90792142
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208825992599888837997250
+    re_ext: 1099353027266
+    im_ext: 1099420835634
+- vector:
+    core_re: -115667337
+    core_im: -110593307
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208804220988727869771383
+    re_ext: 1099395960439
+    im_ext: 1099401034469
+- vector:
+    core_re: 96587967
+    core_im: 22828002
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 25099653637990371519
+    re_ext: 96587967
+    im_ext: 22828002
+- vector:
+    core_re: 31614271
+    core_im: 115256941
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 126726346811424007487
+    re_ext: 31614271
+    im_ext: 115256941
+- vector:
+    core_re: -4767363
+    core_im: -36318180
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208885887354519019798909
+    re_ext: 1099506860413
+    im_ext: 1099475309596
+- vector:
+    core_re: -62444416
+    core_im: 80920774
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 88973333041083001984
+    re_ext: 1099449183360
+    im_ext: 80920774
+- vector:
+    core_re: -143047962
+    core_im: 110803299
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 121829516745809412838
+    re_ext: 1099368579814
+    im_ext: 110803299
+- vector:
+    core_re: -20840287
+    core_im: 70788041
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 77832275286475014305
+    re_ext: 1099490787489
+    im_ext: 70788041
+- vector:
+    core_re: 31366114
+    core_im: -48533776
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208872456163577330310114
+    re_ext: 31366114
+    im_ext: 1099463094000
+- vector:
+    core_re: 23987708
+    core_im: 80342663
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 88337692175012595196
+    re_ext: 23987708
+    im_ext: 80342663
+- vector:
+    core_re: 56389922
+    core_im: -99496908
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208816421607355472179490
+    re_ext: 56389922
+    im_ext: 1099412130868
+- vector:
+    core_re: 123402385
+    core_im: -21485043
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208902196560027530754193
+    re_ext: 123402385
+    im_ext: 1099490142733
+- vector:
+    core_re: 24125372
+    core_im: -5286444
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208920007107981612163004
+    re_ext: 24125372
+    im_ext: 1099506341332
+- vector:
+    core_re: 54476371
+    core_im: -8043656
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208916975521327398993491
+    re_ext: 54476371
+    im_ext: 1099503584120
+- vector:
+    core_re: 108250384
+    core_im: -21481897
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208902200019091096585488
+    re_ext: 108250384
+    im_ext: 1099490145879
+- vector:
+    core_re: 20176647
+    core_im: 35411561
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 38935423077219294983
+    re_ext: 20176647
+    im_ext: 35411561
+- vector:
+    core_re: 14222075
+    core_im: 99208972
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 109081418293717828347
+    re_ext: 14222075
+    im_ext: 99208972
+- vector:
+    core_re: 93051762
+    core_im: -46193277
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208875029569442690095986
+    re_ext: 93051762
+    im_ext: 1099465434499
+- vector:
+    core_re: 18434540
+    core_im: -1445774
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208924229969305056922092
+    re_ext: 18434540
+    im_ext: 1099510182002
+- vector:
+    core_re: -24147301
+    core_im: 19360068
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 21286620980021529243
+    re_ext: 1099487480475
+    im_ext: 19360068
+- vector:
+    core_re: 40960321
+    core_im: -24869722
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208898475066110659068225
+    re_ext: 40960321
+    im_ext: 1099486758054
+- vector:
+    core_re: 53201885
+    core_im: -11401952
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208913283035825884089309
+    re_ext: 53201885
+    im_ext: 1099500225824
+- vector:
+    core_re: -108993876
+    core_im: -105623065
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208809685827599737086636
+    re_ext: 1099402633900
+    im_ext: 1099406004711
+- vector:
+    core_re: 51499121
+    core_im: -22396710
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208901194171560299188337
+    re_ext: 51499121
+    im_ext: 1099489231066
+- vector:
+    core_re: -91052598
+    core_im: 85255716
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 93739652175788942794
+    re_ext: 1099420575178
+    im_ext: 85255716
+- vector:
+    core_re: -77093290
+    core_im: -157178144
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208753000418768358712918
+    re_ext: 1099434534486
+    im_ext: 1099354449632
+- vector:
+    core_re: -44138824
+    core_im: -150113442
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208760768140764164030136
+    re_ext: 1099467488952
+    im_ext: 1099361514334
+- vector:
+    core_re: 136612768
+    core_im: -68539645
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208850459477988172139424
+    re_ext: 136612768
+    im_ext: 1099443088131
+- vector:
+    core_re: -3650201
+    core_im: 121926098
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 134059163579864075623
+    re_ext: 1099507977575
+    im_ext: 121926098
+- vector:
+    core_re: 23206670
+    core_im: -7905903
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208917126982352628751118
+    re_ext: 23206670
+    im_ext: 1099503721873
+- vector:
+    core_re: 37552941
+    core_im: 27902337
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 30678943973662065453
+    re_ext: 37552941
+    im_ext: 27902337
+- vector:
+    core_re: 61899341
+    core_im: -29602387
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208893271445912811504205
+    re_ext: 61899341
+    im_ext: 1099482025389
+- vector:
+    core_re: -4338272
+    core_im: 12409262
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 13644128960626150816
+    re_ext: 1099507289504
+    im_ext: 12409262
+- vector:
+    core_re: -49152854
+    core_im: 80929607
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 88983045027304438954
+    re_ext: 1099462474922
+    im_ext: 80929607
+- vector:
+    core_re: -15662031
+    core_im: 55775864
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 61326212116748764209
+    re_ext: 1099495965745
+    im_ext: 55775864
+- vector:
+    core_re: 149856104
+    core_im: -149595242
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208761337906590359920488
+    re_ext: 149856104
+    im_ext: 1099362032534
+- vector:
+    core_re: 22972638
+    core_im: 94513508
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 103918701027922970846
+    re_ext: 22972638
+    im_ext: 94513508
+- vector:
+    core_re: 12281641
+    core_im: -28769671
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208894187026837397006121
+    re_ext: 12281641
+    im_ext: 1099482858105
+- vector:
+    core_re: -72946658
+    core_im: -53846864
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208866614362641340492830
+    re_ext: 1099438681118
+    im_ext: 1099457780912
+- vector:
+    core_re: -169143347
+    core_im: 37566711
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 41305036661143049165
+    re_ext: 1099342484429
+    im_ext: 37566711
+- vector:
+    core_re: -946480
+    core_im: 123365759
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 135642087589422403280
+    re_ext: 1099510681296
+    im_ext: 123365759
+- vector:
+    core_re: 23996289
+    core_im: -47415554
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208873685661668757874561
+    re_ext: 23996289
+    im_ext: 1099464212222
+- vector:
+    core_re: -72109655
+    core_im: -75555511
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208842745452841556750761
+    re_ext: 1099439518121
+    im_ext: 1099436072265
+- vector:
+    core_re: 190850525
+    core_im: 46467510
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 51091567558988408285
+    re_ext: 190850525
+    im_ext: 46467510
+- vector:
+    core_re: -2149002
+    core_im: -82813115
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208834765632853833102710
+    re_ext: 1099509478774
+    im_ext: 1099428814661
+- vector:
+    core_re: -58095226
+    core_im: 1629940
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1792139082030745990
+    re_ext: 1099453532550
+    im_ext: 1629940
+- vector:
+    core_re: -23820189
+    core_im: -104802590
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208810587949402621773923
+    re_ext: 1099487807587
+    im_ext: 1099406825186
+- vector:
+    core_re: -54089192
+    core_im: -102495945
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208813124132401242876440
+    re_ext: 1099457538584
+    im_ext: 1099409131831
+- vector:
+    core_re: 89756489
+    core_im: -18310748
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208905686734289988326217
+    re_ext: 89756489
+    im_ext: 1099493317028
+- vector:
+    core_re: -15951835
+    core_im: 41581551
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 45719399924956436517
+    re_ext: 1099495675941
+    im_ext: 41581551
+- vector:
+    core_re: 17141483
+    core_im: -9764789
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208915083115580912668395
+    re_ext: 17141483
+    im_ext: 1099501862987
+- vector:
+    core_re: 35893874
+    core_im: -99927182
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208815948516089321992818
+    re_ext: 35893874
+    im_ext: 1099411700594
+- vector:
+    core_re: -2804959
+    core_im: 42152672
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 46347354105336640289
+    re_ext: 1099508822817
+    im_ext: 42152672
+- vector:
+    core_re: -78674906
+    core_im: -39559667
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208882323301871161148454
+    re_ext: 1099432952870
+    im_ext: 1099472068109
+- vector:
+    core_re: 12525890
+    core_im: -63366602
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208856147298917533294914
+    re_ext: 12525890
+    im_ext: 1099448261174
+- vector:
+    core_re: -100569896
+    core_im: -63890130
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208855571674893465513176
+    re_ext: 1099411057880
+    im_ext: 1099447737646
+- vector:
+    core_re: -120391741
+    core_im: -182204501
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208725483648245942122435
+    re_ext: 1099391236035
+    im_ext: 1099329423275
+- vector:
+    core_re: -24138174
+    core_im: 50507563
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 55533653908616359490
+    re_ext: 1099487489602
+    im_ext: 50507563
+- vector:
+    core_re: 28340621
+    core_im: -32778160
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208889779646572100874637
+    re_ext: 28340621
+    im_ext: 1099478849616
+- vector:
+    core_re: 101660510
+    core_im: 97073274
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 106733193509387319134
+    re_ext: 101660510
+    im_ext: 97073274
+- vector:
+    core_re: -42507856
+    core_im: -46223606
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208874996223453907345840
+    re_ext: 1099469119920
+    im_ext: 1099465404170
+- vector:
+    core_re: -59564918
+    core_im: -21635979
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208902030605239809416330
+    re_ext: 1099452062858
+    im_ext: 1099489991797
+- vector:
+    core_re: -4619776
+    core_im: 180053700
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 197971137873598579200
+    re_ext: 1099507008000
+    im_ext: 180053700
+- vector:
+    core_re: 112144413
+    core_im: -136435325
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208775807388352389263389
+    re_ext: 112144413
+    im_ext: 1099375192451
+- vector:
+    core_re: -10959904
+    core_im: 8125028
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 8933563861506245600
+    re_ext: 1099500667872
+    im_ext: 8125028
+- vector:
+    core_re: -87019657
+    core_im: -76844495
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208841328199945524621175
+    re_ext: 1099424608119
+    im_ext: 1099434783281
+- vector:
+    core_re: -94621589
+    core_im: -59172082
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208860759223529876762731
+    re_ext: 1099417006187
+    im_ext: 1099452455694
+- vector:
+    core_re: -74983411
+    core_im: 110524041
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 121522469327728007181
+    re_ext: 1099436644365
+    im_ext: 110524041
+- vector:
+    core_re: -44692625
+    core_im: -26439600
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208896748968094895311727
+    re_ext: 1099466935151
+    im_ext: 1099485188176
+- vector:
+    core_re: -4133468
+    core_im: 77026068
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 84691058507372359076
+    re_ext: 1099507494308
+    im_ext: 77026068
+- vector:
+    core_re: 92082603
+    core_im: 14628908
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 16084654447757431211
+    re_ext: 92082603
+    im_ext: 14628908
+- vector:
+    core_re: -41831279
+    core_im: -27243807
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208895864733147259319441
+    re_ext: 1099469796497
+    im_ext: 1099484383969
+- vector:
+    core_re: 40499230
+    core_im: -54097876
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208866338370929231001630
+    re_ext: 40499230
+    im_ext: 1099457529900
+- vector:
+    core_re: -50991892
+    core_im: 2921481
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 3212203429287292140
+    re_ext: 1099460635884
+    im_ext: 2921481
+- vector:
+    core_re: 66977090
+    core_im: 31749208
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 34908623368745778498
+    re_ext: 66977090
+    im_ext: 31749208
+- vector:
+    core_re: 146291740
+    core_im: 766000
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 842225907022707740
+    re_ext: 146291740
+    im_ext: 766000
+- vector:
+    core_re: 72399608
+    core_im: 143580004
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 157867883914196990712
+    re_ext: 72399608
+    im_ext: 143580004
+- vector:
+    core_re: 282185
+    core_im: 39579858
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 43518514096723217993
+    re_ext: 282185
+    im_ext: 39579858
+- vector:
+    core_re: 6543939
+    core_im: -153738006
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208756782889401084795459
+    re_ext: 6543939
+    im_ext: 1099357889770
+- vector:
+    core_re: 45135072
+    core_im: -19268350
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208904633839756162151648
+    re_ext: 45135072
+    im_ext: 1099492359426
+- vector:
+    core_re: 79386126
+    core_im: 117039093
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 128685843657936033294
+    re_ext: 79386126
+    im_ext: 117039093
+- vector:
+    core_re: 60834817
+    core_im: -41847698
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208879807584082577081345
+    re_ext: 60834817
+    im_ext: 1099469780078
+- vector:
+    core_re: 34316256
+    core_im: -109288128
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208805656047115337179104
+    re_ext: 34316256
+    im_ext: 1099402339648
+- vector:
+    core_re: -27530820
+    core_im: 186430741
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 204982768603879958972
+    re_ext: 1099484096956
+    im_ext: 186430741
+- vector:
+    core_re: -59578032
+    core_im: 68751801
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 75593405729493674320
+    re_ext: 1099452049744
+    im_ext: 68751801
+- vector:
+    core_re: 77377033
+    core_im: -913176
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208924815566999046106633
+    re_ext: 77377033
+    im_ext: 1099510714600
+- vector:
+    core_re: -21591576
+    core_im: -47888505
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208873165647644355627496
+    re_ext: 1099490036200
+    im_ext: 1099463739271
+- vector:
+    core_re: -55612515
+    core_im: 112472736
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 123665082139236330397
+    re_ext: 1099456015261
+    im_ext: 112472736
+- vector:
+    core_re: 85794463
+    core_im: -10089627
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208914725952422837821087
+    re_ext: 85794463
+    im_ext: 1099501538149
+- vector:
+    core_re: -169151085
+    core_im: 79608915
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 87530928816473699731
+    re_ext: 1099342476691
+    im_ext: 79608915
+- vector:
+    core_re: 6847994
+    core_im: 113298564
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 124573088528330161658
+    re_ext: 6847994
+    im_ext: 113298564
+- vector:
+    core_re: -20282997
+    core_im: 81837982
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 89981813902214332811
+    re_ext: 1099491344779
+    im_ext: 81837982
+- vector:
+    core_re: 57653732
+    core_im: 10011541
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 11007805741513816548
+    re_ext: 57653732
+    im_ext: 10011541
+- vector:
+    core_re: 17975459
+    core_im: 11758572
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 12928686640059271331
+    re_ext: 17975459
+    im_ext: 11758572
+- vector:
+    core_re: -64860614
+    core_im: -111255620
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208803492767883193372218
+    re_ext: 1099446767162
+    im_ext: 1099400372156
+- vector:
+    core_re: 83249264
+    core_im: 46523608
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 51153247962175785072
+    re_ext: 83249264
+    im_ext: 46523608
+- vector:
+    core_re: -78125778
+    core_im: -28849368
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208894099400158619362606
+    re_ext: 1099433501998
+    im_ext: 1099482778408
+- vector:
+    core_re: 14160829
+    core_im: -110594404
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208804219781464232301501
+    re_ext: 14160829
+    im_ext: 1099401033372
+- vector:
+    core_re: -36123593
+    core_im: 69220866
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 76109148151199878199
+    re_ext: 1099475504183
+    im_ext: 69220866
+- vector:
+    core_re: 10869150
+    core_im: -68671934
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208850314024694319536542
+    re_ext: 10869150
+    im_ext: 1099442955842
+- vector:
+    core_re: -95544437
+    core_im: -98830365
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208817154480233744571275
+    re_ext: 1099416083339
+    im_ext: 1099412797411
+- vector:
+    core_re: -10930191
+    core_im: 4074953
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 4480459305641392113
+    re_ext: 1099500697585
+    im_ext: 4074953
+- vector:
+    core_re: 24742920
+    core_im: -47535760
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208873553493774030179336
+    re_ext: 24742920
+    im_ext: 1099464092016
+- vector:
+    core_re: -23207995
+    core_im: -63662953
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208855821458646606143429
+    re_ext: 1099488419781
+    im_ext: 1099447964823
+- vector:
+    core_re: -38078577
+    core_im: 44955390
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 49428975135678461839
+    re_ext: 1099473549199
+    im_ext: 44955390
+- vector:
+    core_re: 45445281
+    core_im: 80267564
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 88255119951299702945
+    re_ext: 45445281
+    im_ext: 80267564
+- vector:
+    core_re: -66800428
+    core_im: 175905126
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 193409732521847207124
+    re_ext: 1099444827348
+    im_ext: 175905126
+- vector:
+    core_re: 34037506
+    core_im: 110056479
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 121008378372619198210
+    re_ext: 34037506
+    im_ext: 110056479
+- vector:
+    core_re: 74871697
+    core_im: -46516350
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208874674346922551440273
+    re_ext: 74871697
+    im_ext: 1099465111426
+- vector:
+    core_re: 24526753
+    core_im: -65582639
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208853710740468463452065
+    re_ext: 24526753
+    im_ext: 1099446045137
+- vector:
+    core_re: -63913679
+    core_im: -92432364
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208824189156727798677809
+    re_ext: 1099447714097
+    im_ext: 1099419195412
+- vector:
+    core_re: -6091319
+    core_im: -196431004
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208709841442774966275529
+    re_ext: 1099505536457
+    im_ext: 1099315196772
+- vector:
+    core_re: -147876675
+    core_im: -75415792
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208842899075506602218685
+    re_ext: 1099363751101
+    im_ext: 1099436211984
+- vector:
+    core_re: -87184184
+    core_im: -81416070
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208836301700075774389448
+    re_ext: 1099424443592
+    im_ext: 1099430211706
+- vector:
+    core_re: 39642278
+    core_im: 44686996
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 49133871712419243174
+    re_ext: 39642278
+    im_ext: 44686996
+- vector:
+    core_re: -21484565
+    core_im: 4795377
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 5272573870559734763
+    re_ext: 1099490143211
+    im_ext: 4795377
+- vector:
+    core_re: 59307127
+    core_im: 85684398
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 94210991920045945975
+    re_ext: 59307127
+    im_ext: 85684398
+- vector:
+    core_re: -50249799
+    core_im: 52048098
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 57227490054086148025
+    re_ext: 1099461377977
+    im_ext: 52048098
+- vector:
+    core_re: 19503624
+    core_im: 45949530
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 50522042525861648904
+    re_ext: 19503624
+    im_ext: 45949530
+- vector:
+    core_re: 83078666
+    core_im: -42708554
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208878861062900758588938
+    re_ext: 83078666
+    im_ext: 1099468919222
+- vector:
+    core_re: 45922937
+    core_im: -555605
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208925208720471270144633
+    re_ext: 45922937
+    im_ext: 1099511072171
+- vector:
+    core_re: 8379522
+    core_im: -39748609
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208882115556845761322114
+    re_ext: 8379522
+    im_ext: 1099471879167
+- vector:
+    core_re: -70069264
+    core_im: 31722505
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 34879264209123857392
+    re_ext: 1099441558512
+    im_ext: 31722505
+- vector:
+    core_re: -93461530
+    core_im: -62757788
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208856816698089091752934
+    re_ext: 1099418166246
+    im_ext: 1099448869988
+- vector:
+    core_re: -48491172
+    core_im: -139701454
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208772216242638423856476
+    re_ext: 1099463136604
+    im_ext: 1099371926322
+- vector:
+    core_re: 26869295
+    core_im: 38516966
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 42349851983679716911
+    re_ext: 26869295
+    im_ext: 38516966
+- vector:
+    core_re: -46707639
+    core_im: 15036757
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 16533090265007082569
+    re_ext: 1099464920137
+    im_ext: 15036757
+- vector:
+    core_re: -2747732
+    core_im: -48475738
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208872519978132660687532
+    re_ext: 1099508880044
+    im_ext: 1099463152038
+- vector:
+    core_re: 6098254
+    core_im: -30345922
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208892453920534597274958
+    re_ext: 6098254
+    im_ext: 1099481281854
+- vector:
+    core_re: -5968737
+    core_im: 110443533
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 121433949845668031647
+    re_ext: 1099505659039
+    im_ext: 110443533
+- vector:
+    core_re: -82118053
+    core_im: -17835030
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208906209792861870422619
+    re_ext: 1099429509723
+    im_ext: 1099493792746
+- vector:
+    core_re: 69399923
+    core_im: -42141399
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208879484656417996207475
+    re_ext: 69399923
+    im_ext: 1099469486377
+- vector:
+    core_re: -84834919
+    core_im: 72672060
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 79903776083861931417
+    re_ext: 1099426792857
+    im_ext: 72672060
+- vector:
+    core_re: 163683858
+    core_im: -89233480
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208827706365782421249554
+    re_ext: 163683858
+    im_ext: 1099422394296
+- vector:
+    core_re: -98742142
+    core_im: -40952027
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208880792385861090889858
+    re_ext: 1099412885634
+    im_ext: 1099470675749
+- vector:
+    core_re: 162704755
+    core_im: -103834885
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208811651951203053645171
+    re_ext: 162704755
+    im_ext: 1099407792891
+- vector:
+    core_re: -88790328
+    core_im: -41313006
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208880395485253217888968
+    re_ext: 1099422837448
+    im_ext: 1099470314770
+- vector:
+    core_re: 50970518
+    core_im: -87821951
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208829258358330751565718
+    re_ext: 50970518
+    im_ext: 1099423805825
+- vector:
+    core_re: 66532004
+    core_im: 55825150
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 61380401547405898404
+    re_ext: 66532004
+    im_ext: 55825150
+- vector:
+    core_re: -26124277
+    core_im: 11339421
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 12467826341232861195
+    re_ext: 1099485503499
+    im_ext: 11339421
+- vector:
+    core_re: 68475848
+    core_im: 83142296
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 91415921212062489544
+    re_ext: 68475848
+    im_ext: 83142296
+- vector:
+    core_re: -70868021
+    core_im: -146931204
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208764267048447487943627
+    re_ext: 1099440759755
+    im_ext: 1099364696572
+- vector:
+    core_re: -44026738
+    core_im: -45506945
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208875784200556579402894
+    re_ext: 1099467601038
+    im_ext: 1099466120831
+- vector:
+    core_re: -112452951
+    core_im: 42781541
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 47038802883074857641
+    re_ext: 1099399174825
+    im_ext: 42781541
+- vector:
+    core_re: -13233811
+    core_im: -17694440
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208906364373201688334701
+    re_ext: 1099498393965
+    im_ext: 1099493933336
+- vector:
+    core_re: -22219766
+    core_im: -56308599
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208863907656384388068362
+    re_ext: 1099489408010
+    im_ext: 1099455319177
+- vector:
+    core_re: 46597316
+    core_im: -31718086
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208890945210261422146756
+    re_ext: 46597316
+    im_ext: 1099479909690
+- vector:
+    core_re: -55038469
+    core_im: 126665294
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 139269964688122195451
+    re_ext: 1099456589307
+    im_ext: 126665294
+- vector:
+    core_re: -53576333
+    core_im: -33877394
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208888571027106883861875
+    re_ext: 1099458051443
+    im_ext: 1099477750382
+- vector:
+    core_re: -34190977
+    core_im: 116872174
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 128502315375937341823
+    re_ext: 1099477436799
+    im_ext: 116872174
+- vector:
+    core_re: 44429816
+    core_im: 59482247
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 65401422222788522488
+    re_ext: 44429816
+    im_ext: 59482247
+- vector:
+    core_re: -10598659
+    core_im: 67232046
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 73922417435671938813
+    re_ext: 1099501029117
+    im_ext: 67232046
+- vector:
+    core_re: -4170178
+    core_im: -69735370
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208849144765546420526654
+    re_ext: 1099507457598
+    im_ext: 1099441892406
+- vector:
+    core_re: 85953636
+    core_im: -120429400
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208793406089003173645412
+    re_ext: 85953636
+    im_ext: 1099391198376
+- vector:
+    core_re: 136330770
+    core_im: 18046500
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 19842336590795914770
+    re_ext: 136330770
+    im_ext: 18046500
+- vector:
+    core_re: -10462958
+    core_im: 18755739
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 20622154217532971282
+    re_ext: 1099501164818
+    im_ext: 18755739
+- vector:
+    core_re: 93094287
+    core_im: -37927452
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208884117940143351693711
+    re_ext: 93094287
+    im_ext: 1099473700324
+- vector:
+    core_re: -100532342
+    core_im: -27817773
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208895233650856252538762
+    re_ext: 1099411095434
+    im_ext: 1099483810003
+- vector:
+    core_re: -63667159
+    core_im: 45820715
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 50380410034958140457
+    re_ext: 1099447960617
+    im_ext: 45820715
+- vector:
+    core_re: 195642933
+    core_im: 19633739
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 21587524327414777397
+    re_ext: 195642933
+    im_ext: 19633739
+- vector:
+    core_re: 144959412
+    core_im: -10313934
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208914479324268205434804
+    re_ext: 144959412
+    im_ext: 1099501313842
+- vector:
+    core_re: -137738758
+    core_im: -119604191
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208794313416993306985978
+    re_ext: 1099373889018
+    im_ext: 1099392023585
+- vector:
+    core_re: -55367977
+    core_im: -46080370
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208875153713101410608855
+    re_ext: 1099456259799
+    im_ext: 1099465547406
+- vector:
+    core_re: 18843580
+    core_im: -25206538
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208898104733002215950268
+    re_ext: 18843580
+    im_ext: 1099486421238
+- vector:
+    core_re: 57156190
+    core_im: -2593766
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208922967738752501817950
+    re_ext: 57156190
+    im_ext: 1099509034010
+- vector:
+    core_re: 102413929
+    core_im: 82923321
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 91175155653404178025
+    re_ext: 102413929
+    im_ext: 82923321
+- vector:
+    core_re: -83662012
+    core_im: -60286538
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208859533866199242992452
+    re_ext: 1099427965764
+    im_ext: 1099451341238
+- vector:
+    core_re: -24036435
+    core_im: 78394903
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 86196108506359217069
+    re_ext: 1099487591341
+    im_ext: 78394903
+- vector:
+    core_re: -29806642
+    core_im: 32766919
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 36027609546376163278
+    re_ext: 1099481821134
+    im_ext: 32766919
+- vector:
+    core_re: -29958411
+    core_im: 35808662
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 39372041343582265077
+    re_ext: 1099481669365
+    im_ext: 35808662
+- vector:
+    core_re: -8416571
+    core_im: -21779577
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208901872717569135186629
+    re_ext: 1099503211205
+    im_ext: 1099489848199
+- vector:
+    core_re: -79254967
+    core_im: 40874776
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 44942292594171750985
+    re_ext: 1099432372809
+    im_ext: 40874776
+- vector:
+    core_re: -12369744
+    core_im: -32973843
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208889564491937713701040
+    re_ext: 1099499258032
+    im_ext: 1099478653933
+- vector:
+    core_re: -43060298
+    core_im: 138564534
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 152353317429831463862
+    re_ext: 1099468567478
+    im_ext: 138564534
+- vector:
+    core_re: -42018205
+    core_im: -160507190
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208749340093981992606307
+    re_ext: 1099469609571
+    im_ext: 1099351120586
+- vector:
+    core_re: -9327392
+    core_im: -28492503
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208894491777375734443232
+    re_ext: 1099502300384
+    im_ext: 1099483135273
+- vector:
+    core_re: 125622947
+    core_im: -16003590
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208908223481338140613283
+    re_ext: 125622947
+    im_ext: 1099495624186
+- vector:
+    core_re: -54196389
+    core_im: -25407897
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208897883337539797190491
+    re_ext: 1099457431387
+    im_ext: 1099486219879
+- vector:
+    core_re: -456809
+    core_im: 149278377
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 164133312386540570519
+    re_ext: 1099511170967
+    im_ext: 149278377
+- vector:
+    core_re: 135487388
+    core_im: -18150402
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208905863036581501427612
+    re_ext: 135487388
+    im_ext: 1099493477374
+- vector:
+    core_re: -9756001
+    core_im: -9893510
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208914941586444158444191
+    re_ext: 1099501871775
+    im_ext: 1099501734266
+- vector:
+    core_re: -80775530
+    core_im: 132513163
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 145699764651307267734
+    re_ext: 1099430852246
+    im_ext: 132513163
+- vector:
+    core_re: -44658824
+    core_im: 103759792
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 114085098899086151544
+    re_ext: 1099466968952
+    im_ext: 103759792
+- vector:
+    core_re: -8082298
+    core_im: -81912996
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208835755324160709274758
+    re_ext: 1099503545478
+    im_ext: 1099429714780
+- vector:
+    core_re: -63157131
+    core_im: 59545597
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 65471077383812172917
+    re_ext: 1099448470645
+    im_ext: 59545597
+- vector:
+    core_re: -204216852
+    core_im: -2240851
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208923355773997868639724
+    re_ext: 1099307410924
+    im_ext: 1099509386925
+- vector:
+    core_re: -57542507
+    core_im: -289838
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208925500935477457451157
+    re_ext: 1099454085269
+    im_ext: 1099511337938
+- vector:
+    core_re: -38989134
+    core_im: 49731178
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 54680009573470638770
+    re_ext: 1099472638642
+    im_ext: 49731178
+- vector:
+    core_re: -29410928
+    core_im: -11645614
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208913015127723065948560
+    re_ext: 1099482216848
+    im_ext: 1099499982162
+- vector:
+    core_re: 19406754
+    core_im: -78747401
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208839235931572554702754
+    re_ext: 19406754
+    im_ext: 1099432880375
+- vector:
+    core_re: -135832660
+    core_im: 84551282
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 92965118801743403948
+    re_ext: 1099375795116
+    im_ext: 84551282
+- vector:
+    core_re: -73788535
+    core_im: 95284865
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 104766818118004249481
+    re_ext: 1099437839241
+    im_ext: 95284865
+- vector:
+    core_re: 54994824
+    core_im: -35229468
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208887084404922867197832
+    re_ext: 54994824
+    im_ext: 1099476398308
+- vector:
+    core_re: 4911075
+    core_im: 8619561
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 9477307545829437411
+    re_ext: 4911075
+    im_ext: 8619561
+- vector:
+    core_re: 11120063
+    core_im: -26323582
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208896876530135470812607
+    re_ext: 11120063
+    im_ext: 1099485304194
+- vector:
+    core_re: -91919967
+    core_im: -147555011
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208763581165397478828449
+    re_ext: 1099419707809
+    im_ext: 1099364072765
+- vector:
+    core_re: -48208641
+    core_im: 81574972
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 89692631348965041407
+    re_ext: 1099463419135
+    im_ext: 81574972
+- vector:
+    core_re: 11223190
+    core_im: -16532470
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208907641971628328042646
+    re_ext: 11223190
+    im_ext: 1099495095306
+- vector:
+    core_re: 80024061
+    core_im: 167027960
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 183649184183784641021
+    re_ext: 80024061
+    im_ext: 167027960
+- vector:
+    core_re: -151718205
+    core_im: -80545649
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208837258738086270269123
+    re_ext: 1099359909571
+    im_ext: 1099431082127
+- vector:
+    core_re: 75023548
+    core_im: -70412954
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208848399752960193119420
+    re_ext: 75023548
+    im_ext: 1099441214822
+- vector:
+    core_re: 1038322
+    core_im: -5185301
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208920118315886157223922
+    re_ext: 1038322
+    im_ext: 1099506442475
+- vector:
+    core_re: -117799988
+    core_im: -113927262
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208800555266438885704652
+    re_ext: 1099393827788
+    im_ext: 1099397700514
+- vector:
+    core_re: 69510608
+    core_im: -109458430
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208805468798086138865104
+    re_ext: 69510608
+    im_ext: 1099402169346
+- vector:
+    core_re: 8655744
+    core_im: -118019920
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208796055340279990064000
+    re_ext: 8655744
+    im_ext: 1099393607856
+- vector:
+    core_re: 58192365
+    core_im: -150339026
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208760520107433714512365
+    re_ext: 58192365
+    im_ext: 1099361288750
+- vector:
+    core_re: 61875515
+    core_im: 1239572
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1362923827527427387
+    re_ext: 61875515
+    im_ext: 1239572
+- vector:
+    core_re: -105970148
+    core_im: -19959240
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208903874199267008513564
+    re_ext: 1099405657628
+    im_ext: 1099491668536
+- vector:
+    core_re: 16664958
+    core_im: 128099451
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 140846835886238615934
+    re_ext: 16664958
+    im_ext: 128099451
+- vector:
+    core_re: -48558337
+    core_im: 1810710
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1990897798993350399
+    re_ext: 1099463069439
+    im_ext: 1810710
+- vector:
+    core_re: 88225972
+    core_im: -67658456
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208851428355539892058292
+    re_ext: 88225972
+    im_ext: 1099443969320
+- vector:
+    core_re: 39083078
+    core_im: 3524069
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 3874754842624023622
+    re_ext: 39083078
+    im_ext: 3524069
+- vector:
+    core_re: -17771880
+    core_im: 4260231
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 4684174621005632152
+    re_ext: 1099493855896
+    im_ext: 4260231
+- vector:
+    core_re: -35006961
+    core_im: -88878834
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208828096304282478433807
+    re_ext: 1099476620815
+    im_ext: 1099422748942
+- vector:
+    core_re: 1424288
+    core_im: -64308917
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 1208855111212617994451872
+    re_ext: 1424288
+    im_ext: 1099447318859
+- vector:
+    core_re: -41419167
+    core_im: 24303152
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 26721599315077758561
+    re_ext: 1099470208609
+    im_ext: 24303152
+- vector:
+    core_re: 65515885
+    core_im: 116951253
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 128589262556538319213
+    re_ext: 65515885
+    im_ext: 116951253
+- vector:
+    core_re: -121696997
+    core_im: 8183665
+    core_width: 33
+    out_width: 40
+  golden:
+    tdata: 8998035924713409819
+    re_ext: 1099389930779
+    im_ext: 8183665

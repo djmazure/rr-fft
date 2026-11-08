@@ -1,0 +1,25 @@
+test: test_fft_shim_live_unscaled
+runs:
+- timestamp: '2026-10-21T12:20:52Z'
+  sim_commit: 620b43b20dff-dirty
+  bfm_source_hashes: {}
+  pass: false
+  failures:
+  - failed
+  - failed=1
+  attestation: null
+  test_file_hashes:
+    sim/cocotb/tests/test_fft_shim_live_unscaled.py: b912608f3e99bcda
+  assertion_fingerprints:
+    test:sim/cocotb/tests/test_fft_shim_live_unscaled.py::test_live_unscaled_forward_bit_exact: f9775d522622aa24f188bfec3b3e3ad959ed3c9c2bf8e6987e1d285b250bc739
+    test:sim/cocotb/tests/test_fft_shim_live_unscaled.py::test_live_unscaled_forward_vs_xfft: 665739b526600c1b074ca7e311d5e813eb0c613d691af6c897a607e2038cfd45
+  invocation:
+    kind: regular
+    module: test_fft_shim_live_unscaled
+    netlist: false
+    view: false
+    seed: null
+    generics: {}
+    scope_patterns: null
+    schema_version: 1
+    written_at: '2026-10-21T14:20:49'

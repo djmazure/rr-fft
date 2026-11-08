@@ -1,0 +1,8 @@
+{
+    "rr_fft_top": [
+        "rtl/rr_fft_pkg.vhd",
+        "rtl/rr_fft_reorder.vhd",
+        "rtl/rr_fft_sdf_pair.vhd",
+        "rtl/rr_fft_top.vhd"
+    ]
+}
