@@ -29,10 +29,13 @@
 # rr_fft_top. Vivado 2025.2 with default flattening produced a netlist that
 # differs from the RTL when two adjacent stage pairs share one flattened
 # scope. RTL behaviour unchanged.
+#
+# v0.3.3: FDD machine block refreshed; registry source fix. RTL, tests and
+# documentation prose are those of v0.3.2.
 
 name: fft
 namespace: routertl
-version: 0.3.2
+version: 0.3.3
 description: Pipelined streaming FFT/IFFT (radix-2^2 SDF, 256-pt/24-bit, scaled + unscaled builds, xfft drop-in shim), contract-verified bit-exact to its fixed-point oracle.
 license: MIT
 library: rr_fft

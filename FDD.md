@@ -2,7 +2,7 @@
 # rr_fft_top — Firmware Design Document
 
 <!-- rr:fdd:generated:begin -->
-<!-- rr:fdd:inputs sha256:28b022a9f803a9ca -->
+<!-- rr:fdd:inputs sha256:8674c4fb81f3b7f8 -->
 <!-- rr:fdd:projection v3 -->
 > Machine-owned block — scaffolded by `rr fdd init`, refreshed by
 > `rr fdd generate`. Do not edit inside the markers;
@@ -69,7 +69,7 @@ Facts verified on 2026-10-21 against the RTL of this revision. Model checks with
 
 ## Overview
 
-- `rr_fft_top` is a pipelined streaming FFT/IFFT core in VHDL-2008, package `routertl/fft` v0.3.2 (`ip.yml`).
+- `rr_fft_top` is a pipelined streaming FFT/IFFT core in VHDL-2008, package `routertl/fft` v0.3.3 (`ip.yml`).
 - Transform length 256 points, 24-bit complex input, 24-bit twiddles (`rtl/rr_fft_pkg.vhd`: `C_LOG2N` = 8, `C_DW` = 24, `C_TW` = 24).
 - Direction (forward or inverse) is selected per frame through an AXI-Stream configuration channel.
 - Two build variants, selected by the generic `G_HAS_SCALING`:

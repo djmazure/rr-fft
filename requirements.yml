@@ -242,7 +242,7 @@ technical:
     on_infeasible: fail-loud
 
 # ── Feature matrix (FFT-P2.9) ───────────────────────────────────────
-# The shipped configuration space of v0.3.2, one axis per configuration
+# The shipped configuration space of v0.3.3, one axis per configuration
 # dimension. The RTL is 256 points, 24-bit data, 24-bit twiddle (package
 # constants, not generics). An arm with reqs is PROVEN only when every
 # mapped REQ has a live, non-vacuous @requires test (satisfy: all). An arm
