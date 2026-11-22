@@ -24,10 +24,15 @@
 # names, widths, order and generics are otherwise unchanged and VHDL binds
 # an instance written with the xfft lower-case names as before. Output
 # stream cycle-identical to v0.3.0 (tools/equiv/run.sh).
+#
+# v0.3.2 (FFT-P2.14): keep_hierarchy on each rr_fft_sdf_pair instance of
+# rr_fft_top. Vivado 2025.2 with default flattening produced a netlist that
+# differs from the RTL when two adjacent stage pairs share one flattened
+# scope. RTL behaviour unchanged.
 
 name: fft
 namespace: routertl
-version: 0.3.1
+version: 0.3.2
 description: Pipelined streaming FFT/IFFT (radix-2^2 SDF, 256-pt/24-bit, scaled + unscaled builds, xfft drop-in shim), contract-verified bit-exact to its fixed-point oracle.
 license: MIT
 library: rr_fft

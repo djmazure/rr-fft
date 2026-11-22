@@ -10,3 +10,45 @@ runs:
     sim/cocotb/tests/test_fft_shim_scaled.py: 760ab79e19313e89
   assertion_fingerprints:
     test:sim/cocotb/tests/test_fft_shim_scaled.py::test_shim_scaled_transparent: 457a534c3ceb3c3b25adb1080ae4e099bd7bb111696d59ddde2cfdef0e6fd769
+- timestamp: '2026-11-22T20:23:03Z'
+  sim_commit: e9de25e32caf-dirty
+  bfm_source_hashes: {}
+  pass: false
+  failures:
+  - failed
+  - failed=1
+  attestation: null
+  test_file_hashes:
+    sim/cocotb/tests/test_fft_shim_scaled.py: 7cd0356981b8c6ff
+  assertion_fingerprints:
+    test:sim/cocotb/tests/test_fft_shim_scaled.py::test_shim_scaled_transparent: aec36da9da6db80434227da7f1779cd8a61f0552aa3072b119882d8a7b88940e
+  invocation:
+    kind: regular
+    module: test_fft_shim_scaled
+    netlist: true
+    view: false
+    seed: null
+    generics: {}
+    scope_patterns: null
+    schema_version: 1
+    written_at: '2026-11-22T21:16:59'
+- timestamp: '2026-11-22T20:29:33Z'
+  sim_commit: e9de25e32caf-dirty
+  bfm_source_hashes: {}
+  pass: true
+  failures: []
+  attestation: null
+  test_file_hashes:
+    sim/cocotb/tests/test_fft_shim_scaled.py: 7cd0356981b8c6ff
+  assertion_fingerprints:
+    test:sim/cocotb/tests/test_fft_shim_scaled.py::test_shim_scaled_transparent: aec36da9da6db80434227da7f1779cd8a61f0552aa3072b119882d8a7b88940e
+  invocation:
+    kind: regular
+    module: test_fft_shim_scaled
+    netlist: true
+    view: false
+    seed: null
+    generics: {}
+    scope_patterns: null
+    schema_version: 1
+    written_at: '2026-11-22T21:23:23'

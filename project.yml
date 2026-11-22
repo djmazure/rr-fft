@@ -26,6 +26,12 @@ simulation:
   test_dir: sim/cocotb/tests
   waves_dir: sim/cocotb/waves
   logs_dir: sim/cocotb/logs
+  # vendor-tools: tests that are also run against the post-synthesis
+  # netlist, `rr sim run --netlist --tag vendor-tools`. Needs Vivado for the
+  # netlist and the nvc UNISIM library; not part of the RTL suite (FFT-P2.14).
+  tags:
+    vendor-tools:
+      - test_fft_shim_scaled
 
 linting:
   profile: routertl-vhdl-strict-provisional

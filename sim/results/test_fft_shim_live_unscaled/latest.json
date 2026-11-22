@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-11-08T00:42:20.505084+00:00",
+  "timestamp": "2026-11-22T20:30:10.695295+00:00",
   "module": "test_fft_shim_live_unscaled",
   "simulator": "nvc",
-  "seed": 1794098538,
-  "duration_s": 1.471,
+  "seed": 1795379410,
+  "duration_s": 0.5,
   "passed": 2,
   "failed": 0,
   "errors": 0,
@@ -16,30 +16,30 @@
       "name": "test_live_unscaled_forward_bit_exact",
       "classname": "test_fft_shim_live_unscaled",
       "status": "pass",
-      "time_s": 0.718,
+      "time_s": 0.239,
       "sim_time_ns": 11468.0
     },
     {
       "name": "test_live_unscaled_forward_vs_xfft",
       "classname": "test_fft_shim_live_unscaled",
       "status": "pass",
-      "time_s": 0.753,
+      "time_s": 0.261,
       "sim_time_ns": 11468.0
     }
   ],
   "wave_dir": "sim/waves/test_fft_shim_live_unscaled",
-  "session_id": "2f6386f77302",
+  "session_id": "344c17fa3cf5",
   "source_state": {
     "schema": "rr.sim.source_state.v1",
     "root_rel": ".",
-    "git_head": "4a66144b48a05de980f828a37a987b8eb1fb6cff",
-    "dirty_digest": "4a859434459fc2e3",
-    "content_digest": "9713c3dfe89f53b15a8306e0349f826d5b3f8dda8a6f0cedc60f81b9a49cbda8",
-    "tree_digest": "9713c3dfe89f53b15a8306e0349f826d5b3f8dda8a6f0cedc60f81b9a49cbda8",
-    "captured_at": "2026-11-08T00:42:14+00:00"
+    "git_head": "e9de25e32cafcb30532bf7e4718174861be9254c",
+    "dirty_digest": "ede27b1a1e7445bd",
+    "content_digest": "dd460e2a1aa2f983f9131c95829bf19eca8fd4069d9703e25a787ad3d93fa0ea",
+    "tree_digest": "dd460e2a1aa2f983f9131c95829bf19eca8fd4069d9703e25a787ad3d93fa0ea",
+    "captured_at": "2026-11-22T20:30:08+00:00"
   },
-  "compile_s": 0.096,
-  "run_s": 5.284,
+  "compile_s": 0.027,
+  "run_s": 1.819,
   "contract_payload": {
     "latency.in_valid__out_valid": {
       "value": {

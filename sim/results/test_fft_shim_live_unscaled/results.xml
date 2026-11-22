@@ -1,30 +1,30 @@
 <testsuites name="results">
   <testsuite name="all" package="all">
     <property name="cocotb" value="True" />
-    <testcase classname="test_fft_shim_live_unscaled" name="test_live_unscaled_forward_bit_exact" time="0.718">
+    <testcase classname="test_fft_shim_live_unscaled" name="test_live_unscaled_forward_bit_exact" time="0.239">
       <properties>
         <property name="cocotb" value="True" />
-        <property name="random_seed" value="1794098537" />
-        <property name="file" value="/home/dmazure/git_repo/tich-super/routertl/sdk/cocotb_helpers/_heartbeat_bootstrap.py" />
+        <property name="random_seed" value="1795379409" />
+        <property name="file" value="/home/dmazure/venvs/routertl-5.5.0/lib/python3.14/site-packages/sdk/cocotb_helpers/_heartbeat_bootstrap.py" />
         <property name="line" value="111" />
         <property name="sim_time_unit" value="ns" />
         <property name="sim_time_start" value="0.0" />
         <property name="sim_time_stop" value="11468.0" />
         <property name="sim_time_duration" value="11468.0" />
-        <property name="sim_time_ratio" value="15969.324548741972" />
+        <property name="sim_time_ratio" value="47945.58699766236" />
       </properties>
     </testcase>
-    <testcase classname="test_fft_shim_live_unscaled" name="test_live_unscaled_forward_vs_xfft" time="0.753">
+    <testcase classname="test_fft_shim_live_unscaled" name="test_live_unscaled_forward_vs_xfft" time="0.261">
       <properties>
         <property name="cocotb" value="True" />
-        <property name="random_seed" value="1794098538" />
-        <property name="file" value="/home/dmazure/git_repo/tich-super/routertl/sdk/cocotb_helpers/_heartbeat_bootstrap.py" />
+        <property name="random_seed" value="1795379410" />
+        <property name="file" value="/home/dmazure/venvs/routertl-5.5.0/lib/python3.14/site-packages/sdk/cocotb_helpers/_heartbeat_bootstrap.py" />
         <property name="line" value="111" />
         <property name="sim_time_unit" value="ns" />
         <property name="sim_time_start" value="0.0" />
         <property name="sim_time_stop" value="11468.0" />
         <property name="sim_time_duration" value="11468.0" />
-        <property name="sim_time_ratio" value="15237.964721907296" />
+        <property name="sim_time_ratio" value="43889.63425183686" />
       </properties>
     </testcase>
   </testsuite>

@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-11-08T00:42:36.608762+00:00",
+  "timestamp": "2026-11-22T20:30:17.314553+00:00",
   "module": "test_fft_twiddle_block",
   "simulator": "nvc",
-  "seed": 1794098555,
-  "duration_s": 0.619,
+  "seed": 1795379417,
+  "duration_s": 0.227,
   "passed": 2,
   "failed": 0,
   "errors": 0,
@@ -16,30 +16,30 @@
       "name": "test_block_rom_forward_bit_exact_same_latency",
       "classname": "test_fft_twiddle_block",
       "status": "pass",
-      "time_s": 0.369,
+      "time_s": 0.136,
       "sim_time_ns": 5328.0
     },
     {
       "name": "test_block_rom_inverse_bit_exact",
       "classname": "test_fft_twiddle_block",
       "status": "pass",
-      "time_s": 0.25,
+      "time_s": 0.091,
       "sim_time_ns": 3280.0
     }
   ],
   "wave_dir": "sim/waves/test_fft_twiddle_block",
-  "session_id": "2f6386f77302",
+  "session_id": "344c17fa3cf5",
   "source_state": {
     "schema": "rr.sim.source_state.v1",
     "root_rel": ".",
-    "git_head": "4a66144b48a05de980f828a37a987b8eb1fb6cff",
-    "dirty_digest": "a827ef1fc9b845f2",
-    "content_digest": "51789c924687304b36441e8e6281eda36beea9c6c1c76142a74c06bf09b0643a",
-    "tree_digest": "51789c924687304b36441e8e6281eda36beea9c6c1c76142a74c06bf09b0643a",
-    "captured_at": "2026-11-08T00:42:33+00:00"
+    "git_head": "e9de25e32cafcb30532bf7e4718174861be9254c",
+    "dirty_digest": "e09a50868a126e41",
+    "content_digest": "461c7cf62021148f1f9f709a878fa917dacaa7b0a8829f2826ce7dc51691c6bf",
+    "tree_digest": "461c7cf62021148f1f9f709a878fa917dacaa7b0a8829f2826ce7dc51691c6bf",
+    "captured_at": "2026-11-22T20:30:15+00:00"
   },
-  "compile_s": 0.151,
-  "run_s": 3.054,
+  "compile_s": 0.045,
+  "run_s": 1.545,
   "contract_payload": {
     "latency.in_valid__out_valid": {
       "value": {

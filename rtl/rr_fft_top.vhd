@@ -156,6 +156,12 @@ begin
     constant C_WO : natural := f_wplan(p + 1, G_HAS_SCALING);
     signal diRe, diIm : signed(C_WI - 1 downto 0);
     signal doRe, doIm : signed(C_WO - 1 downto 0);
+    -- Each stage pair is kept as its own hierarchy in synthesis. Vivado
+    -- 2025.2 with default flattening produces a netlist that differs from
+    -- this RTL when two adjacent rr_fft_sdf_pair instances share one
+    -- flattened scope (FFT-P2.14); a pair on its own is unaffected.
+    attribute keep_hierarchy : string;
+    attribute keep_hierarchy of i_pair : label is "yes";
   begin
     diRe <= resize(chRe(p), C_WI);   -- value fits by the width plan
     diIm <= resize(chIm(p), C_WI);

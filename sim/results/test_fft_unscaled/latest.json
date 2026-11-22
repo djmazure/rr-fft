@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-11-08T00:42:40.669299+00:00",
+  "timestamp": "2026-11-22T20:30:18.759319+00:00",
   "module": "test_fft_unscaled",
   "simulator": "nvc",
-  "seed": 1794098559,
-  "duration_s": 0.366,
+  "seed": 1795379418,
+  "duration_s": 0.126,
   "passed": 1,
   "failed": 0,
   "errors": 0,
@@ -16,23 +16,23 @@
       "name": "test_unscaled_bit_growth_bit_exact",
       "classname": "test_fft_unscaled",
       "status": "pass",
-      "time_s": 0.366,
+      "time_s": 0.126,
       "sim_time_ns": 4304.0
     }
   ],
   "wave_dir": "sim/waves/test_fft_unscaled",
-  "session_id": "2f6386f77302",
+  "session_id": "344c17fa3cf5",
   "source_state": {
     "schema": "rr.sim.source_state.v1",
     "root_rel": ".",
-    "git_head": "4a66144b48a05de980f828a37a987b8eb1fb6cff",
-    "dirty_digest": "53d895a9b923555b",
-    "content_digest": "c72b8b25784b1bd136d13561db86965e01fe1e0662f5a67017ed8e77124a8c80",
-    "tree_digest": "c72b8b25784b1bd136d13561db86965e01fe1e0662f5a67017ed8e77124a8c80",
-    "captured_at": "2026-11-08T00:42:37+00:00"
+    "git_head": "e9de25e32cafcb30532bf7e4718174861be9254c",
+    "dirty_digest": "afd99dc64e1f0b30",
+    "content_digest": "3eba4fd00ac953952c411c4fe2c991142b2048c243ea078e5f67ee70be2aabe3",
+    "tree_digest": "3eba4fd00ac953952c411c4fe2c991142b2048c243ea078e5f67ee70be2aabe3",
+    "captured_at": "2026-11-22T20:30:17+00:00"
   },
-  "compile_s": 0.082,
-  "run_s": 2.927,
+  "compile_s": 0.021,
+  "run_s": 0.986,
   "contract_payload": {
     "latency.in_valid__out_valid": {
       "value": {

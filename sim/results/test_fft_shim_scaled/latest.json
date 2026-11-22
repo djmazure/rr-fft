@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-11-08T00:42:24.272511+00:00",
+  "timestamp": "2026-11-22T20:30:12.197937+00:00",
   "module": "test_fft_shim_scaled",
   "simulator": "nvc",
-  "seed": 1794098543,
-  "duration_s": 0.29,
+  "seed": 1795379411,
+  "duration_s": 0.088,
   "passed": 1,
   "failed": 0,
   "errors": 0,
@@ -16,23 +16,23 @@
       "name": "test_shim_scaled_transparent",
       "classname": "test_fft_shim_scaled",
       "status": "pass",
-      "time_s": 0.29,
+      "time_s": 0.088,
       "sim_time_ns": 3280.0
     }
   ],
   "wave_dir": "sim/waves/test_fft_shim_scaled",
-  "session_id": "2f6386f77302",
+  "session_id": "344c17fa3cf5",
   "source_state": {
     "schema": "rr.sim.source_state.v1",
     "root_rel": ".",
-    "git_head": "4a66144b48a05de980f828a37a987b8eb1fb6cff",
-    "dirty_digest": "12beade2a0cf30e2",
-    "content_digest": "c33fb9e5c282c58d73b76fffa5f1a83cfe6fbbee599ce9b757a6712d5eacc162",
-    "tree_digest": "c33fb9e5c282c58d73b76fffa5f1a83cfe6fbbee599ce9b757a6712d5eacc162",
-    "captured_at": "2026-11-08T00:42:21+00:00"
+    "git_head": "e9de25e32cafcb30532bf7e4718174861be9254c",
+    "dirty_digest": "c678e5031eea05f8",
+    "content_digest": "0f4cf92c3b30002f0ca9f52a74f854a5a128bf7c666a2e0a075ebce5cbccc718",
+    "tree_digest": "0f4cf92c3b30002f0ca9f52a74f854a5a128bf7c666a2e0a075ebce5cbccc718",
+    "captured_at": "2026-11-22T20:30:11+00:00"
   },
-  "compile_s": 0.054,
-  "run_s": 2.879,
+  "compile_s": 0.026,
+  "run_s": 1.051,
   "contract_payload": {
     "latency.in_valid__out_valid": {
       "value": {

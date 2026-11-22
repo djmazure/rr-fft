@@ -69,7 +69,7 @@ Facts verified on 2026-10-21 against the RTL of this revision. Model checks with
 
 ## Overview
 
-- `rr_fft_top` is a pipelined streaming FFT/IFFT core in VHDL-2008, package `routertl/fft` v0.3.1 (`ip.yml`).
+- `rr_fft_top` is a pipelined streaming FFT/IFFT core in VHDL-2008, package `routertl/fft` v0.3.2 (`ip.yml`).
 - Transform length 256 points, 24-bit complex input, 24-bit twiddles (`rtl/rr_fft_pkg.vhd`: `C_LOG2N` = 8, `C_DW` = 24, `C_TW` = 24).
 - Direction (forward or inverse) is selected per frame through an AXI-Stream configuration channel.
 - Two build variants, selected by the generic `G_HAS_SCALING`:
@@ -153,6 +153,7 @@ graph LR
 | Multiply | `mRe_r`, `mIm_r`, `pRe_r`, `pIm_r` | four-DSP48E2 cascade per real output (see Complex multiply) |
 | Output | `RE_OUT`, `IM_OUT`, `VALID_OUT`, `CFG_OUT` | single truncation and output width (see Data path) |
 
+- Each `rr_fft_sdf_pair` instance of `rr_fft_top` carries `keep_hierarchy` = "yes" (FFT-P2.14). Vivado 2025.2 with default flattening retimes the output register of one pair into the A1/B1 stage of the next pair's BF2I DSPs and omits the synchronous zeroing of the short adder input (`b1sAb*_r` in the first half), with no synthesis message; the netlist then differs from the RTL. The attribute prevents the retiming. Cost on the deployment build: about 376 LUT and 998 flip-flops for four FFT instances, no change in DSP or block RAM count.
 - BF2I and BF2II advance only on valid beats. Every register of a butterfly DSP, input, sign and P, advances on valid beats only, so the DSP input registers and P are the first two stages of the feedback line and the line in fabric is two beats shorter. The ROM, multiply and output stages advance on every enabled cycle.
 - Fabric butterfly adders, where used, are gated single adders: an operand is gated to 0 or passed, the other is complemented on subtraction, and the carry-in is folded into the same adder.
 
@@ -359,7 +360,8 @@ graph LR
 
 - Expected values come from the oracle through `model/gen_golden.py` (`sim/cocotb/tests/fft_goldens.py`), from `model/gen_live_goldens.py` (`sim/cocotb/tests/fft_live_goldens.py`, oracle and xfft C-model columns) and from minted fixtures `sim/goldens/FFT-REQ-021.yml`, `sim/goldens/FFT-REQ-030.yml`.
 - The deployment-configuration corpus is nine frames driven back to back with `S_AXIS_CONFIG_TVALID` held at 1: impulses at n = 0 (full scale) and n = 5, tones in bins 1 and 37 (full scale) and 200 (half scale), two full-scale random frames, a full-scale DC frame and a tone in bin 37 at amplitude 2^12.
-- Recorded results (`sim/results/<module>/latest.json`, `rr sim run --all` on routertl 5.3.0 (dev), 2026-11-08): 22 testcases, 22 passed, 0 failed, 0 skipped.
+- Recorded results (`sim/results/<module>/latest.json`, `rr sim run --all` on routertl 5.5.0, 2026-11-22): 22 testcases, 22 passed, 0 failed, 0 skipped.
+- Post-synthesis netlist (FFT-P2.14): the tests under the `vendor-tools` tag of `project.yml` also run against the funcsim netlist of their top, `rr sim run --netlist --tag vendor-tools` (Vivado 2025.2 synthesis, default options, nvc with the Vivado UNISIM library). `test_fft_shim_scaled` fails on the netlist of v0.3.1 ("FFT-REQ-020 failed at k=4") and passes on the netlist of v0.3.2. The tag is not part of the RTL suite because it needs Vivado.
 - Block twiddle ROM style, every test file above except the two block-style files run with `rr sim run <module> -g G_TWIDDLE_ROM_STYLE=block`, 2026-11-08: 19 testcases, 19 passed, 0 failed, 0 skipped.
 - Restyle (FFT-P2.13), before and after: the 41 testcases above pass on `origin/main` 4a66144 and on the restyled RTL with the same status and the same simulated time per testcase.
 - Cycle equivalence (`tools/equiv/run.sh`, nvc): `rr_fft_xfft_shim` of a base revision and of the working tree side by side on one random stimulus (input gaps, `ACLKEN` low, config writes, resets of 1 to 4 cycles), every output compared on every cycle. Against 4a66144, 2026-11-08: 4 builds (scaled and unscaled, distributed and block twiddle ROM) × 200000 cycles, 552 to 592 output frames each, no difference. A copy of the restyled RTL with `TLAST` one beat early fails it (exit 1).
